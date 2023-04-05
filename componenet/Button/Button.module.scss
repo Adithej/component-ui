@@ -1,0 +1,39 @@
+@import "../colors.scss";
+@import "../spacing.scss";
+Button.button {
+  border: none;
+  padding: $p-10 $p-20;
+  border-radius: $p-5;
+  font-size: $p-15;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &.primary {
+    background-color: $primary-blue-100;
+    color: $primary-black;
+  }
+
+  &.secondary {
+    background-color: $primary-gray;
+    color: $primary-black;
+  }
+
+  &.danger {
+    background-color: $primary-red-100;
+    color: $primary-white;
+  }
+
+  &.dark {
+    background-color: $primary-black-100;
+    color: $primary-white;
+  }
+
+  span.icon {
+    margin-right: $p-10;
+  }
+
+  span.label {
+    flex: 1;
+  }
+}
