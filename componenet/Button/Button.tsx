@@ -4,7 +4,7 @@ import styles from "./Button.module.scss";
 interface Props {
   onClick?: () => void;
   disabled?: boolean;
-  variant?: string;
+  variant?: "primary" | "secondary" | "danger";
   icon: React.ReactNode;
   children: React.ReactNode;
 }
@@ -21,9 +21,7 @@ export default function Button({
       ? styles.primary
       : variant === "secondary"
       ? styles.secondary
-      : variant === "danger"
-      ? styles.danger
-      : styles.dark;
+      : styles.danger;
   return (
     <button
       className={`${styles.button} ${className}`}
