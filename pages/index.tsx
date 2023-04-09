@@ -2,13 +2,25 @@ import { Inter } from "next/font/google";
 import Button from "@/componenet/Button/Button";
 // import { useState } from "react";
 import styles from "../componenet/theme.module.scss";
-import style from "/Users/mozilor/Desktop/assignment/component-ui/component-ui/componenet/variable.module.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  // const [bagtheme, setTheme] = useState(styles.dark);
-  // console.log("1 ", bagtheme);
+  function handleClick() {
+    console.log("check", document.body);
+    // if (document.body.classList.contains("dark")) {
+    //   document.body.classList.remove("dark");
+    //   document.body.classList.add("light");
+    // } else {
+    //   document.body.classList.remove("light");
+    //   document.body.classList.add("dark");
+    // }
+    if (document.body.dataset.theme === "light") {
+      document.body.dataset.theme = "dark";
+    } else {
+      document.body.dataset.theme = "light";
+    }
+  }
 
   return (
     <div>
@@ -16,7 +28,7 @@ export default function Home() {
         variant="primary"
         icon={<span>Primary</span>}
         children={undefined}
-        onClick={() => {}}
+        onClick={() => handleClick()}
       />
       {/* <Button
         variant="secondary"

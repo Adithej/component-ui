@@ -1,12 +1,6 @@
-@import "../colors.scss";
+// @use "feature-componenet\component-ui\styles\globals.scss"as globals;
+@import "../colors.module.scss";
 @import "../spacing.scss";
-@import "../theme.module.scss";
-
-// @function function_name(theme.light, theme.dark) {
-//   // code block
-
-//   @return value;
-// }
 
 Button.button {
   border: none;
@@ -18,7 +12,8 @@ Button.button {
   align-items: center;
 
   &.primary {
-    background-color: $primary-black-300;
+    background-color: var(--color-12);
+    color: var(--color-1);
   }
 
   &.secondary {
@@ -28,11 +23,6 @@ Button.button {
 
   &.danger {
     background-color: $primary-red-100;
-    color: $primary-white;
-  }
-
-  &.dark {
-    background-color: $primary-black-100;
     color: $primary-white;
   }
 

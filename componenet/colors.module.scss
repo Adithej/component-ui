@@ -28,3 +28,35 @@ $primary-gary-200: #c0c0c0;
 $primary-gary-300: #e5e4e2;
 $primary-gary-400: #a9a9a9;
 $primary-gary-500: #c9c0bb;
+
+// Define the default theme
+$color1: $primary-blue-200;
+$color2: $primary-gary-200;
+$color3: $primary-red-200;
+$color4: $primary-black;
+$color5: $primary-white;
+$color6: $primary-gray;
+
+// Define the variable mapping for the dark theme
+$map-dark: (
+  $color1: red,
+  $color2: gray,
+);
+
+// Define the variable mapping for the light theme
+$map-light: (
+  $color1: blue,
+  $color2: pink,
+);
+
+// Define the function to get the value from the variable map
+@function map-value($name) {
+  @return map-get($map, "color1");
+}
+
+// Define the mixin to apply the variable mapping
+@mixin apply-map($map) {
+  @each $name, $value in $map {
+    // background-color: $value;
+  }
+}

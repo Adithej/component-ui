@@ -1,8 +1,4 @@
 @import "./colors.scss";
-// // Define color variables
-// $primary-color: #007aff;
-// $secondary-color: #ff3b30;
-// $accent-color: #ffcc00;
 
 // Define font variables
 $font-family-sans-serif: "Helvetica Neue", sans-serif;
@@ -20,19 +16,8 @@ $font-size-base: 16px;
 
 // Define a mixin for applying the theme tokens
 @mixin theme($primary, $secondary, $danger, $dark) {
-  $primary-black-300: $primary;
+  $primary-blue-100: $primary;
   $primary-gary-200: $secondary;
   $primary-red-200: $danger;
-  $primary-blue-200: $dark;
-}
-
-body {
-  &.dark {
-    @include theme(
-      $primary-blue-100,
-      $primary-gary-200,
-      $primary-red-200,
-      $primary-black-300
-    );
-  }
+  $primary-black-100: $dark;
 }
