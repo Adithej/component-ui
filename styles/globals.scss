@@ -1,48 +1,68 @@
-@import "../componenet/colors.module.scss";
+// @import "../componenet/colors.module.scss";
+// @import "../styles/designToken.scss";
+@import "../styles/token.scss";
 
-// $active-map: $map-light;
+// :root {
+//   --background: #fff;
+//   --foreground: #000;
+//   --color-1: #fafafa;
+//   --color-2: #eaeaea;
+//   --color-3: #999;
+//   --color-4: #888;
+//   --color-5: #666;
+//   --color-6: #444;
+//   --color-7: #333;
+//   --color-8: #111;
+//   --color-9: #3291ff;
+//   --color-10: #0070f3;
+//   --color-11: #0761d1;
+//   --color-12 :#AA77FF;
+//   --color-13 :
+//   --error-light: #ff1a1a;
+//   --error: #e00;
+//   --error-dark: #c50000;
 
-:root {
-  --background: #fff;
-  --foreground: #000;
-  --color-1: #fafafa;
-  --color-2: #eaeaea;
-  --color-3: #999;
-  --color-4: #888;
-  --color-5: #666;
-  --color-6: #444;
-  --color-7: #333;
-  --color-8: #111;
-  --color-9: #3291ff;
-  --color-10: #0070f3;
-  --color-11: #0761d1;
-  --color-12 :#AA77FF;
-  --color-13 : 
-  --error-light: #ff1a1a;
-  --error: #e00;
-  --error-dark: #c50000;
-}
-[data-theme="dark"] {
-  --foreground: #fff;
-  --background: #000;
-  --color-12 :#DDFFBB;
-  --color-11: #3291ff;
-  --color-10: #0070f3;
-  --color-9: #0761d1;
-  --color-8: #fafafa;
-  --color-7: #eaeaea;
-  --color-6: #999;
-  --color-5: #888;
-  --color-4: #666;
-  --color-3: #444;
-  --color-2: #333;
-  --color-1: #111;
-  --error-light: #ff1a1a;
-  --error: #e00;
-  --error-dark: #c50000;
-}
+//   .dark {
+//     --foreground: #fff;
+//     --background: #000;
+//     --color-12 :#DDFFBB;
+//     --color-11: #3291ff;
+//     --color-10: #0070f3;
+//     --color-9: #0761d1;
+//     --color-8: #fafafa;
+//     --color-7: #eaeaea;
+//     --color-6: #999;
+//     --color-5: #888;
+//     --color-4: #666;
+//     --color-3: #444;
+//     --color-2: #333;
+//     --color-1: #111;
+//     --error-light: #ff1a1a;
+//     --error: #e00;
+//     --error-dark: #c50000;
+//   }
+// }
+// [data-theme="dark"] {
+//   --foreground: #fff;
+//   --background: #000;
+//   --color-12 :#DDFFBB;
+//   --color-11: #3291ff;
+//   --color-10: #0070f3;
+//   --color-9: #0761d1;
+//   --color-8: #fafafa;
+//   --color-7: #eaeaea;
+//   --color-6: #999;
+//   --color-5: #888;
+//   --color-4: #666;
+//   --color-3: #444;
+//   --color-2: #333;
+//   --color-1: #111;
+//   --error-light: #ff1a1a;
+//   --error: #e00;
+//   --error-dark: #c50000;
+// }
 
 body {
-  color: var(--foreground);
-  background-color: var(--background);
+  color: var(--onBackgroundColor);
+  background-color: var(--backgroundColor);
 }

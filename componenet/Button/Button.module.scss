@@ -12,18 +12,18 @@ Button.button {
   align-items: center;
 
   &.primary {
-    background-color: var(--color-12);
-    color: var(--color-1);
+    background-color: var(--ele-button-background-color);
+    color: var(--positiveColor);
   }
 
   &.secondary {
-    background-color: $primary-gray;
-    color: $primary-black;
+    background-color: $onSurfaceMediumColor;
+    color: $onSurfaceNeutralHighColor;
   }
 
   &.danger {
-    background-color: $primary-red-100;
-    color: $primary-white;
+    background-color: $negativeColor;
+    color: $surface01Color;
   }
 
   span.icon {
