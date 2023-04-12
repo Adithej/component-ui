@@ -12,8 +12,10 @@ Button.button {
   align-items: center;
 
   &.primary {
-    background-color: var(--ele-button-background-pri);
-    color: var(--global-white);
+    background-color: var(--color-button-primary);
+    color: var(--color-text);
+    border-style: solid;
+    border-color: var(--color-border);
   }
 
   &.secondary {
