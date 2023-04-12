@@ -1,5 +1,5 @@
 // @use "feature-componenet\component-ui\styles\globals.scss"as globals;
-@import "../colors.module.scss";
+
 @import "../spacing.scss";
 
 Button.button {
@@ -12,18 +12,18 @@ Button.button {
   align-items: center;
 
   &.primary {
-    background-color: var(--ele-button-background-color);
-    color: var(--positiveColor);
+    background-color: var(--ele-button-background-pri);
+    color: var(--global-white);
   }
 
   &.secondary {
-    background-color: $onSurfaceMediumColor;
-    color: $onSurfaceNeutralHighColor;
+    background-color: var(--ele-button-background-sec);
+    color: var(-blue-300);
   }
 
   &.danger {
-    background-color: $negativeColor;
-    color: $surface01Color;
+    background-color: var(--ele-button-background-dan);
+    color: var(--ele-background-color);
   }
 
   span.icon {
