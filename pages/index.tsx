@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import Button from "@/componenet/Button/Button";
 // import { useState } from "react";
-import styles from "../componenet/theme.module.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 

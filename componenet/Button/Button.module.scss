@@ -1,5 +1,3 @@
-// @use "feature-componenet\component-ui\styles\globals.scss"as globals;
-
 @import "../spacing.scss";
 
 Button.button {
@@ -12,10 +10,11 @@ Button.button {
   align-items: center;
 
   &.primary {
-    background-color: var(--color-button-primary);
-    color: var(--color-text);
+    // background-color: var(--color-button-primary);
+    background-color: $purple-100;
+    color: $color-text;
     border-style: solid;
-    border-color: var(--color-border);
+    border-color: $color-border;
   }
 
   &.secondary {
