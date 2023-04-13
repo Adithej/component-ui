@@ -1,6 +1,10 @@
 @import "../styles/token.scss";
 
+@function color($color-name) {
+  @return var(--color-#{$color-name});
+}
+
 body {
-  color: var(--color-text);
-  background-color: var(--global-white);
+  color: color(text);
+  background-color: color(background);
 }

@@ -1,5 +1,9 @@
 // @import "../styles/token.scss";
 
+@function color($color-name) {
+  @return var(--color-#{$color-name});
+}
+
 $global-white: #ffffff;
 $global-dark: #000000;
 $global-transparent: #00000000;
