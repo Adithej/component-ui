@@ -11,20 +11,23 @@ Button.button {
 
   &.primary {
     // background-color: var(--color-button-primary);
-    background-color: color(button-primary);
-    color: color(text-primary);
+    background-color: color(button-secondary);
+    // background-color: $color-background-primary;
+    color: color(dark);
+    // color: $color-text-primary;
     border-style: solid;
-    border-color: color(border-primary);
+    border-color: color(magenta-200);
+    // border-color: $color-border-primary;
   }
 
   &.secondary {
-    background-color: var(--ele-button-background-sec);
-    color: var(-blue-300);
+    background-color: color(purple-100);
+    color: color(dark);
   }
 
   &.danger {
-    background-color: var(--ele-button-background-dan);
-    color: var(--ele-background-color);
+    background-color: color(button-danger);
+    color: color(text-danger);
   }
 
   span.icon {
