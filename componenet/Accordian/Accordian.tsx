@@ -10,8 +10,12 @@ const Accordion = AccordionPrimitive.Root;
 const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
->(({ className, ...props }) => (
-  <AccordionPrimitive.Item className={styles.AccordianPrimitive} {...props} />
+>(({ className, ...props }, ref) => (
+  <AccordionPrimitive.Item
+    ref={ref}
+    className={styles.AccordianPrimitive}
+    {...props}
+  />
 ));
 AccordionItem.displayName = "AccordionItem";
 
