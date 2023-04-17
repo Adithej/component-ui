@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import Button from "@/componenet/Button/Button";
+import Input from "@/componenet/Input/Input";
 // import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,12 +24,36 @@ export default function Home() {
 
   return (
     <div>
-      <Button
+      <Input
+        variant="primary"
+        type={"email"}
+        icon={undefined}
+        placeholder={"email"}
+        children={<label></label>}
+      />
+      <br></br>
+      <Input
+        variant="secondary"
+        type={"email"}
+        icon={undefined}
+        placeholder={"email"}
+        children={<label>Email</label>}
+      />
+      <br></br>
+      <Input
+        variant="error"
+        type={"email"}
+        icon={undefined}
+        placeholder={"email"}
+        children={<label></label>}
+      />
+      <br></br>
+      {/* <Button
         variant="primary"
         icon={<span>Primary</span>}
         children={undefined}
         onClick={() => handleClick()}
-      />
+      /> */}
       {/* <Button
         variant="secondary"
         icon={<span>Secondary</span>}

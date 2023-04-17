@@ -1,7 +1,14 @@
 @import "../styles/token";
 
 body {
-  color: color(dark);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 16px;
   background-color: color(background);
   // background-color: get("colors.blue");
 
