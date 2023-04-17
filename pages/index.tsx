@@ -1,7 +1,13 @@
 import { Inter } from "next/font/google";
-import Button from "@/componenet/Button/Button";
-import Input from "@/componenet/Input/Input";
-// import { useState } from "react";
+// import Button from "@/componenet/Button/Button";
+// import Input from "@/componenet/Input/Input";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/componenet/Accordian/Accordian";
+// import { useRef } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,47 +29,26 @@ export default function Home() {
   }
 
   return (
-    <div>
-      <Input
-        variant="primary"
-        type={"email"}
-        icon={undefined}
-        placeholder={"email"}
-        children={<label></label>}
-      />
-      <br></br>
-      <Input
-        variant="secondary"
-        type={"email"}
-        icon={undefined}
-        placeholder={"email"}
-        children={<label>Email</label>}
-      />
-      <br></br>
-      <Input
-        variant="error"
-        type={"email"}
-        icon={undefined}
-        placeholder={"email"}
-        children={<label></label>}
-      />
-      <br></br>
-      {/* <Button
-        variant="primary"
-        icon={<span>Primary</span>}
-        children={undefined}
-        onClick={() => handleClick()}
-      /> */}
-      {/* <Button
-        variant="secondary"
-        icon={<span>Secondary</span>}
-        children={undefined}
-      />
-      <Button
-        variant="danger"
-        icon={<span>Danger</span>}
-        children={undefined}
-      /> */}
-    </div>
+    <Accordion type="single" collapsible>
+      <AccordionItem value="item-1">
+        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It adheres to the WAI-ARIA design pattern.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger>Is it styled?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It comes with default styles that matches the other components'
+          aesthetic.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3">
+        <AccordionTrigger>Is it animated?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It's animated by default, but you can disable it if you prefer.
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
   );
 }
