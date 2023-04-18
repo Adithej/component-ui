@@ -10,8 +10,9 @@ div.formElement {
 
     &.primary {
       appearance: none;
-      background-color: color(gray-200);
+      background-color: color(gray-100);
       border-radius: 10px;
+      outline-color: color(gray-200);
 
       &::placeholder {
         color: color(dark);
@@ -27,18 +28,24 @@ div.formElement {
       appearance: none;
       background-color: color(seafoam-100);
       border-radius: 10px;
+      outline-color: color(gray-200);
     }
     &.error {
       border: gray;
       appearance: none;
       background-color: color(red-200);
-      outline: red;
+      outline-color: color(red-400);
       border-radius: 10px;
     }
   }
 
   span.icon {
     flex: 1;
+    display: block;
+    padding: 5px;
+    text-align: left;
+    width: 5px;
+    color: color(white);
   }
 
   span.label {

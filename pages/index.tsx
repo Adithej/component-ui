@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 // import Button from "@/componenet/Button/Button";
-// import Input from "@/componenet/Input/Input";
+import Input from "@/componenet/Input/Input";
 import AccordionDemo from "@/componenet/Accordian/AccordianDemo";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,5 +22,42 @@ export default function Home() {
     // }
   }
 
-  return <AccordionDemo />;
+  return (
+    <>
+      <Input
+        variant="primary"
+        type={"email"}
+        placeholder={"email"}
+        children={<label>Email</label>}
+        icon={<></>}
+      />
+      <br></br>
+      <Input
+        disabled
+        variant="primary"
+        type={"email"}
+        placeholder={"Email"}
+        children={<label></label>}
+        icon={<></>}
+      />
+      <br></br>
+      <Input
+        variant="secondary"
+        type={"email"}
+        placeholder={"Email"}
+        children={<label></label>}
+        icon={<></>}
+      />
+      <br></br>
+      <Input
+        variant="error"
+        type={"password"}
+        placeholder={"Password"}
+        children={<label>Password</label>}
+        icon={<></>}
+      />
+      <br></br>
+      <AccordionDemo />
+    </>
+  );
 }
