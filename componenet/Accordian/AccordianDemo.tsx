@@ -1,3 +1,4 @@
+import styles from "./Accordion.module.scss";
 import {
   Accordion,
   AccordionContent,
@@ -6,7 +7,7 @@ import {
 } from "./Accordian";
 export default function AccordionDemo() {
   return (
-    <Accordion type="single" collapsible className="w-[450px]">
+    <Accordion type="single" collapsible className={styles["sizing"]}>
       <AccordionItem value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
         <AccordionContent>

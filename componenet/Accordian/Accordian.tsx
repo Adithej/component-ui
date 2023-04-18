@@ -1,5 +1,3 @@
-"use client";
-
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { ChevronDown } from "lucide-react";
@@ -13,7 +11,7 @@ const AccordionItem = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AccordionPrimitive.Item
     ref={ref}
-    className={styles.AccordianPrimitive}
+    className={styles["accordian-primitive"]}
     {...props}
   />
 ));
@@ -23,14 +21,14 @@ const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
 >(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Header className={styles.header}>
+  <AccordionPrimitive.Header className={styles["header"]}>
     <AccordionPrimitive.Trigger
       ref={ref}
-      className={styles.accordionPrimitiveTrigger}
+      className={styles["accordion-primitive-trigger"]}
       {...props}
     >
       {children}
-      <ChevronDown />
+      <ChevronDown className={styles["chevron-down"]} />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));
@@ -42,7 +40,7 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className={styles.accordionPrimitiveContent}
+    className={styles["accordion-primitive-content"]}
     {...props}
   >
     <div className={styles.space}>{children}</div>

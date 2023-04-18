@@ -6,9 +6,6 @@ interface Props {
   disabled?: boolean;
   type: string;
   placeholder: string;
-  variant?: "primary" | "secondary" | "error";
-  icon: React.ReactNode;
-  children: React.ReactNode;
 }
 
 function Input({
@@ -16,28 +13,21 @@ function Input({
   disabled = false,
   type,
   placeholder,
-  variant = "primary",
-  icon,
-  children,
 }: Props): JSX.Element {
-  const className =
-    variant === "primary"
-      ? styles.primary
-      : variant === "secondary"
-      ? styles.secondary
-      : styles.error;
+  // const className =
+  //   variant === "primary"
+  //     ? styles.primary
+  //     : variant === "secondary"
+  //     ? styles.secondary
+  //     : styles.error;
   return (
-    <div className={styles.formElement}>
-      <span className={styles.label}>{children}</span>
-      <input
-        className={`${styles.input} ${className}`}
-        onClick={onChange}
-        disabled={disabled}
-        type={type}
-        placeholder={placeholder}
-      />
-      <span className={styles.icon}>{icon}</span>
-    </div>
+    <input
+      className={styles["form-input"]}
+      onClick={onChange}
+      disabled={disabled}
+      type={type}
+      placeholder={placeholder}
+    />
   );
 }
 

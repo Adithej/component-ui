@@ -24,39 +24,7 @@ export default function Home() {
 
   return (
     <>
-      <Input
-        variant="primary"
-        type={"email"}
-        placeholder={"email"}
-        children={<label>Email</label>}
-        icon={<></>}
-      />
-      <br></br>
-      <Input
-        disabled
-        variant="primary"
-        type={"email"}
-        placeholder={"Email"}
-        children={<label></label>}
-        icon={<></>}
-      />
-      <br></br>
-      <Input
-        variant="secondary"
-        type={"email"}
-        placeholder={"Email"}
-        children={<label></label>}
-        icon={<></>}
-      />
-      <br></br>
-      <Input
-        variant="error"
-        type={"password"}
-        placeholder={"Password"}
-        children={<label>Password</label>}
-        icon={<></>}
-      />
-      <br></br>
+      {/* <Input type={"email"} placeholder={"Email"} /> */}
       <AccordionDemo />
     </>
   );
