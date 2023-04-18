@@ -24,7 +24,8 @@ export default function Home() {
 
   return (
     <>
-      {/* <Input type={"email"} placeholder={"Email"} /> */}
+      {/* <Input type={"email"} placeholder={"Email"} />
+      <br></br> */}
       <AccordionDemo />
     </>
   );
