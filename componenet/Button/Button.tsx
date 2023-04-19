@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Button.module.css";
+import styles from "./Button.module.scss";
 
 interface Props {
   onClick?: () => void;
@@ -21,8 +21,7 @@ export default function Button({
       ? styles.primary
       : variant === "secondary"
       ? styles.secondary
-      : styles.danger;
-
+      : styles.withLabel;
   return (
     <button
       className={`${styles.button} ${className}`}

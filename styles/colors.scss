@@ -1,0 +1,223 @@
+$white: #ffffff;
+$dark: #000000;
+$transparent: #00000000;
+$blue-100: #b7d9f8;
+$blue-200: #5eb0ef;
+$blue-300: #0091ff;
+$blue-400: #0081f1;
+$blue-500: #00254d;
+$red-100: #f3aeaf;
+$red-200: #eb9091;
+$red-300: #e5484d;
+$red-400: #cd2b31;
+$red-500: #381316;
+$green-100: #92ceac;
+$green-200: #30a46c;
+$green-300: #299764;
+$green-400: #18794e;
+$green-500: #153226;
+$yellow-100: #fef2a4;
+$yellow-200: #f9e68c;
+$yellow-300: #f5d90a;
+$yellow-400: #f7ce00;
+$yellow-500: #946800;
+$purple-100: #f6ebff;
+$purple-200: #bd8bfc;
+$purple-300: #9d57f4;
+$purple-400: #5d13b7;
+$purple-500: #33106a;
+$gray-100: #e6e6e6;
+$gray-200: #d5d5d5;
+$gray-300: #909090;
+$gray-400: #6d6d6d;
+$gray-500: #464646;
+$seafoam-100: #cef7f3;
+$seafoam-200: #aaf1ea;
+$seafoam-300: #8ce9e2;
+$seafoam-400: #3fc9c1;
+$seafoam-500: #00a19a;
+$orange-100: #ffeccc;
+$orange-200: #fdd291;
+$orange-300: #ffbb63;
+$orange-400: #ffa037;
+$orange-500: #f68511;
+$magenta-100: #ffdce8;
+$magenta-200: #ffb2ce;
+$magenta-300: #ff95bd;
+$magenta-400: #ef5a98;
+$magenta-500: #c82269;
+$neutral-100: #f1f2f4;
+$neutral-200: #8590a2;
+$neutral-300: #626f86;
+$neutral-400: #2c3e5d;
+$neutral-500: #172b4d;
+$darkneutral-100: #161a1d;
+$darkneutral-200: #1d2125;
+$darkneutral-300: #2c333a;
+$darkneutral-400: #738496;
+$darkneutral-500: #9fadbc;
+
+$map-light: (
+  white: #ffffff,
+  dark: #000000,
+  transparent: #00000000,
+  blue-100: #b7d9f8,
+  blue-200: #5eb0ef,
+  blue-300: #0091ff,
+  blue-400: #0081f1,
+  blue-500: #00254d,
+  red-100: #f3aeaf,
+  red-200: #eb9091,
+  red-300: #e5484d,
+  red-400: #cd2b31,
+  red-500: #381316,
+  green-100: #92ceac,
+  green-200: #30a46c,
+  green-300: #299764,
+  green-400: #18794e,
+  green-500: #153226,
+  yellow-100: #fef2a4,
+  yellow-200: #f9e68c,
+  yellow-300: #f5d90a,
+  yellow-400: #f7ce00,
+  yellow-500: #946800,
+  purple-100: #f6ebff,
+  purple-200: #bd8bfc,
+  purple-300: #9d57f4,
+  purple-400: #5d13b7,
+  purple-500: #33106a,
+  gray-100: #e6e6e6,
+  gray-200: #d5d5d5,
+  gray-300: #909090,
+  gray-400: #6d6d6d,
+  gray-500: #464646,
+  seafoam-100: #cef7f3,
+  seafoam-200: #aaf1ea,
+  seafoam-300: #8ce9e2,
+  seafoam-400: #3fc9c1,
+  seafoam-500: #00a19a,
+  orange-100: #ffeccc,
+  orange-200: #fdd291,
+  orange-300: #ffbb63,
+  orange-400: #ffa037,
+  orange-500: #f68511,
+  magenta-100: #ffdce8,
+  magenta-200: #ffb2ce,
+  magenta-300: #ff95bd,
+  magenta-400: #ef5a98,
+  magenta-500: #c82269,
+  darkneutral-100: hsl(214.3 31.8% 60.4%),
+  darkneutral-200: hsl(214.3 31.8% 91.4%),
+  darkneutral-300: #0f172a,
+  darkneutral-400: #e2e8f0,
+  darkneutral-500: #9fadbc,
+  background: $seafoam-200,
+  background-primary: $green-100,
+  background-secondary: $purple-100,
+  background-danger: $red-500,
+  border: $darkneutral-300,
+  border-primary: $blue-500,
+  border-secondary: $orange-500,
+  border-danger: $red-100,
+  border-success: $green-100,
+  link: $blue-300,
+  link-pressed: $blue-100,
+  text: $darkneutral-100,
+  text-primary: $green-500,
+  text-secondary: $purple-300,
+  text-danger: $red-400,
+  text-warn: $yellow-400,
+  text-select: $blue-400,
+  text-disabled: $darkneutral-400,
+  button-primary: $blue-200,
+  button-secondary: $purple-400,
+  button-danger: $red-200,
+  button-hover: $seafoam-500,
+);
+
+$map-dark: (
+  white: #000000,
+  dark: #ffffff,
+  transparent: #00000000,
+  blue-100: #381316,
+  blue-200: #0081f1,
+  blue-300: #0091ff,
+  blue-400: #5eb0ef,
+  blue-500: #b7d9f8,
+  red-100: #381316,
+  red-200: #cd2b31,
+  red-300: #e5484d,
+  red-400: #eb9091,
+  red-500: #f3aeaf,
+  green-100: #153226,
+  green-200: #18794e,
+  green-300: #299764,
+  green-400: #30a46c,
+  green-500: #92ceac,
+  yellow-100: #946800,
+  yellow-200: #f7ce00,
+  yellow-300: #f5d90a,
+  yellow-400: #f9e68c,
+  yellow-500: #fef2a4,
+  purple-100: #f6ebff,
+  purple-200: #bd8bfc,
+  purple-300: #9d57f4,
+  purple-400: #5d13b7,
+  purple-500: #f6ebff,
+  gray-100: #464646,
+  gray-200: #6d6d6d,
+  gray-300: #909090,
+  gray-400: #d5d5d5,
+  gray-500: #e6e6e6,
+  seafoam-100: #00a19a,
+  seafoam-200: #3fc9c1,
+  seafoam-300: #8ce9e2,
+  seafoam-400: #aaf1ea,
+  seafoam-500: #cef7f3,
+  orange-100: #f68511,
+  orange-200: #ffa037,
+  orange-300: #ffbb63,
+  orange-400: #fdd291,
+  orange-500: #ffeccc,
+  magenta-100: #c82269,
+  magenta-200: #ef5a98,
+  magenta-300: #ff95bd,
+  magenta-400: #ffb2ce,
+  magenta-500: #ffdce8,
+  darkneutral-100: #1d283a,
+  darkneutral-200: #1d283a,
+  darkneutral-300: #e1e7ef,
+  darkneutral-400: #72767c,
+  darkneutral-500: #9fadbc,
+  background: $neutral-400,
+  background-primary: $green-400,
+  background-secondary: $purple-400,
+  background-danger: $red-500,
+  border: $gray-200,
+  border-primary: $neutral-300,
+  border-secondary: $orange-100,
+  border-danger: $red-300,
+  border-success: $green-400,
+  link: $blue-300,
+  link-pressed: $blue-100,
+  text: $darkneutral-500,
+  text-primary: $green-200,
+  text-secondary: $purple-100,
+  text-danger: $red-100,
+  text-warn: $yellow-300,
+  text-select: $blue-200,
+  text-disabled: $neutral-200,
+  button-primary: $neutral-500,
+  button-secondary: $purple-300,
+  button-danger: $red-500,
+  button-hover: $seafoam-100,
+);
+@mixin apply-map($map) {
+  @each $name, $value in $map {
+    $var-name: unquote("--color-#{$name}");
+    #{$var-name}: $value;
+  }
+}
+@function color($color-name) {
+  @return var(--color-#{$color-name});
+}
