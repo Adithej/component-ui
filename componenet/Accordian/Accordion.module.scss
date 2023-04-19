@@ -44,7 +44,7 @@
   display: flex;
   flex: 1 1 0%;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.2rem;
   font-size: 16px;
   font-weight: 500;
   justify-content: space-between;
@@ -52,7 +52,7 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom-color: none; // rgb(226, 232, 240)
+  border-bottom-color: color(darkneutral-400); // rgb(226, 232, 240)
   border-bottom-width: 1px;
   border-image-width: 1;
   color: color(darkneutral-300); // #0F172A // #E1E7EF
