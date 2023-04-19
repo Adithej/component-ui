@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Input from "@/componenet/Input/Input";
 import AccordionDemo from "@/componenet/Accordian/AccordianDemo";
 import { SelectDemo } from "@/componenet/Select/SelectDemo";
+import { CheckboxDemo } from "@/componenet/Checkbox/CheckboxDemo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,8 @@ export default function Home() {
       {/* <Input type={"email"} placeholder={"Email"} />
       <br></br> */}
       {/* <AccordionDemo /> */}
-      <SelectDemo />
+      {/* <SelectDemo /> */}
+      <CheckboxDemo />
     </>
   );
 }
