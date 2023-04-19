@@ -1,7 +1,3 @@
-@function color($color-name) {
-  @return var(--color-#{$color-name});
-}
-
 .checkbox-primitive {
   display: flex;
   align-items: flex-start;
