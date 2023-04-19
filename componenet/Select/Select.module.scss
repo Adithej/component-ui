@@ -1,0 +1,113 @@
+.select-trigger {
+  display: flex;
+  color: color(select-text);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: transparent;
+  font-size: 0.875rem;
+  font-weight: 20;
+  line-height: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: color(select-border);
+  &:focus {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: color(select-outline); // #1D283A
+    outline-offset: 2px;
+  }
+}
+
+.cheverdown {
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.5;
+}
+
+.select-content {
+  width: 180px;
+  overflow: hidden;
+  position: relative;
+  z-index: 50;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  box-shadow: 0px 10px 38px color(select-box);
+}
+
+.select-viewport {
+  padding: 0.25rem;
+  margin: 5px;
+}
+
+.select-label {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-right: 0.5rem;
+  padding-left: 2rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: color(select-text-secondary);
+}
+
+.select-item {
+  display: flex;
+  position: relative;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-right: 0.5rem;
+  padding-left: 2rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.125rem;
+  outline: 0;
+  user-select: none;
+  margin: 3px;
+  color: color(select-text-primary);
+  &[data-disabled] {
+    color: color(select-text-primary);
+    pointer-events: none;
+  }
+  &[data-highlighted] {
+    outline: none;
+    background-color: color(select-background);
+    color: color(dark);
+  }
+}
+
+.select-item-indicator {
+  width: 200%;
+  display: flex;
+  position: absolute;
+  left: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.check {
+  width: 1rem;
+  height: 1rem;
+}
+
+.select-seperator {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+  height: 1px;
+}
+
+.sizing {
+  width: 180px;
+}

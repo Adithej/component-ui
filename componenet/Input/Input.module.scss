@@ -1,12 +1,8 @@
-@function color($color-name) {
-  @return var(--color-#{$color-name});
-}
-
 .form-input {
   // border: 5px solid hsl(214.3 31.8% 91.4%);
   border-width: 5px;
   border-style: solid;
-  border-color: color(darkneutral-200); // #1D283A
+  border-color: color(input-border); // #1D283A
   max-width: 24rem;
   padding-top: 0.2rem; //8
   padding-bottom: 0.2rem;
@@ -23,7 +19,7 @@
   &:focus {
     outline-width: 2px;
     outline-style: solid;
-    outline-color: color(darkneutral-100); // #1D283A
+    outline-color: color(input-outline); // #1D283A
     outline-offset: 2px;
   }
 }
