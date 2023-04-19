@@ -30,12 +30,12 @@
 
 .accordian-primitive {
   border-bottom-width: 1px;
-  color: color(darkneutral-300);
+  color: $accordian-text-primary;
 }
 .accordion-primitive-trigger {
   appearance: auto;
   -webkit-appearance: button;
-  background-color: color(accordian-background);
+  background-color: $accordian-background;
   background-image: none;
   display: flex;
   flex: 1 1 0%;
@@ -48,10 +48,10 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom-color: color(accordian-border); // rgb(226, 232, 240)
+  border-bottom-color: $accordian-border; // rgb(226, 232, 240)
   border-bottom-width: 1px;
   border-image-width: 1;
-  color: color(accordian-text); // #0F172A // #E1E7EF
+  color: $accordian-text; // #0F172A // #E1E7EF
 
   &[data-state="open"] > svg {
     transform: rotate(180deg);
@@ -66,7 +66,7 @@
   height: 1rem;
   transition-property: transform;
   transition-duration: 200ms;
-  color: color(accordian-text);
+  color: $accordian-text;
 }
 
 .space {
