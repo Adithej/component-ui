@@ -1,3 +1,7 @@
+@function color($color-name) {
+  @return var(--color-#{$color-name});
+}
+
 $white: #ffffff;
 $dark: #000000;
 $transparent: #00000000;
@@ -56,6 +60,25 @@ $darkneutral-200: #1d2125;
 $darkneutral-300: #2c333a;
 $darkneutral-400: #738496;
 $darkneutral-500: #9fadbc;
+$accordian-background: color(transparent);
+$accordian-text: color(darkneutral-300);
+$accordian-text-primary: color(darkneutral-300);
+$accordian-border: color(darkneutral-400);
+$checkbox-background: color(transparent);
+$checkbox-background-primary: $white;
+$checkbox-background-secondary: $dark;
+$checkbox-border: color(darkneutral-100);
+$checkbox-text: color(dark);
+$select-background: color(neutral-300);
+$select-text-primary: color(neutral-100);
+$select-text-secondary: color(neutral-200);
+$checkbox-focus: $white;
+$select-text: color(darkneutral-300);
+$select-border: color(darkneutral-200);
+$select-outline: color(darkneutral-100);
+$select-box: color(neutral-400);
+$input-border: color(neutral-300);
+$input-outline: color(darkneutral-100);
 
 $map-light: (
   white: #ffffff,
@@ -106,14 +129,15 @@ $map-light: (
   magenta-300: #ff95bd,
   magenta-400: #ef5a98,
   magenta-500: #c82269,
-  darkneutral-100: hsl(214.3 31.8% 60.4%),
-  darkneutral-200: hsl(214.3 31.8% 91.4%),
+  darkneutral-100: #5e7d9a,
+  darkneutral-200: #b9c9d1,
   darkneutral-300: #0f172a,
   darkneutral-400: #e2e8f0,
   darkneutral-500: #e2e8f0,
   neutral-100: #0f172a,
   neutral-200: #0f172a,
-  neutral-300: hsl(214.3 31.8% 91.4%),
+  neutral-300: #b9c9d1,
+  neutral-400: #70737459,
   background: $seafoam-200,
   background-primary: $green-100,
   background-secondary: $purple-100,
@@ -136,24 +160,6 @@ $map-light: (
   button-secondary: $purple-400,
   button-danger: $red-200,
   button-hover: $seafoam-500,
-  accordian-text: #0f172a,
-  accordian-background: $transparent,
-  accordian-border: #e2e8f0,
-  checkbox-background: $transparent,
-  checkbox-bacground-primary: #ffffff,
-  checkbox-bacground-secondary: $dark,
-  checkbox-border: hsl(214.3 31.8% 60.4%),
-  checkbox-text: #000000,
-  select-background: hsl(214.3 31.8% 91.4%),
-  select-text-primary: #0f172a,
-  select-text-secondary: #0f172a,
-  checkbox-focus: #ffffff,
-  select-text: #0f172a,
-  select-border: hsl(214.3 31.8% 91.4%),
-  select-outline: hsl(214.3 31.8% 60.4%),
-  select-box: rgba(112, 115, 116, 0.35),
-  input-border: hsl(214.3 31.8% 91.4%),
-  input-outline: hsl(214.3 31.8% 60.4%),
 );
 
 $map-dark: (
@@ -213,6 +219,7 @@ $map-dark: (
   neutral-100: #a5c0d9,
   neutral-200: #a5c0d9,
   neutral-300: #1d283a,
+  neutral-400: rgba(112, 115, 116, 0.35),
   background: $neutral-400,
   background-primary: $green-400,
   background-secondary: $purple-400,
@@ -235,31 +242,10 @@ $map-dark: (
   button-secondary: $purple-300,
   button-danger: $red-500,
   button-hover: $seafoam-100,
-  accordian-text: #e1e7ef,
-  accordian-background: $transparent,
-  accordian-border: #72767c,
-  checkbox-background: $transparent,
-  checkbox-background-primary: #ffffff,
-  checkbox-background-secondary: $dark,
-  checkbox-border: #1d283a,
-  checkbox-text: #ffffff,
-  checkbox-focus: #ffffff,
-  select-background: #1d283a,
-  select-text: #e1e7ef,
-  select-text-primary: #a5c0d9,
-  select-text-secondary: #a5c0d9,
-  select-border: #1d283a,
-  select-outline: #1d283a,
-  select-box: rgba(112, 115, 116, 0.35),
-  input-border: #1d283a,
-  input-outline: #1d283a,
 );
 @mixin apply-map($map) {
   @each $name, $value in $map {
     $var-name: unquote("--color-#{$name}");
     #{$var-name}: $value;
   }
-}
-@function color($color-name) {
-  @return var(--color-#{$color-name});
 }

@@ -1,6 +1,6 @@
 .select-trigger {
   display: flex;
-  color: color(select-text);
+  color: $select-text;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
@@ -16,11 +16,11 @@
   border-radius: 0.375rem;
   border-width: 1px;
   border-style: solid;
-  border-color: color(select-border);
+  border-color: $select-border;
   &:focus {
     outline-width: 2px;
     outline-style: solid;
-    outline-color: color(select-outline); // #1D283A
+    outline-color: $select-outline; // #1D283A
     outline-offset: 2px;
   }
 }
@@ -38,7 +38,7 @@
   z-index: 50;
   border-radius: 0.375rem;
   border-width: 1px;
-  box-shadow: 0px 10px 38px color(select-box);
+  box-shadow: 0px 10px 38px $select-box;
 }
 
 .select-viewport {
@@ -54,7 +54,7 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
-  color: color(select-text-secondary);
+  color: $select-text-secondary;
 }
 
 .select-item {
@@ -72,14 +72,14 @@
   outline: 0;
   user-select: none;
   margin: 3px;
-  color: color(select-text-primary);
+  color: $select-text-primary;
   &[data-disabled] {
-    color: color(select-text-primary);
+    color: $select-text-primary;
     pointer-events: none;
   }
   &[data-highlighted] {
     outline: none;
-    background-color: color(select-background);
+    background-color: $select-background;
     color: color(dark);
   }
 }
