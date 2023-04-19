@@ -28,9 +28,9 @@ export default function Home() {
     <>
       {/* <Input type={"email"} placeholder={"Email"} />
       <br></br> */}
-      {/* <AccordionDemo /> */}
+      <AccordionDemo />
       {/* <SelectDemo /> */}
-      <CheckboxDemo />
+      {/* <CheckboxDemo /> */}
     </>
   );
 }
