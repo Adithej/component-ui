@@ -4,6 +4,8 @@ import Input from "@/componenet/Input/Input";
 import AccordionDemo from "@/componenet/Accordian/AccordianDemo";
 import { SelectDemo } from "@/componenet/Select/SelectDemo";
 import { CheckboxDemo } from "@/componenet/Checkbox/CheckboxDemo";
+import { ContextMenuDemo } from "@/componenet/ContextMenu/ContextMenuDemo";
+import { RadioGroupDemo } from "@/componenet/RadioGroup/RadioGroupDemo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,9 +30,11 @@ export default function Home() {
     <>
       {/* <Input type={"email"} placeholder={"Email"} />
       <br></br> */}
-      <AccordionDemo />
+      {/* <AccordionDemo /> */}
       {/* <SelectDemo /> */}
       {/* <CheckboxDemo /> */}
+      {/* <ContextMenuDemo /> */}
+      <RadioGroupDemo />
     </>
   );
 }
