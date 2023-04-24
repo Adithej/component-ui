@@ -32,8 +32,8 @@ export default function Home() {
       <br></br> */}
       {/* <AccordionDemo /> */}
       {/* <SelectDemo /> */}
-      <CheckboxDemo />
-      {/* <ContextMenuDemo /> */}
+      {/* <CheckboxDemo /> */}
+      <ContextMenuDemo />
       {/* <RadioGroupDemo /> */}
     </>
   );
