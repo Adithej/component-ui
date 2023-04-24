@@ -36,14 +36,9 @@
   border-radius: 0.375rem;
   background-color: $contextmenu-background-secondry;
   color: $contextmenu-text;
-  //   border: 0 solid #e5e7eb;
+
   box-shadow: 0 4px 6px -1px $contextmenu-shadow-primary,
     0 2px 4px -1px $contextmenu-shadow-seconadry;
-  --tw-enter-opacity: 0.8;
-  --tw-enter-scale: initial;
-  --tw-enter-rotate: initial;
-  --tw-enter-translate-x: initial;
-  --tw-enter-translate-y: initial;
 }
 
 .context-content {
@@ -59,14 +54,8 @@
   color: $contextmenu-text;
   box-shadow: 0 4px 6px -1px $contextmenu-shadow-primary,
     0 2px 4px -1px $contextmenu-shadow-seconadry;
-  --tw-enter-opacity: 0.8;
   animation-name: enter;
   animation-duration: 0.15s;
-  --tw-enter-opacity: initial;
-  --tw-enter-scale: initial;
-  --tw-enter-rotate: initial;
-  --tw-enter-translate-x: initial;
-  --tw-enter-translate-y: initial;
 }
 
 .context-item {
@@ -84,10 +73,10 @@
   outline: 0;
   user-select: none;
 
-  color: $contextmenu-text-secondary; //$contextmenu-text-secondary
+  color: $contextmenu-text-secondary;
   &[data-highlighted] {
     outline: none;
-    background-color: $contextmenu-background-primary; // $contextmenu-background-primary
+    background-color: $contextmenu-background-primary;
     color: color(dark);
   }
   &[data-disabled] {
@@ -110,10 +99,10 @@
   cursor: default;
   outline: 0;
   user-select: none;
-  color: $contextmenu-text-secondary; //$contextmenu-text-secondary
+  color: $contextmenu-text-secondary;
   &[data-highlighted] {
     outline: none;
-    background-color: $contextmenu-background-primary; // $contextmenu-background-primar
+    background-color: $contextmenu-background-primary;
     color: color(dark);
   }
   &[data-disabled] {
@@ -151,10 +140,10 @@
   cursor: default;
   outline: 0;
   user-select: none;
-  color: $contextmenu-text-secondary; //$contextmenu-text-secondary
+  color: $contextmenu-text-secondary;
   &[data-highlighted] {
     outline: none;
-    background-color: $contextmenu-background-primary; //$contextmenu-background-primary
+    background-color: $contextmenu-background-primary;
     color: color(dark);
   }
   &[data-disabled] {
@@ -193,29 +182,5 @@
   font-size: 0.75rem;
   line-height: 1rem;
   letter-spacing: 0.1em;
-  color: #6b7280;
-}
-
-.demo-trigger {
-  display: flex;
-  height: 150px;
-  width: 300px;
-  border-width: 1px;
-  border-style: dashed;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.375rem;
-  font-weight: 200;
-  border-color: $contextmenu-border;
   color: $contextmenu-text-primary;
-}
-
-.demo-content {
-  width: 16rem;
-}
-
-.demo-subcontent {
-  width: 12rem;
 }

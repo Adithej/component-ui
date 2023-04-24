@@ -12,3 +12,10 @@ $map-space: (
   spacing-900: 80 px,
   spacing-1000: 96 px,
 );
+
+@mixin apply-space-map($map) {
+  @each $name, $value in $map {
+    $var-name: unquote("--space-#{$name}");
+    #{$var-name}: $value;
+  }
+}
