@@ -1,6 +1,6 @@
-import styles from "./Checkbox.module.scss";
+import { Checkbox } from "@/component/Checkbox";
 
-import { Checkbox } from "./Checkbox";
+import styles from "./CheckboxDemo.module.scss";
 
 export function CheckboxDemo() {
   return (

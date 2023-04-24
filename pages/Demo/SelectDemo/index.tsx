@@ -1,13 +1,13 @@
 import {
   Select,
-  SelectContent,
   SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
   SelectValue,
-} from "./Select";
-import styles from "./Select.module.scss";
+  SelectTrigger,
+  SelectContent,
+  SelectLabel,
+  SelectItem,
+} from "@/component/Select";
+import styles from "./SelectDemo.module.scss";
 
 export function SelectDemo() {
   return (

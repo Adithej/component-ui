@@ -2,7 +2,8 @@ import styles from "./Checkbox.module.scss";
 
 import * as React from "react";
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
-import { Check } from "lucide-react";
+
+import { CheckIcon } from "@radix-ui/react-icons";
 
 const Checkbox = React.forwardRef<
   React.ElementRef<typeof CheckboxPrimitive.Root>,
@@ -16,7 +17,7 @@ const Checkbox = React.forwardRef<
     <CheckboxPrimitive.Indicator
       className={styles["checkbox-primitive-indicator "]}
     >
-      <Check className={styles["check"]} />
+      <CheckIcon className={styles["check"]} />
     </CheckboxPrimitive.Indicator>
   </CheckboxPrimitive.Root>
 ));

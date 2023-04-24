@@ -1,11 +1,11 @@
 import { Inter } from "next/font/google";
 // import Button from "@/componenet/Button/Button";
-import Input from "@/componenet/Input/Input";
-import AccordionDemo from "@/componenet/Accordian/AccordianDemo";
-import { SelectDemo } from "@/componenet/Select/SelectDemo";
-import { CheckboxDemo } from "@/componenet/Checkbox/CheckboxDemo";
-import { ContextMenuDemo } from "@/componenet/ContextMenu/ContextMenuDemo";
-import { RadioGroupDemo } from "@/componenet/RadioGroup/RadioGroupDemo";
+import Input from "@/component/Input";
+import AccordionDemo from "./Demo/AccordionDemo";
+import { CheckboxDemo } from "./Demo/CheckboxDemo";
+import { ContextMenuDemo } from "./Demo/ContextMenuDemo";
+import { RadioGroupDemo } from "./Demo/RadioGroupDemo";
+import { SelectDemo } from "./Demo/SelectDemo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,9 +32,9 @@ export default function Home() {
       <br></br> */}
       {/* <AccordionDemo /> */}
       {/* <SelectDemo /> */}
-      {/* <CheckboxDemo /> */}
+      <CheckboxDemo />
       {/* <ContextMenuDemo /> */}
-      <RadioGroupDemo />
+      {/* <RadioGroupDemo /> */}
     </>
   );
 }

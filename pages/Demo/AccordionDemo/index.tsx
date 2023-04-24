@@ -1,10 +1,11 @@
-import styles from "./Accordion.module.scss";
 import {
   Accordion,
-  AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "./Accordian";
+  AccordionContent,
+} from "@/component/Accordion";
+import styles from "./AccordianDemo.module.scss";
+
 export default function AccordionDemo() {
   return (
     <Accordion type="single" collapsible className={styles["sizing"]}>

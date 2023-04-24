@@ -68,11 +68,13 @@ $checkbox-background: color(transparent);
 $checkbox-background-primary: $white;
 $checkbox-background-secondary: $dark;
 $checkbox-border: color(darkneutral-100);
+$checkbox-border-primary: color(white-200);
 $checkbox-text: color(dark);
+$checkbox-focus: color(purple-300);
+$checkbox-check: $white;
 $select-background: color(neutral-300);
 $select-text-primary: color(neutral-100);
 $select-text-secondary: color(neutral-200);
-$checkbox-focus: $white;
 $select-text: color(darkneutral-300);
 $select-border: color(darkneutral-200);
 $select-outline: color(darkneutral-100);
@@ -96,6 +98,7 @@ $radiogroup-border-primary: color(white);
 $map-light: (
   white: #ffffff,
   white-100: #c4e4f4,
+  white-200: #d1d5db,
   dark: #000000,
   dark-100: #1c160d,
   transparent: #00000000,
@@ -121,7 +124,7 @@ $map-light: (
   yellow-500: #946800,
   purple-100: #f6ebff,
   purple-200: #bd8bfc,
-  purple-300: #9d57f4,
+  purple-300: #4f46e5,
   purple-400: #5d13b7,
   purple-500: #33106a,
   gray-100: #ffffff,
@@ -181,6 +184,7 @@ $map-light: (
 $map-dark: (
   white: #000000,
   white-100: #1d283a,
+  white-200: #d1d5db,
   dark: #ffffff,
   dark-100: #ffffff,
   transparent: #00000000,
@@ -206,7 +210,7 @@ $map-dark: (
   yellow-500: #fef2a4,
   purple-100: #f6ebff,
   purple-200: #bd8bfc,
-  purple-300: #9d57f4,
+  purple-300: #4f46e5,
   purple-400: #5d13b7,
   purple-500: #f6ebff,
   gray-100: #000000,
