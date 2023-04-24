@@ -10,24 +10,19 @@ Button.button {
   align-items: center;
 
   &.primary {
-    // background-color: var(--color-button-primary);
-    background-color: color(button-secondary);
-    // background-color: $color-background-primary;
-    color: color(dark);
-    // color: $color-text-primary;
+    background-color: $button-background-primary;
+    color: $button-color;
     border-style: solid;
-    border-color: color(magenta-200);
-    // border-color: $color-border-primary;
   }
 
   &.secondary {
-    background-color: color(purple-100);
-    color: color(dark);
+    background-color: $button-background-secondary;
+    color: $button-color;
   }
 
   &.danger {
-    background-color: color(button-danger);
-    color: color(text-danger);
+    background-color: $button-background-danger;
+    color: $button-color;
   }
 
   span.icon {
