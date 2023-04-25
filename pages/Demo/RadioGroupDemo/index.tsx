@@ -1,5 +1,5 @@
 import { RadioGroup, RadioGroupItem } from "@/component/RadioGroup";
-import styles from "./RadioGroupDemo.module.scss";
+import styles from "/Users/mozilor/Desktop/assignment/component-ui/component-ui/component/RadioGroup/RadioGroup.module.scss";
 
 export function RadioGroupDemo() {
   return (

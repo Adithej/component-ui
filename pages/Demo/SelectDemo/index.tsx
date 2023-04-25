@@ -7,7 +7,7 @@ import {
   SelectLabel,
   SelectItem,
 } from "@/component/Select";
-import styles from "./SelectDemo.module.scss";
+import styles from "/Users/mozilor/Desktop/assignment/component-ui/component-ui/component/Select/Select.module.scss";
 
 export function SelectDemo() {
   return (

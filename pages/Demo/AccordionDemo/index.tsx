@@ -4,7 +4,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/component/Accordion";
-import styles from "./AccordianDemo.module.scss";
+import styles from "/Users/mozilor/Desktop/assignment/component-ui/component-ui/component/Accordion/Accordion.module.scss";
 
 export default function AccordionDemo() {
   return (

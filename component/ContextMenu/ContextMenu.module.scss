@@ -184,3 +184,27 @@
   letter-spacing: 0.1em;
   color: $contextmenu-text-primary;
 }
+
+.demo-trigger {
+  display: flex;
+  height: 150px;
+  width: 300px;
+  border-width: 1px;
+  border-style: dashed;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.375rem;
+  font-weight: 200;
+  border-color: $contextmenu-border;
+  color: $contextmenu-text-primary;
+}
+
+.demo-content {
+  width: 16rem;
+}
+
+.demo-subcontent {
+  width: 12rem;
+}

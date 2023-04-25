@@ -15,7 +15,7 @@ import {
   ContextMenuSubTrigger,
   ContextMenuRadioGroup,
 } from "@/component/ContextMenu";
-import styles from "./ContextMenu.module.scss";
+import styles from "/Users/mozilor/Desktop/assignment/component-ui/component-ui/component/ContextMenu/ContextMenu.module.scss";
 
 export function ContextMenuDemo() {
   return (

@@ -1,9 +1,10 @@
-import Button from "../component/Button";
-import type { Meta, StoryObj } from '@storybook/nextjs';
+import Button from "./Button";
+import { Meta, StoryObj } from "@storybook/react";
+
 
 
 const meta: Meta<typeof Button> = {
-  title: 'Button',
+  title: 'Componenets/Button',
   component: Button,
 };
 
@@ -12,6 +13,7 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
   args: {
+
     variant: 'primary',
     disabled : false,
     icon : ["Primary"],
