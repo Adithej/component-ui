@@ -1,3 +1,4 @@
+import { Meta } from "@storybook/react";
 import {
   ContextMenu,
   ContextMenuTrigger,
@@ -8,17 +9,22 @@ import {
   ContextMenuLabel,
   ContextMenuSeparator,
   ContextMenuShortcut,
-  ContextMenuGroup,
-  ContextMenuPortal,
   ContextMenuSub,
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuRadioGroup,
-} from "@/component/ContextMenu";
-import styles from "/Users/mozilor/Desktop/assignment/component-ui/component-ui/component/ContextMenu/ContextMenu.module.scss";
+} from "./ContextMenu";
+import styles from "./ContextMenu.module.scss";
 
-export function ContextMenuDemo() {
-  return (
+const meta: Meta<typeof ContextMenu> = {
+  title: "Componenets/ContextMenu",
+  component: ContextMenu,
+};
+
+export default meta;
+
+export const DefaultContextMenu = () => (
+  <>
     <ContextMenu>
       <ContextMenuTrigger className={styles["demo-trigger"]}>
         Right click here
@@ -66,5 +72,5 @@ export function ContextMenuDemo() {
         </ContextMenuRadioGroup>
       </ContextMenuContent>
     </ContextMenu>
-  );
-}
+  </>
+);

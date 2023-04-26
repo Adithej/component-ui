@@ -6,7 +6,11 @@ import { CheckboxDemo } from "./Demo/CheckboxDemo";
 import { ContextMenuDemo } from "./Demo/ContextMenuDemo";
 import { RadioGroupDemo } from "./Demo/RadioGroupDemo";
 import { SelectDemo } from "./Demo/SelectDemo";
-
+import Button from "@/component/Button";
+import Demo from "./Demo/index";
+import { Textarea } from "@/component/TextArea/TextArea";
+import { TextareaDemo } from "./Demo/TextAreaDemo";
+import { DialogDemo } from "./Demo/DialogDemo";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -28,13 +32,22 @@ export default function Home() {
 
   return (
     <>
+      {/* <Button icon={undefined} children={undefined} variant="primary" />
+      <br></br>
+      <Button icon={undefined} children={undefined} variant="secondary" />
+      <br></br>
+      <Button icon={undefined} children={undefined} variant="danger" /> */}
+
       {/* <Input type={"email"} placeholder={"Email"} />
       <br></br> */}
       {/* <AccordionDemo /> */}
       {/* <SelectDemo /> */}
       {/* <CheckboxDemo /> */}
-      <ContextMenuDemo />
+      {/* <ContextMenuDemo /> */}
       {/* <RadioGroupDemo /> */}
+      {/* <Demo /> */}
+      {/* <TextareaDemo /> */}
+      <DialogDemo />
     </>
   );
 }

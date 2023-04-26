@@ -21,7 +21,7 @@ export default function Button({
       ? styles.primary
       : variant === "secondary"
       ? styles.secondary
-      : styles.withLabel;
+      : styles.danger;
   return (
     <button
       className={`${styles.button} ${className}`}

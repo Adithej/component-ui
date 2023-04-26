@@ -1,5 +1,9 @@
 @import "../spacing.scss";
 
+// :root {
+//   --color-purple-300: #9d57f4;
+// }
+
 Button.button {
   border: none;
   padding: $p-10 $p-20;
@@ -10,24 +14,24 @@ Button.button {
   align-items: center;
 
   &.primary {
-    // background-color: var(--color-button-primary);
-    background-color: color(button-secondary);
-    // background-color: $color-background-primary;
-    color: color(dark);
-    // color: $color-text-primary;
+    background-color: $button-background-primary; // $button-background-primary
+    color: #f1fcfd; // $button-color
     border-style: solid;
-    border-color: color(magenta-200);
-    // border-color: $color-border-primary;
   }
 
   &.secondary {
-    background-color: color(purple-100);
-    color: color(dark);
+    border-color: #b9c9d1;
+    background-color: $button-background-secondary; //
+    color: $button-color;
+    border-style: solid;
+    &:hover {
+      background-color: #e2e8f0; //   226, 232, 240
+    }
   }
 
   &.danger {
-    background-color: color(button-danger);
-    color: color(text-danger);
+    background-color: $button-background-danger;
+    color: $button-color;
   }
 
   span.icon {

@@ -1,13 +1,21 @@
+import { Meta, StoryObj } from "@storybook/react";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from "@/component/Accordion";
-import styles from "/Users/mozilor/Desktop/assignment/component-ui/component-ui/component/Accordion/Accordion.module.scss";
+} from "./Accordion";
+import styles from "./Accordion.module.scss";
 
-export default function AccordionDemo() {
-  return (
+const meta: Meta<typeof Accordion> = {
+  title: "Componenets/Accordion",
+  component: Accordion,
+};
+
+export default meta;
+
+export const DefaultAccordion = () => (
+  <>
     <Accordion type="single" collapsible className={styles["sizing"]}>
       <AccordionItem value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
@@ -29,5 +37,5 @@ export default function AccordionDemo() {
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-  );
-}
+  </>
+);

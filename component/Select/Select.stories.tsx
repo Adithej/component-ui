@@ -1,3 +1,4 @@
+import { Meta } from "@storybook/react";
 import {
   Select,
   SelectGroup,
@@ -6,11 +7,19 @@ import {
   SelectContent,
   SelectLabel,
   SelectItem,
-} from "@/component/Select";
-import styles from "/Users/mozilor/Desktop/assignment/component-ui/component-ui/component/Select/Select.module.scss";
+  SelectSeparator,
+} from "./Select";
+import styles from "./Select.module.scss";
 
-export function SelectDemo() {
-  return (
+const meta: Meta<typeof Select> = {
+  title: "Componenets/Select",
+  component: Select,
+};
+
+export default meta;
+
+export const DefaultSelect = () => (
+  <>
     <Select>
       <SelectTrigger className={styles["sizing"]}>
         <SelectValue placeholder="Select a fruit" />
@@ -26,5 +35,5 @@ export function SelectDemo() {
         </SelectGroup>
       </SelectContent>
     </Select>
-  );
-}
+  </>
+);

@@ -1,8 +1,16 @@
-import { RadioGroup, RadioGroupItem } from "@/component/RadioGroup";
-import styles from "/Users/mozilor/Desktop/assignment/component-ui/component-ui/component/RadioGroup/RadioGroup.module.scss";
+import { Meta } from "@storybook/react";
+import { RadioGroup, RadioGroupItem } from "./RadioGroup";
+import styles from "./RadioGroup.module.scss";
 
-export function RadioGroupDemo() {
-  return (
+const meta: Meta<typeof RadioGroup> = {
+  title: "Componenets/RadioGroup",
+  component: RadioGroup,
+};
+
+export default meta;
+
+export const DefaultRadioGroup = () => (
+  <>
     <RadioGroup defaultValue="comfortable">
       <div className={styles["radiogroup-demo"]}>
         <RadioGroupItem value="default" id="r1" />
@@ -23,5 +31,5 @@ export function RadioGroupDemo() {
         </label>
       </div>
     </RadioGroup>
-  );
-}
+  </>
+);

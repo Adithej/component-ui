@@ -38,3 +38,17 @@
     transform: scale(5, 5);
   }
 }
+
+.radiogroup-demo {
+  display: flex;
+  margin-left: 0.5rem;
+  align-items: center;
+}
+
+.radiogroup-label {
+  font-size: 15px;
+  font-weight: 250;
+  line-height: 1;
+  padding-left: 10px;
+  color: $radiogroup-text;
+}
