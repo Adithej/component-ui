@@ -6,6 +6,8 @@ interface Props {
   disabled?: boolean;
   type: string;
   placeholder: string;
+  id: string;
+  value?: string;
 }
 
 function Input({
@@ -13,6 +15,8 @@ function Input({
   disabled = false,
   type,
   placeholder,
+  id,
+  value,
 }: Props): JSX.Element {
   // const className =
   //   variant === "primary"
@@ -27,6 +31,8 @@ function Input({
       disabled={disabled}
       type={type}
       placeholder={placeholder}
+      id={id}
+      value={value}
     />
   );
 }

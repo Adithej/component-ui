@@ -14,14 +14,19 @@ Button.button {
   align-items: center;
 
   &.primary {
-    background-color: $button-background-primary;
-    color: $button-color;
+    background-color: $button-background-primary; // $button-background-primary
+    color: #f1fcfd; // $button-color
     border-style: solid;
   }
 
   &.secondary {
-    background-color: $button-background-secondary;
+    border-color: #b9c9d1;
+    background-color: $button-background-secondary; //
     color: $button-color;
+    border-style: solid;
+    &:hover {
+      background-color: #e2e8f0; //   226, 232, 240
+    }
   }
 
   &.danger {

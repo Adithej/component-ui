@@ -94,10 +94,15 @@ $radiogroup-text: color(dark);
 $radiogroup-background-primary: color(dark-100);
 $radiogroup-border: color(white-100);
 $radiogroup-border-primary: color(white);
-$button-background-primary: color(purple-300);
-$button-background-secondary: color(darkneutral-200);
+$button-background-primary: color(dark-300);
+$button-background-secondary: color(transparent);
 $button-background-danger: color(red-400);
 $button-color: color(dark);
+$textarea-background: color(transparent);
+$textarea-color: color(darkneutral-300);
+$textarea-color-primary: color(dark-200);
+$textarea-border: color(neutral-300);
+$textarea-outline: color(darkneutral-100);
 
 $map-light: (
   white: #ffffff,
@@ -106,6 +111,7 @@ $map-light: (
   dark: #000000,
   dark-100: #1c160d,
   dark-200: #6b7280,
+  dark-300: #0e0d13,
   transparent: #00000000,
   blue-100: #b7d9f8,
   blue-200: #5eb0ef,
@@ -189,6 +195,7 @@ $map-dark: (
   dark: #ffffff,
   dark-100: #ffffff,
   dark-200: #6b7280,
+  dark-300: #ffffff,
   transparent: #00000000,
   blue-100: #381316,
   blue-200: #0081f1,

@@ -8,6 +8,9 @@ import { RadioGroupDemo } from "./Demo/RadioGroupDemo";
 import { SelectDemo } from "./Demo/SelectDemo";
 import Button from "@/component/Button";
 import Demo from "./Demo/index";
+import { Textarea } from "@/component/TextArea/TextArea";
+import { TextareaDemo } from "./Demo/TextAreaDemo";
+import { DialogDemo } from "./Demo/DialogDemo";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -42,7 +45,9 @@ export default function Home() {
       {/* <CheckboxDemo /> */}
       {/* <ContextMenuDemo /> */}
       {/* <RadioGroupDemo /> */}
-      <Demo />
+      {/* <Demo /> */}
+      {/* <TextareaDemo /> */}
+      <DialogDemo />
     </>
   );
 }
