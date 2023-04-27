@@ -11,6 +11,7 @@ import Demo from "./Demo/index";
 import { Textarea } from "@/component/TextArea/TextArea";
 import { TextareaDemo } from "./Demo/TextAreaDemo";
 import { DialogDemo } from "./Demo/DialogDemo";
+import { CardDemo } from "./Demo/CardDemo";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -47,7 +48,8 @@ export default function Home() {
       {/* <RadioGroupDemo /> */}
       {/* <Demo /> */}
       {/* <TextareaDemo /> */}
-      <DialogDemo />
+      {/* <DialogDemo /> */}
+      <CardDemo />
     </>
   );
 }

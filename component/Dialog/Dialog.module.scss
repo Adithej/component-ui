@@ -1,3 +1,28 @@
+@mixin animate-overlay-show {
+  animation-name: overlay-show;
+  animation-duration: 150ms;
+  animation-timing-function: ease-out;
+}
+
+@keyframes overlay-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes content-show {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
 .dialog-primitive-portal {
   display: flex;
   position: fixed;
@@ -14,7 +39,7 @@
 }
 
 .dialog-primitive-overlay {
-  background-color: hsl(0 0% 100% /0.8);
+  background-color: $dialog-background-primary; //hsl(0 0% 100% /0.8)
   position: fixed;
   top: 0;
   right: 0;
@@ -24,30 +49,38 @@
   transition-property: all;
   inset: 0;
   box-sizing: border-box;
-  border: 0 solid #e5e7eb;
+  animation-duration: 1s;
+  transition-duration: 0.1s;
+  @include animate-overlay-show;
 }
 
 .dialog-primitive-content {
-  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
-    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  // hsl(206 22% 7% / 35%)  hsl(206 22% 7% / 20%)
+  border-width: 1px;
+  border-style: solid;
+  border-color: $dialog-border-primary;
+  box-shadow: $dialog-box-color-primary 0px 10px 38px -10px,
+    $dialog-box-color-secondary 0px 10px 20px -15px;
+
   position: fixed;
-  background-color: hsl(0 0% 100%);
+  background-color: $dailog-background-secondary; //hsl(0 0% 100%)
   display: grid;
   z-index: 50;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  gap: 1rem;
+  // gap: 1rem;
+  // grid-gap: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 425px;
-  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  max-width: 375px;
+  animation: content-show 150ms cubic-bezier(0.16, 1, 0.3, 1);
 
   .dialog-primitive-close {
     background-color: transparent;
     background-image: none;
     position: absolute;
-    border-color: hsl(214.3 31.8% 91.4%);
+    // border-color: hsl(214.3 31.8% 91.4%);
     top: 1rem;
     right: 1rem;
     border-radius: 0.125rem;
@@ -64,6 +97,7 @@
   .icon-x {
     width: 1rem;
     height: 1rem;
+    color: $dialog-text-primary;
   }
 
   .dialog-primitive-close-span {
@@ -78,10 +112,12 @@
 }
 
 .dialog-header {
-  display: flex;
-  margin: 0;
   text-align: center;
   flex-direction: column;
+  font-size: 12px;
+  color: $dialog-text-primary; // $dialog-text-primary
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   @media (min-width: 640px) {
     text-align: left;
@@ -111,7 +147,7 @@
 .dialog-description {
   margin-top: calc(0.375rem * calc(1 - 0));
   margin-bottom: calc(0.375rem * 0);
-  color: hsl(215.4 16.3% 46.9%);
+  color: $dialog-text-secondary;
   font-size: 0.875rem;
   line-height: 1.25rem;
   text-align: left;
@@ -122,8 +158,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   @media (min-width: 450px) {
   }
+}
+
+.demo-dialog-button {
+  margin-top: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .demo-dialog-names {
@@ -142,6 +186,7 @@
 
 .demo-dialog-label {
   text-align: right;
+  color: $dialog-text-primary;
 }
 
 .demo-dialog-input {
