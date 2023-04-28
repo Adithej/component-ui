@@ -14,6 +14,7 @@ import { DialogDemo } from "./Demo/DialogDemo";
 import { CardDemo } from "./Demo/CardDemo";
 import { TooltipDemo } from "./Demo/TooltipDemo";
 import { ProgressDemo } from "./Demo/ProgressDemo";
+import { NavigationMenuDemo } from "./Demo/NavigationMenuDemo";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -53,7 +54,8 @@ export default function Home() {
       {/* <DialogDemo /> */}
       {/* <CardDemo /> */}
       {/* <TooltipDemo /> */}
-      <ProgressDemo />
+      {/* <ProgressDemo /> */}
+      <NavigationMenuDemo />
     </>
   );
 }
