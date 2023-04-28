@@ -123,6 +123,8 @@ $tooltip-border: color(gray-600);
 $tooltip-background-primary: color(darkneutral-700);
 $tooltip-text-primary: color(dark);
 $tooltip-text-secondary: color(dark-700);
+$progress-background-primary: color(white-700);
+$progress-background-secondary: color(dark-800);
 
 $map-light: (
   white: #ffffff,
@@ -132,6 +134,7 @@ $map-light: (
   white-400: #e2e8f0,
   white-500: hsl(0 0% 100% /0.8),
   white-600: hsl(206 22% 7% / 20%),
+  white-700: hsl(210 40% 96.1%),
   dark: #000000,
   dark-100: #1c160d,
   dark-200: #6b7280,
@@ -140,6 +143,7 @@ $map-light: (
   dark-500: hsl(215.4 16.3% 46.9%),
   dark-600: hsl(206 22% 7% / 35%),
   dark-700: #000000,
+  dark-800: hsl(222.2 47.4% 11.2%),
   transparent: #00000000,
   blue-100: #b7d9f8,
   blue-200: #5eb0ef,
@@ -230,6 +234,7 @@ $map-dark: (
   white-400: #1d283a,
   white-500: #00000000,
   white-600: #1d283a,
+  white-700: hsl(222.2 47.4% 11.2%),
   dark: #ffffff,
   dark-100: #ffffff,
   dark-200: #6b7280,
@@ -238,6 +243,7 @@ $map-dark: (
   dark-500: hsl(215.4 16.3% 46.9%),
   dark-600: #1d283a,
   dark-700: rgb(68, 74, 84),
+  dark-800: hsl(210 40% 98%),
   transparent: #00000000,
   blue-100: #381316,
   blue-200: #0081f1,

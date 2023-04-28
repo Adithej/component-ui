@@ -1,0 +1,22 @@
+.progress-primitive-root {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  border-radius: 9999px;
+  width: 300px;
+  transform: translateZ(0);
+  background-color: $progress-background-primary; // l:210 40% 96.1%  d: 222.2 47.4% 11.2%;
+}
+
+.progress-primitive-indicator {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  transition: transform 660ms cubic-bezier(0.65, 0, 0.35, 1);
+  background-color: $progress-background-secondary; //l:222.2 47.4% 11.2%,  210 40% 98%;
+}
+
+.demo-progress {
+  width: 60%;
+}
