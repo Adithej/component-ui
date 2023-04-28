@@ -1,17 +1,18 @@
 import { Inter } from "next/font/google";
 // import Button from "@/componenet/Button/Button";
-import Input from "@/component/Input";
-import AccordionDemo from "./Demo/AccordionDemo";
-import { CheckboxDemo } from "./Demo/CheckboxDemo";
-import { ContextMenuDemo } from "./Demo/ContextMenuDemo";
-import { RadioGroupDemo } from "./Demo/RadioGroupDemo";
-import { SelectDemo } from "./Demo/SelectDemo";
-import Button from "@/component/Button";
-import Demo from "./Demo/index";
-import { Textarea } from "@/component/TextArea/TextArea";
-import { TextareaDemo } from "./Demo/TextAreaDemo";
-import { DialogDemo } from "./Demo/DialogDemo";
-import { CardDemo } from "./Demo/CardDemo";
+// import Input from "@/component/Input";
+// import AccordionDemo from "./Demo/AccordionDemo";
+// import { CheckboxDemo } from "./Demo/CheckboxDemo";
+// import { ContextMenuDemo } from "./Demo/ContextMenuDemo";
+// import { RadioGroupDemo } from "./Demo/RadioGroupDemo";
+// import { SelectDemo } from "./Demo/SelectDemo";
+// import Button from "@/component/Button";
+// import Demo from "./Demo/index";
+// import { Textarea } from "@/component/TextArea/TextArea";
+// import { TextareaDemo } from "./Demo/TextAreaDemo";
+// import { DialogDemo } from "./Demo/DialogDemo";
+// import { CardDemo } from "./Demo/CardDemo";
+import { TooltipDemo } from "./Demo/TooltipDemo";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -49,7 +50,8 @@ export default function Home() {
       {/* <Demo /> */}
       {/* <TextareaDemo /> */}
       {/* <DialogDemo /> */}
-      <CardDemo />
+      {/* <CardDemo /> */}
+      <TooltipDemo />
     </>
   );
 }

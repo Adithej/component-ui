@@ -1,0 +1,128 @@
+@keyframes slideup-fade {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideright-fade {
+  from {
+    opacity: 0;
+    transform: translateX(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidedown-fade {
+  from {
+    opacity: 0;
+    transform: translateY(-2px); // -2px
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideleft-fade {
+  from {
+    opacity: 0;
+    transform: translateX(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.tooltip-primitive-content {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $tooltip-border;
+  overflow: hidden;
+  z-index: 50;
+  width: 100px;
+  padding: 5px 10px;
+  color: $tooltip-text-secondary;
+  margin: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: none;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  border-radius: 4px;
+  user-select: none;
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+  &[data-state="delayed-open"][data-side="top"] {
+    animation-name: slidedown-fade;
+  }
+  &[data-state="delayed-open"][data-side="right"] {
+    animation-name: slideleft-fade;
+  }
+  &[data-state="delayed-open"][data-side="bottom"] {
+    animation-name: slideup-fade;
+  }
+  &[data-state="delayed-open"][data-side="left"] {
+    animation-name: slideright-fade;
+  }
+}
+
+.icon-button {
+  font-family: inherit;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $tooltip-border; // l: hsl(214.3, 31.8, 91.4) d: rgb(29, 40, 58)
+  background-color: transparent;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: $tooltip-background-primary; // l: #E2E8F0
+  }
+}
+
+.icon-plus {
+  color: $tooltip-text-primary; // dark and white
+  width: 1rem;
+  height: 1rem;
+}
+
+.add-span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.add-para {
+  margin: 5px;
+  padding: 0px;
+}
+
+.story-align {
+  margin-top: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

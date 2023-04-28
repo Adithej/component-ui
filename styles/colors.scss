@@ -119,6 +119,10 @@ $dialog-border-primary: color(gray-600);
 $card-background-primary: color(neutral-700);
 $card-border-primary: color(darkneutral-600);
 $card-text-primary: color(neutral-600);
+$tooltip-border: color(gray-600);
+$tooltip-background-primary: color(darkneutral-700);
+$tooltip-text-primary: color(dark);
+$tooltip-text-secondary: color(dark-700);
 
 $map-light: (
   white: #ffffff,
@@ -135,6 +139,7 @@ $map-light: (
   dark-400: hsl(0 0% 100%),
   dark-500: hsl(215.4 16.3% 46.9%),
   dark-600: hsl(206 22% 7% / 35%),
+  dark-700: #000000,
   transparent: #00000000,
   blue-100: #b7d9f8,
   blue-200: #5eb0ef,
@@ -189,6 +194,7 @@ $map-light: (
   darkneutral-400: #e2e8f0,
   darkneutral-500: #e2e8f0,
   darkneutral-600: hsl(214.3 31.8% 91.4%),
+  darkneutral-700: #e2e8f0,
   neutral-100: #0f172a,
   neutral-200: #0f172a,
   neutral-300: #b9c9d1,
@@ -231,6 +237,7 @@ $map-dark: (
   dark-400: #010101,
   dark-500: hsl(215.4 16.3% 46.9%),
   dark-600: #1d283a,
+  dark-700: rgb(68, 74, 84),
   transparent: #00000000,
   blue-100: #381316,
   blue-200: #0081f1,
@@ -285,6 +292,7 @@ $map-dark: (
   darkneutral-400: #72767c,
   darkneutral-500: #72767c,
   darkneutral-600: rgb(29, 40, 58),
+  darkneutral-700: #1d283a,
   neutral-100: #a5c0d9,
   neutral-200: #a5c0d9,
   neutral-300: #1d283a,
