@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-// import Button from "@/componenet/Button/Button";
+
 import Input from "@/component/Input";
 import AccordionDemo from "./Demo/AccordionDemo";
 import { CheckboxDemo } from "./Demo/CheckboxDemo";
@@ -11,6 +11,10 @@ import Demo from "./Demo/index";
 import { Textarea } from "@/component/TextArea/TextArea";
 import { TextareaDemo } from "./Demo/TextAreaDemo";
 import { DialogDemo } from "./Demo/DialogDemo";
+import { CardDemo } from "./Demo/CardDemo";
+import { TooltipDemo } from "./Demo/TooltipDemo";
+import { ProgressDemo } from "./Demo/ProgressDemo";
+import { NavigationMenuDemo } from "./Demo/NavigationMenuDemo";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -47,7 +51,11 @@ export default function Home() {
       {/* <RadioGroupDemo /> */}
       {/* <Demo /> */}
       {/* <TextareaDemo /> */}
-      <DialogDemo />
+      {/* <DialogDemo /> */}
+      {/* <CardDemo /> */}
+      {/* <TooltipDemo /> */}
+      {/* <ProgressDemo /> */}
+      <NavigationMenuDemo />
     </>
   );
 }

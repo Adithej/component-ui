@@ -1,5 +1,5 @@
 @import "../styles/colors.scss";
-
+@import "./spacing.scss";
 // :root {
 //   --color-white: #ffffff;
 //   --color-white-100: #c4e4f4;
@@ -85,6 +85,7 @@
 
 :root {
   @include apply-map($map-light);
+  @include apply-space-map($map-space);
   .light {
     @include apply-map($map-light);
   }

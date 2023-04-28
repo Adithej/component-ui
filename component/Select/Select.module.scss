@@ -11,7 +11,7 @@
   line-height: 1.25rem;
   justify-content: space-between;
   align-items: center;
-  width: 180px;
+  width: 300px;
   height: 2.5rem;
   border-radius: 0.375rem;
   border-width: 1px;
@@ -32,13 +32,16 @@
 }
 
 .select-content {
-  width: 180px;
+  width: 250%;
   overflow: hidden;
   position: relative;
   z-index: 50;
   border-radius: 0.375rem;
   border-width: 1px;
+  border-style: solid;
+  border-color: $select-border-primary;
   box-shadow: 0px 10px 38px $select-box;
+  background-color: $select-bacground-primary; // hsla(0, 0%, 100%, 1)
 }
 
 .select-viewport {
@@ -54,7 +57,8 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
-  color: $select-text-secondary;
+
+  color: $select-text-secondary; // $select-text-secondary
 }
 
 .select-item {
@@ -79,7 +83,7 @@
   }
   &[data-highlighted] {
     outline: none;
-    background-color: $select-background;
+    background-color: $select-background; // $select-background
     color: color(dark);
   }
 }

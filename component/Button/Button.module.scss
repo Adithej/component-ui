@@ -6,36 +6,36 @@
 
 Button.button {
   border: none;
-  padding: $p-10 $p-20;
+  padding: $p-10 $p-20; // $p-10 $p-20
   border-radius: $p-5;
-  font-size: $p-15;
+  font-size: $p-15; //$p-15
   cursor: pointer;
   display: flex;
   align-items: center;
-
+  justify-content: center;
   &.primary {
     background-color: $button-background-primary; // $button-background-primary
-    color: #f1fcfd; // $button-color
-    border-style: solid;
+    color: $button-color-primary; // $button-color  #f1fcfd
+    // border-style: solid;
   }
 
   &.secondary {
-    border-color: #b9c9d1;
+    border-color: $button-border-secondary;
     background-color: $button-background-secondary; //
-    color: $button-color;
+    color: $button-color-secondary;
     border-style: solid;
     &:hover {
-      background-color: #e2e8f0; //   226, 232, 240
+      background-color: $button-background-hover; //   226, 232, 240  //$button-background-hover
     }
   }
 
   &.danger {
     background-color: $button-background-danger;
-    color: $button-color;
+    color: $button-color-secondary;
   }
 
   span.icon {
-    margin-right: $p-10;
+    justify-items: center;
   }
 
   span.label {

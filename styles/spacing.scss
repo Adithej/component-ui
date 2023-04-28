@@ -1,16 +1,16 @@
 $map-space: (
-  spacing-50: 2 px,
-  spacing-75: 4 px,
-  spacing-100: 8 px,
-  spacing-200: 12 px,
-  spacing-300: 16 px,
-  spacing-400: 24 px,
-  spacing-500: 32 px,
-  spacing-600: 40 px,
-  spacing-700: 48 px,
-  spacing-800: 64 px,
-  spacing-900: 80 px,
-  spacing-1000: 96 px,
+  spacing-50: 2px,
+  spacing-75: 4px,
+  spacing-100: 8px,
+  spacing-200: 12px,
+  spacing-300: 16px,
+  spacing-400: 24px,
+  spacing-500: 32px,
+  spacing-600: 40px,
+  spacing-700: 48px,
+  spacing-800: 64px,
+  spacing-900: 80px,
+  spacing-1000: 96px,
 );
 
 @mixin apply-space-map($map) {
