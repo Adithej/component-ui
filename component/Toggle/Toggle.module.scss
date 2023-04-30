@@ -1,0 +1,31 @@
+.toggle {
+  background-color: transparent;
+  color: $togggle-text-primary;
+  height: 35px;
+  width: 35px;
+  border-radius: 4px;
+  display: flex;
+  font-size: 15px;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  //   box-shadow: 0 2px 10px var(--blackA7);
+  &:hover {
+    background-color: $tooltip-background-primary;
+    color: hsl(215.4 16.3% 46.9%);
+  }
+  &[data-state="on"] {
+    background-color: $tooltip-background-primary;
+    color: $togggle-text-secondary; //ls gray dark : white
+  }
+
+  :focus {
+    box-shadow: 0 0 0 2px black;
+  }
+}
+
+.demo-toggle {
+  width: 1rem;
+  height: 1rem;
+}

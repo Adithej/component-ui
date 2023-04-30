@@ -125,6 +125,8 @@ $tooltip-text-primary: color(dark);
 $tooltip-text-secondary: color(dark-700);
 $progress-background-primary: color(white-700);
 $progress-background-secondary: color(dark-800);
+$togggle-text-primary: color(dark);
+$togggle-text-secondary: color(text-secondary);
 
 $map-light: (
   white: #ffffff,
@@ -215,7 +217,6 @@ $map-light: (
   link-pressed: $blue-100,
   text: $darkneutral-100,
   text-primary: $green-500,
-  text-secondary: $purple-300,
   text-danger: $red-400,
   text-warn: $yellow-400,
   text-select: $blue-400,
@@ -224,6 +225,7 @@ $map-light: (
   button-secondary: $purple-400,
   button-danger: $red-200,
   button-hover: $seafoam-500,
+  text-secondary: gray,
 );
 
 $map-dark: (
@@ -319,7 +321,6 @@ $map-dark: (
   link-pressed: $blue-100,
   text: $darkneutral-500,
   text-primary: $green-200,
-  text-secondary: $purple-100,
   text-danger: $red-100,
   text-warn: $yellow-300,
   text-select: $blue-200,
@@ -328,6 +329,7 @@ $map-dark: (
   button-secondary: $purple-300,
   button-danger: $red-500,
   button-hover: $seafoam-100,
+  text-secondary: white,
 );
 @mixin apply-map($map) {
   @each $name, $value in $map {
