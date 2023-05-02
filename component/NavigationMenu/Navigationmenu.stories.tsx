@@ -1,16 +1,25 @@
+import { Meta } from "@storybook/react";
 import * as React from "react";
 import Link from "next/link";
-// import styles from "/Users/mozilor/Desktop/assignment/component-ui/component-ui/component/NavigationMenu/NavigationMenu.module.scss";
-import styles from "D:/myProject/component-shad/component-ui/component/NavigationMenu/NavigationMenu.module.scss";
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuContent,
   NavigationMenuTrigger,
-} from "@/component/NavigationMenu";
-import { Icons } from "@/component/Icons";
+  NavigationMenuLink,
+  NavigationMenuIndicator,
+  NavigationMenuViewport,
+} from "./NavigationMenu";
+import styles from "./NavigationMenu.module.scss";
+import { Icons } from "../Icons";
+
+const meta: Meta<typeof NavigationMenu> = {
+  title: "Componenets/NavigationMenu",
+  component: NavigationMenu,
+};
+
+export default meta;
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -50,8 +59,8 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ];
 
-export function NavigationMenuDemo() {
-  return (
+export const DefaultNavigationMenu = () => (
+  <>
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
@@ -107,8 +116,8 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-  );
-}
+  </>
+);
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,

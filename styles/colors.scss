@@ -60,6 +60,7 @@ $darkneutral-200: #1d2125;
 $darkneutral-300: #2c333a;
 $darkneutral-400: #738496;
 $darkneutral-500: #9fadbc;
+$darkneutral-600: rgb(68, 74, 84);
 $accordian-background: color(transparent);
 $accordian-text: color(darkneutral-300);
 $accordian-text-primary: color(darkneutral-300);
@@ -125,8 +126,20 @@ $tooltip-text-primary: color(dark);
 $tooltip-text-secondary: color(dark-700);
 $progress-background-primary: color(white-700);
 $progress-background-secondary: color(dark-800);
+$toggle-background-primary: color(darkneutral-700);
 $togggle-text-primary: color(dark);
 $togggle-text-secondary: color(text-secondary);
+$navigation-text-primary: color(dark);
+$navigation-text-secondary: color(dark-700);
+$navigation-text-danger: $darkneutral-600;
+$navigation-hover-primary: color(white-400);
+$navigation-background-primary: color(white-400);
+$navigation-background-secondary: $transparent;
+$navigation-border-primary: color(white-400);
+$navigation-icon-color: color(icon-primary);
+$popover-hover-primary: color(white-400);
+$popover-border-primary: color(white-400);
+$popover-bacground-primary: color(transparent);
 
 $map-light: (
   white: #ffffff,
@@ -226,6 +239,7 @@ $map-light: (
   button-danger: $red-200,
   button-hover: $seafoam-500,
   text-secondary: gray,
+  icon-primary: $dark,
 );
 
 $map-dark: (
@@ -330,6 +344,7 @@ $map-dark: (
   button-danger: $red-500,
   button-hover: $seafoam-100,
   text-secondary: white,
+  icon-primary: $gray-100,
 );
 @mixin apply-map($map) {
   @each $name, $value in $map {

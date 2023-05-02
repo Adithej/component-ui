@@ -16,6 +16,8 @@ import { TooltipDemo } from "./Demo/TooltipDemo";
 import { ProgressDemo } from "./Demo/ProgressDemo";
 import { NavigationMenuDemo } from "./Demo/NavigationMenuDemo";
 import { ToggleDemo } from "./Demo/ToggleDemo";
+import { ToastDemo } from "./Demo/ToastDemo";
+import { PopoverDemo } from "./Demo/PopoverDemo";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -57,7 +59,9 @@ export default function Home() {
       {/* <TooltipDemo /> */}
       {/* <ProgressDemo /> */}
       {/* <NavigationMenuDemo /> */}
-      <ToggleDemo />
+      {/* <ToggleDemo /> */}
+      {/* <ToastDemo /> */}
+      <PopoverDemo />
     </>
   );
 }

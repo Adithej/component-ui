@@ -6,9 +6,9 @@
 
 Button.button {
   border: none;
-  padding: $p-10 $p-20; // $p-10 $p-20
-  border-radius: $p-5;
-  font-size: $p-15; //$p-15
+  padding: 10px 20px; // $p-10 $p-20
+  border-radius: 5px;
+  font-size: 15px; //$p-15
   cursor: pointer;
   display: flex;
   align-items: center;
