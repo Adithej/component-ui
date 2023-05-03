@@ -47,7 +47,7 @@ export default function Home() {
 
       {/* <Input type={"email"} placeholder={"Email"} />
       <br></br> */}
-      {/* <AccordionDemo /> */}
+      <AccordionDemo />
       {/* <SelectDemo /> */}
       {/* <CheckboxDemo /> */}
       {/* <ContextMenuDemo /> */}
@@ -61,7 +61,7 @@ export default function Home() {
       {/* <NavigationMenuDemo /> */}
       {/* <ToggleDemo /> */}
       {/* <ToastDemo /> */}
-      <PopoverDemo />
+      {/* <PopoverDemo /> */}
     </>
   );
 }
