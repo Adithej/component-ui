@@ -42,6 +42,21 @@ $card-width-primary: space(width-350);
 $card-width-secondary: space(width-165);
 $card-width-danger: space(width-280);
 $card-gap-primary: space(space-rem-1);
+$checkbox-width-primary: space(space-rem-1);
+$checkbox-width-secondary: space(spacing-300);
+$checkbox-height-primary: space(space-rem-1);
+$checkbox-height-secondary: space(spacing-300);
+$checkbox-borderwidth-primary: space(spacing-1);
+$checkbox-margin-primary: space(space-px-neg1);
+$checkbox-marginright-primary: space(spacing-100);
+$checkbox-marginleft-primary: space(space-rem-0);
+$ckeckbox-outlinewidth-primary: space(spacing-50);
+$checkbox-outlineoffset-primary: space(spacing-1);
+$checkbox-fontsize-primary: space(space-rem-1F);
+$checkbox-fontweight-primary: space(weight-400);
+$checkbox-lineheight-primary: space(space-rem-1B);
+$checkbox-lineheight-secondary: space(space-num-1);
+$checkbox-opacity-primary: space(opacity-1);
 
 $map-space: (
   space-0: 0px,
@@ -83,13 +98,18 @@ $map-space: (
   space-rem-1F: 0.875rem,
   space-rem-2: 2rem,
   space-rem-neg1: -0.025em,
+  space-px-neg1: -2px,
   weight-100: 100,
+  weight-400: 400,
   weight-500: 500,
   weight-600: 600,
   duration-0: 0s,
   duration-1: 0.2s,
   space-num-0: 0,
   space-num-1: 1,
+  opacity-0: 0,
+  opacity-1: 0.5,
+  opacity-2: 1,
 );
 
 @mixin apply-space-map($map) {
