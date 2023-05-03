@@ -6,21 +6,52 @@ $accordian-height-up: space(height-0);
 $accordian-height-down: space(spacing-850);
 $accordian-width-primary: space(spacing-1);
 $accordian-width-secondary: space(space-rem-1);
+$accordian-width-danger: space(width-400);
 $accordian-height-primary: space(space-rem-1);
 $accordian-padding-primary: space(space-rem-1);
 $accordian-padding-secondary: space(space-rem-1A);
+$accordian-padding-danger: space(space-0);
 $accordian-font-primary: space(spacing-300);
 $accordian-font-secondary: space(spacing-250);
 $accordian-font-danger: space(weight-500);
 $accordian-fontweight-primary: space(weight-100);
+$accordian-lineheight-primary: space(space-rem-1B);
+$accordian-duration-primary: space(duration-1);
+$button-padding-primary: space(p-10);
+$button-padding-secondary: space(p-20);
+$button-radius-primary: space(r-5);
+$button-font-primary: space(spacing-250A);
+$card-radius-primary: space(space-rem-0);
+$card-borderwidth-primary: space(spacing-1);
+$card-padding-primary: space(space-0);
+$card-padding-secondary: space(space-rem-1C);
+$card-padding-danger: space(space-rem-1A);
+$card-margin-primary: space(space-num-0);
+$card-margintop-primary: space(space-rem-0A);
+$card-marginleft-primary: space(width-120);
+$card-marginleft-secondary: space(r-5);
+$card-marginbottom-primary: space(r-3);
+$card-fontsize-primary: space(space-rem-1D);
+$card-fontsize-secondary: space(space-rem-1F);
+$card-lineheight-primary: space(space-rem-1E);
+$card-lineheight-secondary: space(space-rem-1B);
+$card-fontweight-primary: space(weight-600);
+$card-letterspacing-primary: space(space-rem-neg1);
+$card-height-primary: space(space-num-1);
+$card-width-primary: space(width-350);
+$card-width-secondary: space(width-165);
+$card-width-danger: space(width-280);
+$card-gap-primary: space(space-rem-1);
 
 $map-space: (
+  space-0: 0px,
   spacing-1: 1px,
   spacing-50: 2px,
   spacing-75: 4px,
   spacing-100: 8px,
   spacing-200: 12px,
   spacing-250: 14px,
+  spacing-250A: 15px,
   spacing-300: 16px,
   spacing-400: 24px,
   spacing-500: 32px,
@@ -30,12 +61,35 @@ $map-space: (
   spacing-850: 67px,
   spacing-900: 80px,
   spacing-1000: 96px,
+  p-10: 10px,
+  p-20: 20px,
+  r-1: 1px,
+  r-3: 3px,
+  r-5: 5px,
   height-0: 0,
+  width-120: 120px,
+  width-165: 165px,
+  width-280: 280px,
+  width-350: 350px,
+  width-400: 450px,
+  space-rem-0: 0.5rem,
+  space-rem-0A: 0.375rem,
   space-rem-1: 1rem,
   space-rem-1A: 1.2rem,
+  space-rem-1B: 1.25rem,
+  space-rem-1C: 1.5rem,
+  space-rem-1D: 1.125,
+  space-rem-1E: 1.75,
+  space-rem-1F: 0.875rem,
   space-rem-2: 2rem,
+  space-rem-neg1: -0.025em,
   weight-100: 100,
   weight-500: 500,
+  weight-600: 600,
+  duration-0: 0s,
+  duration-1: 0.2s,
+  space-num-0: 0,
+  space-num-1: 1,
 );
 
 @mixin apply-space-map($map) {

@@ -6,6 +6,7 @@
 
 $white: #ffffff;
 $dark: #000000;
+$dark-100: hsl(222.2 47.4% 11.2%);
 $transparent: #00000000;
 $blue-100: #b7d9f8;
 $blue-200: #5eb0ef;
@@ -37,6 +38,7 @@ $gray-200: #d5d5d5;
 $gray-300: #909090;
 $gray-400: #6d6d6d;
 $gray-500: #464646;
+$gary-600: hsl(215.4 16.3% 46.9%);
 $seafoam-100: #cef7f3;
 $seafoam-200: #aaf1ea;
 $seafoam-300: #8ce9e2;
@@ -122,6 +124,8 @@ $dialog-border-primary: color(gray-600);
 $card-background-primary: color(neutral-700);
 $card-border-primary: color(darkneutral-600);
 $card-text-primary: color(neutral-600);
+$card-text-secondary: $dark-100;
+$card-text-danger: $gary-600;
 $tooltip-border: color(gray-600);
 $tooltip-background-primary: color(darkneutral-700);
 $tooltip-text-primary: color(dark);

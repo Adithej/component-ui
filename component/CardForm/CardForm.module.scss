@@ -1,84 +1,83 @@
 .card-primitive {
   border-style: solid;
-  border-radius: 0.5rem;
-  border-width: 1px;
-  border-color: $card-border-primary; //rgb(29, 40, 58) w: hsl(214.3 31.8% 91.4%)
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); // box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
-  color: hsl(222.2 47.4% 11.2%);
-  background-color: $card-background-primary; //hsl(0 0% 100%) dark : dark
-  width: 350px;
+  border-radius: $card-radius-primary;
+  border-width: $card-borderwidth-primary;
+  border-color: $card-border-primary;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  color: $card-text-secondary;
+  background-color: $card-background-primary;
+  width: $card-width-primary;
 }
 .card-header {
   display: flex;
-  padding: 1.5rem;
-  margin-top: 0.375rem;
+  padding: $card-padding-secondary;
+  margin-top: $card-margintop-primary;
   flex-direction: column;
-  padding-bottom: 0;
+  padding-bottom: $card-padding-primary;
 }
 
 .card-title {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-  letter-spacing: -0.025em;
-  line-height: 1;
-  margin: 0;
+  font-size: $card-fontsize-primary;
+  line-height: $card-lineheight-primary;
+  font-weight: $card-fontweight-primary;
+  letter-spacing: $card-letterspacing-primary;
+  line-height: $card-height-primary;
+  margin: $card-margin-primary;
   color: $card-text-primary;
 }
 
 .card-description {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: hsl(215.4 16.3% 46.9%); // hsl(215.4 16.3% 46.9%)
+  font-size: $card-fontsize-secondary;
+  line-height: $card-lineheight-secondary;
+  color: $card-text-danger;
 }
 
 .card-content {
-  padding: 1.5rem;
-  padding-top: 0;
+  padding: $card-padding-secondary;
+  padding-top: $card-padding-primary;
 }
 
 .card-footer {
   display: flex;
-  padding: 1.2rem;
-  padding-top: 0;
+  padding: $card-padding-danger;
+  padding-top: $card-padding-primary;
   align-items: center;
 }
 
 .demo-card {
-  width: 350px;
+  width: $card-width-primary;
 }
 
 .demo-card-titles {
   display: grid;
   align-items: center;
-  width: 100%;
-  gap: 1rem;
-  width: 280px;
+  gap: $card-gap-primary;
+  width: $card-width-danger;
 }
 
 .demo-card-title {
   display: flex;
-  margin-top: 0.375rem;
+  margin-top: $card-margintop-primary;
   flex-direction: column;
   color: $card-text-primary;
 }
 
 .demo-card-select {
-  width: 165px;
+  width: $card-width-secondary;
 }
 
 .demo-card-input {
-  width: 165px;
+  width: $card-width-secondary;
 }
 .demo-card-button {
-  margin-left: 120px;
+  margin-left: $card-marginleft-primary;
 }
 .demo-card-button-secondary {
-  margin-left: 5px;
+  margin-left: $card-marginleft-secondary;
 }
 
 .demo-card-label {
-  margin-bottom: 3px;
+  margin-bottom: $card-marginbottom-primary;
 }
 
 .demo-card-footer {

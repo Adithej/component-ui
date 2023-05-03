@@ -1,12 +1,12 @@
 @mixin animate-accordion-up {
   animation-name: accordion-up;
-  animation-duration: 0.2s;
+  animation-duration: $accordian-duration-primary;
   animation-timing-function: ease-out;
 }
 
 @mixin animate-accordion-down {
   animation-name: accordion-down;
-  animation-duration: 0.2s;
+  animation-duration: $accordian-duration-primary;
   animation-timing-function: ease-out;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .space {
-  padding-top: 0;
+  padding-top: $accordian-padding-danger;
   padding-bottom: $accordian-padding-primary;
 }
 
@@ -82,7 +82,7 @@
   overflow: hidden;
   transition-property: all;
   font-size: $accordian-font-secondary;
-  line-height: 1.25rem;
+  line-height: $accordian-lineheight-primary;
   font-weight: $accordian-fontweight-primary;
 
   &[data-state="closed"] {
@@ -94,5 +94,5 @@
 }
 
 .sizing {
-  width: 450px;
+  width: $accordian-width-danger;
 }

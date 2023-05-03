@@ -1,5 +1,6 @@
 import * as React from "react";
-import styles from "/Users/mozilor/Desktop/assignment/component-ui/component-ui/component/CardForm/CardForm.module.scss";
+import styles from "/Users/mozilor/Desktop/assignment/library/component-ui/component/CardForm/CardForm.module.scss";
+
 import {
   Card,
   CardContent,

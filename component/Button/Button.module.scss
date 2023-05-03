@@ -1,14 +1,10 @@
 @import "../spacing.scss";
 
-// :root {
-//   --color-purple-300: #9d57f4;
-// }
-
 Button.button {
   border: none;
-  padding: 10px 20px; // $p-10 $p-20
-  border-radius: 5px;
-  font-size: 15px; //$p-15
+  padding: $button-padding-primary $button-padding-secondary;
+  border-radius: $button-radius-primary;
+  font-size: $button-font-primary;
   cursor: pointer;
   display: flex;
   align-items: center;

@@ -8,7 +8,6 @@ interface Props {
   placeholder: string;
   id: string;
   value?: string;
-  size: string;
 }
 
 function Input({
@@ -18,7 +17,6 @@ function Input({
   placeholder,
   id,
   value,
-  size,
 }: Props): JSX.Element {
   // const className =
   //   variant === "primary"
@@ -28,7 +26,7 @@ function Input({
   //     : styles.error;
   return (
     <input
-      className={`${styles["form-input"]} ${size}`}
+      className={styles["form-input"]}
       onClick={onChange}
       disabled={disabled}
       type={type}
