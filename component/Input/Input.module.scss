@@ -1,29 +1,26 @@
 .form-input {
-  // border: 5px solid hsl(214.3 31.8% 91.4%);
-  border-width: 5px;
   border-style: solid;
-  border-color: $input-border; // #1D283A
-  max-width: 18rem;
-  padding-top: 0.2rem; //8
-  padding-bottom: 0.2rem;
-  padding-left: 0.5rem; // 12
-  padding-right: 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  border-color: $input-border;
+  padding-top: $input-paddingtop-primary;
+  padding-bottom: $input-paddingbottom-primary;
+  padding-left: $input-paddingleft-primary;
+  padding-right: $input-paddingright-primary;
+  font-size: $input-fontsize-primary;
+  line-height: $input-lineheight-primary;
   background-color: transparent;
-  border-radius: 6px;
-  border-width: 1px;
+  border-radius: $input-radius-primary;
+  border-width: $input-border-primary;
   display: flex;
   height: 2.5rem;
   // width: 350rem;
   color: $input-text;
   &:focus {
-    outline-width: 2px;
+    outline-width: $input-outlinewidth-primary;
     outline-style: solid;
-    outline-color: $input-outline; // #1D283A
-    outline-offset: 2px;
+    outline-color: $input-outline;
+    outline-offset: $input-outlinewidth-primary;
   }
   &::placeholder {
-    color: hsl(215.4 16.3% 46.9%);
+    color: $input-placeholder;
   }
 }

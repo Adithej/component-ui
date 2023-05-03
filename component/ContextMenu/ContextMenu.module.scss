@@ -1,15 +1,15 @@
 .context-subtrigger {
   display: flex;
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  padding-top: $context-paddingtop-primary;
+  padding-bottom: $context-paddingbottom-primary;
+  padding-left: $contecxt-paddingleft-primary;
+  padding-right: $contecxt-paddingright-primary;
+  font-size: $context-fontsize-primary;
+  line-height: $contextlineheight-primary;
   align-items: center;
-  border-radius: 0.125rem;
+  border-radius: $context-borderradius-secondary;
   cursor: default;
-  outline: 0;
+  outline: $context-outline-primary;
   user-select: none;
 
   &[data-highlighted] {
@@ -19,13 +19,13 @@
   }
   &[data-disabled] {
     pointer-events: none;
-    opacity: 0.5;
+    opacity: $context-opacity-primary;
   }
 
   .chevron-right {
     margin-left: auto;
-    width: 1rem;
-    height: 1rem;
+    width: $context-width-primary;
+    height: $context-height-primary;
   }
 }
 
@@ -33,7 +33,7 @@
   overflow: hidden;
   z-index: 50;
   padding: 0.25rem;
-  border-radius: 0.375rem;
+  border-radius: $context-borderradius-primary;
   background-color: $contextmenu-background-secondry;
   color: $contextmenu-text;
 
@@ -45,7 +45,7 @@
   overflow: hidden;
   z-index: 50;
   padding: 0.25rem;
-  border-radius: 0.375rem;
+  border-radius: $context-borderradius-primary;
   background-color: $contextmenu-background-secondry;
   overflow: hidden;
   min-width: 8rem;
@@ -61,16 +61,16 @@
 .context-item {
   display: flex;
   position: relative;
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  padding-top: $context-paddingtop-primary;
+  padding-bottom: $context-paddingbottom-primary;
+  padding-left: $contecxt-paddingleft-primary;
+  padding-right: $contecxt-paddingright-primary;
+  font-size: $context-fontsize-primary;
+  line-height: $contextlineheight-primary;
   align-items: center;
-  border-radius: 0.125rem;
+  border-radius: $context-borderradius-secondary;
   cursor: default;
-  outline: 0;
+  outline: $context-outline-primary;
   user-select: none;
 
   color: $contextmenu-text-secondary;
@@ -81,23 +81,23 @@
   }
   &[data-disabled] {
     pointer-events: none;
-    opacity: 0.5;
+    opacity: $context-opacity-primary;
   }
 }
 
 .context-checkbox {
   display: flex;
   position: relative;
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-  padding-right: 0.5rem;
+  padding-top: $context-paddingtop-primary;
+  padding-bottom: $context-paddingbottom-primary;
+  padding-right: $contecxt-paddingright-primary;
   padding-left: 2rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: $context-fontsize-primary;
+  line-height: $contextlineheight-primary;
   align-items: center;
-  border-radius: 0.125rem;
+  border-radius: $context-borderradius-secondary;
   cursor: default;
-  outline: 0;
+  outline: $context-outline-primary;
   user-select: none;
   color: $contextmenu-text-secondary;
   &[data-highlighted] {
@@ -107,7 +107,7 @@
   }
   &[data-disabled] {
     pointer-events: none;
-    opacity: 0.5;
+    opacity: $context-opacity-primary;
   }
 }
 
@@ -129,16 +129,16 @@
 .context-radio-item {
   display: flex;
   position: relative;
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-  padding-right: 0.5rem;
+  padding-top: $context-paddingtop-primary;
+  padding-bottom: $context-paddingbottom-primary;
+  padding-right: $contecxt-paddingright-primary;
   padding-left: 2rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: $context-fontsize-primary;
+  line-height: $contextlineheight-primary;
   align-items: center;
-  border-radius: 0.125rem;
+  border-radius: $context-borderradius-secondary;
   cursor: default;
-  outline: 0;
+  outline: $context-outline-primary;
   user-select: none;
   color: $contextmenu-text-secondary;
   &[data-highlighted] {
@@ -159,12 +159,12 @@
 }
 
 .context-label {
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  padding-top: $context-paddingtop-primary;
+  padding-bottom: $context-paddingbottom-primary;
+  padding-left: $contecxt-paddingleft-primary;
+  padding-right: $contecxt-paddingright-primary;
+  font-size: $context-fontsize-primary;
+  line-height: $contextlineheight-primary;
   font-weight: 600;
 }
 
@@ -191,11 +191,11 @@
   width: 300px;
   border-width: 1px;
   border-style: dashed;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: $context-fontsize-primary;
+  line-height: $contextlineheight-primary;
   justify-content: center;
   align-items: center;
-  border-radius: 0.375rem;
+  border-radius: $context-borderradius-primary;
   font-weight: 200;
   border-color: $contextmenu-border;
   color: $contextmenu-text-primary;

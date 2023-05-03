@@ -1,21 +1,20 @@
 .progress-primitive-root {
   overflow: hidden;
   position: relative;
-  width: 100%;
-  height: 1rem;
-  border-radius: 9999px;
-  width: 300px;
+  height: $progress-height-primary;
+  border-radius: $progress-radius-primary;
+  width: $progress-width-primary;
   transform: translateZ(0);
-  background-color: $progress-background-primary; // l:210 40% 96.1%  d: 222.2 47.4% 11.2%;
+  background-color: $progress-background-primary;
 }
 
 .progress-primitive-indicator {
-  width: 100%;
-  height: 100%;
+  width: $popover-border-width-secondary;
+  height: $popover-border-height-primary;
   transition: transform 660ms cubic-bezier(0.65, 0, 0.35, 1);
-  background-color: $progress-background-secondary; //l:222.2 47.4% 11.2%,  210 40% 98%;
+  background-color: $progress-background-secondary;
 }
 
 .demo-progress {
-  width: 60%;
+  width: $progress-width-secondary;
 }

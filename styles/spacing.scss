@@ -57,6 +57,60 @@ $checkbox-fontweight-primary: space(weight-400);
 $checkbox-lineheight-primary: space(space-rem-1B);
 $checkbox-lineheight-secondary: space(space-num-1);
 $checkbox-opacity-primary: space(opacity-1);
+$context-paddingtop-primary: space(space-rem-0A);
+$context-paddingbottom-primary: space(space-rem-0A);
+$contecxt-paddingleft-primary: space(space-rem-0);
+$contecxt-paddingright-primary: space(space-rem-0);
+$context-borderradius-primary: space(space-rem-0A);
+$context-borderradius-secondary: space(space-rem-1H);
+$context-fontsize-primary: space(space-rem-1F);
+$contextlineheight-primary: space(space-rem-1B);
+$context-outline-primary: space(space-num-0);
+$context-opacity-primary: space(opacity-1);
+$context-width-primary: space(space-rem-1);
+$context-height-primary: space(space-rem-1);
+$dialog-opacity-primary: space(opacity-0);
+$dialog-opacity-secondary: space(opacity-2);
+$dialog-top: space(space-num-0);
+$dialog-bottom: space(space-num-0);
+$dialog-left: space(space-num-0);
+$dialog-right: space(space-num-0);
+$dialog-zindex-primary: space(space-num-50);
+$dialog-width-primary: space(spacing-1);
+$dialog-height-primary: space(spacing-1);
+$dilog-padding-primary: space(space-num-0);
+$dialog-padding-secondary: space(space-rem-1C);
+$dialog-paddingtop-primary: space(space-rem-1);
+$dialog-paddingbottom-primary: space(space-rem-1);
+$dialog-gap-primary: space(space-rem-1);
+$dialog-radius-primary: space(space-rem-0);
+$dialog-fontsize-primary: space(spacing-250A);
+$input-border-primary: space(spacing-1);
+$input-paddingtop-primary: space(space-rem-1I);
+$input-paddingbottom-primary: space(space-rem-1I);
+$input-paddingleft-primary: space(space-rem-0);
+$input-paddingright-primary: space(space-rem-0);
+$input-fontsize-primary: space(space-rem-1F);
+$input-lineheight-primary: space(space-rem-1B);
+$input-radius-primary: space(r-6);
+$input-height-primary: space(space-rem-2A);
+$input-outlinewidth-primary: space(spacing-50);
+$popover-opacity-primary: space(opacity-0);
+$popover-opacity-secondary: space(opacity-2);
+$popover-zindex-primary: space(space-num-50);
+$popover-padding-primary: space(space-rem-1);
+$popover-width-primary: space(space-rem-20);
+$popover-width-seondary: space(space-rem-1);
+$popover-height-primary: space(space-rem-15);
+$popover-height-secondary: space(space-rem-1);
+$popover-radius-primary: space(pace-rem-0A);
+$popover-border-width-primary: space(spacing-1);
+$popover-border-width-secondary: space(percent-100);
+$popover-border-height-primary: space(percent-100);
+$progress-width-primary: space(width-300);
+$progress-width-secondary: space(percent-60);
+$progress-height-primary: space(space-rem-1);
+$progress-radius-primary: space(r-999);
 
 $map-space: (
   space-0: 0px,
@@ -81,10 +135,13 @@ $map-space: (
   r-1: 1px,
   r-3: 3px,
   r-5: 5px,
+  r-6: 6px,
+  r-999: 999px,
   height-0: 0,
   width-120: 120px,
   width-165: 165px,
   width-280: 280px,
+  width-300: 300px,
   width-350: 350px,
   width-400: 450px,
   space-rem-0: 0.5rem,
@@ -96,7 +153,12 @@ $map-space: (
   space-rem-1D: 1.125,
   space-rem-1E: 1.75,
   space-rem-1F: 0.875rem,
+  space-rem-1H: 0.125rem,
+  space-rem-1I: 0.2rem,
   space-rem-2: 2rem,
+  space-rem-2A: 2.5rem,
+  space-rem-15: 15rem,
+  space-rem-20: 20rem,
   space-rem-neg1: -0.025em,
   space-px-neg1: -2px,
   weight-100: 100,
@@ -107,9 +169,12 @@ $map-space: (
   duration-1: 0.2s,
   space-num-0: 0,
   space-num-1: 1,
+  space-num-50: 50,
   opacity-0: 0,
   opacity-1: 0.5,
   opacity-2: 1,
+  percent-60: 60%,
+  percent-100: 100%,
 );
 
 @mixin apply-space-map($map) {
