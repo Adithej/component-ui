@@ -111,6 +111,20 @@ $progress-width-primary: space(width-300);
 $progress-width-secondary: space(percent-60);
 $progress-height-primary: space(space-rem-1);
 $progress-radius-primary: space(r-999);
+$radio-gap-primary: space(space-rem-0);
+$radio-width-primary: space(space-rem-1);
+$radio-width-secondary: space(space-rem1J);
+$radio-height-primary: space(space-rem-1);
+$radio-height-secpondary: space(space-rem1J);
+$radio-border-width-primary: space(spacing-1);
+$radio-radius-primary: space(r-999);
+$radio-outline-primary: space(spacing-50);
+$radio-opacity-primary: space(opacity-1);
+$radio-marginleft-primary: space(space-rem-0);
+$radio-fontsize-primary: space(spacing-250A);
+$radio-fontweight-primary: space(weight-250);
+$radio-lineheight-primary: space(space-num-1);
+$radio-paddingleft-primary: space(p-10);
 
 $map-space: (
   space-0: 0px,
@@ -155,6 +169,7 @@ $map-space: (
   space-rem-1F: 0.875rem,
   space-rem-1H: 0.125rem,
   space-rem-1I: 0.2rem,
+  space-rem1J: 0.625,
   space-rem-2: 2rem,
   space-rem-2A: 2.5rem,
   space-rem-15: 15rem,
@@ -162,6 +177,7 @@ $map-space: (
   space-rem-neg1: -0.025em,
   space-px-neg1: -2px,
   weight-100: 100,
+  weight-250: 250,
   weight-400: 400,
   weight-500: 500,
   weight-600: 600,

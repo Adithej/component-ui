@@ -1,28 +1,28 @@
 .radiogroup-primitive-root {
   display: grid;
-  gap: 0.5rem;
+  gap: $radio-gap-primary;
 }
 
 .radiogroup-primitive-item {
-  width: 1rem;
-  height: 1rem;
-  border-width: 1px;
+  width: $radio-width-primary;
+  height: $radio-height-primary;
+  border-width: $radio-border-width-primary;
   border-style: solid;
   border-color: $radiogroup-border;
-  border-radius: 9999px;
+  border-radius: $radio-radius-primary;
 
   background-color: transparent;
   background-image: none;
   &:focus {
     cursor: pointer;
-    outline-width: 2px;
+    outline-width: $radio-outline-primary;
     outline-style: solid;
-    outline-color: $input-outline; // #1D283A
-    outline-offset: 2px;
+    outline-color: $input-outline;
+    outline-offset: $radio-outline-primary;
   }
   &:disabled {
     cursor: not-allowed;
-    opacity: 0.5;
+    opacity: $radio-opacity-primary;
   }
 }
 
@@ -31,25 +31,25 @@
   justify-content: center;
   align-items: center;
   .circle {
-    width: 0.625rem;
-    height: 0.625rem;
-    border-radius: 9999px;
+    width: $radio-width-secondary;
+    height: $radio-height-secpondary;
+    border-radius: $radio-radius-primary;
     color: $radiogroup-background-primary;
-    fill: $radiogroup-background-primary; //hsl(22.2 47.4% 11.2%)
+    fill: $radiogroup-background-primary;
     transform: scale(5, 5);
   }
 }
 
 .radiogroup-demo {
   display: flex;
-  margin-left: 0.5rem;
+  margin-left: $radio-marginleft-primary;
   align-items: center;
 }
 
 .radiogroup-label {
-  font-size: 15px;
-  font-weight: 250;
-  line-height: 1;
-  padding-left: 10px;
+  font-size: $radio-fontsize-primary;
+  font-weight: $radio-fontweight-primary;
+  line-height: $radio-lineheight-primary;
+  padding-left: $radio-paddingleft-primary;
   color: $radiogroup-text;
 }
