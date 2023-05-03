@@ -14,3 +14,12 @@ module.exports = {
     prependData: `@import "colors.scss";`,
   },
 };
+
+// const paths = require("path");
+
+// module.exports = {
+//   sassOptions: {
+//     includePaths: [paths.join(__dirname, "styles")],
+//     prependData: `@import "spacing.scss";`,
+//   },
+// };

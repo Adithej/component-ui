@@ -12,24 +12,24 @@
 
 @keyframes accordion-down {
   from {
-    height: 0;
+    height: $accordian-height-up;
   }
   to {
-    height: 67px;
+    height: $accordian-height-down;
   }
 }
 
 @keyframes accordion-up {
   from {
-    height: 67px;
+    height: $accordian-height-down;
   }
   to {
-    height: 0;
+    height: $accordian-height-up;
   }
 }
 
 .accordian-primitive {
-  border-bottom-width: 1px;
+  border-bottom-width: $accordian-width-primary;
   color: $accordian-text-primary;
 }
 .accordion-primitive-trigger {
@@ -39,17 +39,17 @@
   background-image: none;
   display: flex;
   flex: 1 1 0%;
-  padding-top: 1rem;
-  padding-bottom: 1.2rem;
-  font-size: 16px;
-  font-weight: 500;
+  padding-top: $accordian-padding-primary;
+  padding-bottom: $accordian-padding-secondary;
+  font-size: $accordian-font-primary;
+  font-weight: $accordian-font-danger;
   justify-content: space-between;
   align-items: center;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom-color: $accordian-border; // rgb(226, 232, 240)
-  border-bottom-width: 1px;
+  border-bottom-width: $accordian-width-primary;
   border-image-width: 1;
   color: $accordian-text; // #0F172A // #E1E7EF
 
@@ -62,8 +62,8 @@
   }
 }
 .chevron-down {
-  width: 1rem;
-  height: 1rem;
+  width: $accordian-width-secondary;
+  height: $accordian-height-primary;
   transition-property: transform;
   transition-duration: 200ms;
   color: $accordian-text;
@@ -71,7 +71,7 @@
 
 .space {
   padding-top: 0;
-  padding-bottom: 1rem;
+  padding-bottom: $accordian-padding-primary;
 }
 
 .header {
@@ -81,9 +81,9 @@
 .accordion-primitive-content {
   overflow: hidden;
   transition-property: all;
-  font-size: 14px;
+  font-size: $accordian-font-secondary;
   line-height: 1.25rem;
-  font-weight: 100;
+  font-weight: $accordian-fontweight-primary;
 
   &[data-state="closed"] {
     @include animate-accordion-up;

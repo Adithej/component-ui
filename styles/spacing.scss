@@ -1,16 +1,41 @@
+@function space($space-name) {
+  @return var(--space-#{$space-name});
+}
+
+$accordian-height-up: space(height-0);
+$accordian-height-down: space(spacing-850);
+$accordian-width-primary: space(spacing-1);
+$accordian-width-secondary: space(space-rem-1);
+$accordian-height-primary: space(space-rem-1);
+$accordian-padding-primary: space(space-rem-1);
+$accordian-padding-secondary: space(space-rem-1A);
+$accordian-font-primary: space(spacing-300);
+$accordian-font-secondary: space(spacing-250);
+$accordian-font-danger: space(weight-500);
+$accordian-fontweight-primary: space(weight-100);
+
 $map-space: (
+  spacing-1: 1px,
   spacing-50: 2px,
   spacing-75: 4px,
   spacing-100: 8px,
   spacing-200: 12px,
+  spacing-250: 14px,
   spacing-300: 16px,
   spacing-400: 24px,
   spacing-500: 32px,
   spacing-600: 40px,
   spacing-700: 48px,
   spacing-800: 64px,
+  spacing-850: 67px,
   spacing-900: 80px,
   spacing-1000: 96px,
+  height-0: 0,
+  space-rem-1: 1rem,
+  space-rem-1A: 1.2rem,
+  space-rem-2: 2rem,
+  weight-100: 100,
+  weight-500: 500,
 );
 
 @mixin apply-space-map($map) {
