@@ -105,10 +105,10 @@
 
 .add-span {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
+  width: $tooltip-space-danger;
+  height: $tooltip-space-danger;
+  padding: $tooltip-padding-secondary;
+  margin: $tooltip-margin-primary;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
@@ -116,12 +116,12 @@
 }
 
 .add-para {
-  margin: 5px;
-  padding: 0px;
+  margin: $tooltip-margin-secondary;
+  padding: $tooltip-padding-secondary;
 }
 
 .story-align {
-  margin-top: 300px;
+  margin-top: $tooltip-margin-top-primary;
   display: flex;
   align-items: center;
   justify-content: center;

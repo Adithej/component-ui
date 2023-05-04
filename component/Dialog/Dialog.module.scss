@@ -56,7 +56,7 @@
 }
 
 .dialog-primitive-content {
-  border-width: 1px;
+  border-width: $dialog-border-width-primary;
   border-style: solid;
   border-color: $dialog-border-primary;
   box-shadow: $dialog-box-color-primary 0px 10px 38px -10px,

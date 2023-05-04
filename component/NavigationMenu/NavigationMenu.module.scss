@@ -163,17 +163,17 @@
   top: $navigation-top-danger;
   perspective: 2000px;
   .navigation-menu-primitive-viewport {
-    border: 2px;
+    border: $naviagation-border;
     border-style: solid;
     border-color: $navigation-border-primary;
     position: relative;
     transform-origin: top center;
-    margin-top: 10px;
-    width: 100%;
+    margin-top: $navigation-margin-top-primary;
+    width: $navigation-width-primary;
     background-color: $navigation-background-secondary;
-    border-radius: 6px;
+    border-radius: $navigation-radius-primary;
     overflow: hidden;
-    height: 300px;
+    height: $navigation-height-primary;
     transition: width, height, 300ms ease;
     [data-state="open"] {
       animation: scaleIn 200ms ease;

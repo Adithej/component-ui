@@ -85,6 +85,7 @@ $dialog-paddingbottom-primary: space(space-rem-1);
 $dialog-gap-primary: space(space-rem-1);
 $dialog-radius-primary: space(space-rem-0);
 $dialog-fontsize-primary: space(spacing-250A);
+$dialog-border-width-primary: spaace(spacing-1);
 $input-border-primary: space(spacing-1);
 $input-paddingtop-primary: space(space-rem-1I);
 $input-paddingbottom-primary: space(space-rem-1I);
@@ -100,14 +101,30 @@ $popover-opacity-secondary: space(opacity-2);
 $popover-zindex-primary: space(space-num-50);
 $popover-padding-primary: space(space-rem-1);
 $popover-padding-secondary: space(p-10);
+$popover-padding-danger: space(space-num-0);
 $popover-width-primary: space(space-rem-20);
 $popover-width-seondary: space(space-rem-1);
 $popover-height-primary: space(space-rem-15);
 $popover-height-secondary: space(space-rem-1);
-$popover-radius-primary: space(pace-rem-0A);
+$popover-radius-primary: space(space-rem-0A);
+$popover-radius-secondary: space(spacing-999);
 $popover-border-width-primary: space(spacing-1);
 $popover-border-width-secondary: space(percent-100);
 $popover-border-height-primary: space(percent-100);
+$popover-outline-primary: space(space-num-0);
+$popover-fontsize-primary: space(spacing-250A);
+$popover-fontsize-secondary: space(space-rem-1F);
+$popover-space-primary: space(spacing-1);
+$popover-space-secondary: space(space-num-0);
+$popover-margin-primary: space(space-px-neg2);
+$popover-margin-top-primary: space(space-rem-0);
+$popover-margin-top-secondary: space(space-num-0);
+$popover-lineheight-primary: space(space-num-1);
+$popover-lineheight-secondary: space(space-rem-1B);
+$popover-weight-primary: space(weight-500);
+$popover-gap-primary: space(space-rem-0);
+$popover-gap-seconadry: space(space-rem-1);
+$popover-padding-left-secondary: space(p-25);
 $progress-width-primary: space(width-300);
 $progress-width-secondary: space(percent-60);
 $progress-height-primary: space(space-rem-1);
@@ -133,13 +150,18 @@ $tooltip-borderwidth-secondary: space(space-num-0);
 $tooltip-zindex-primary: space(space-num-50);
 $tooltip-width-primary: space(width-100);
 $tooltip-padding-primary: space(p-10);
+$tooltip-padding-secondary: space(space-num-0);
 $tooltip-adding-secondary: space(p-5);
 $tooltip-space-primary: space(spacing-500A);
 $tooltip-space-secondary: space(space-rem-1);
+$tooltip-space-danger: space(spacing-1);
 $tooltip-fontsize-primary: space(space-rem-1F);
 $tooltip-lineheight-primary: space(space-rem-1);
 $tooltip-radius-primary: space(spacing-75);
 $tooltip-radius-secondary: space(percent-100);
+$tooltip-margin-primary: space(space-px-neg2);
+$tooltip-margin-secondary: space(p-5);
+$tooltip-margin-top-primary: space(width-300);
 $textarea-margin-primary: space(space-num-0);
 $textarea-padding-primary: space(space-rem-0);
 $textarea-padding-secondary: space(space-rem-0B);
@@ -175,9 +197,15 @@ $navigation-outline-primary: space(space-num-0);
 $navigation-gap-primary: space(spacing-50);
 $navigation-space-primary: space(space-rem-0B);
 $navigation-margin-left-primary: space(space-rem-0C);
+$navigation-margin-top-primary: space(p-10);
 $navigation-top-primary: space(space-num-1);
 $navigation-top-secondary: space(space-num-0);
 $navigation-top-danger: space(percent-100);
+$naviagation-border: space(spacing-50);
+$navigation-radius-primary: space(r-6);
+$navigation-height-primary: space(width-300);
+$navigation-width-primary: space(percent-100);
+$select-padding-primary: space(space-rem-0C);
 $select-padding-top-primary: space(space-rem-0);
 $selct-padding-top-secondary: space(space-rem-0A);
 $select-padding-bottom-primary: space(space-rem-0);
@@ -190,15 +218,47 @@ $select-font-weight-primary: space(space-num-20);
 $select-line-height-primary: sapce(space-rem-1B);
 $select-width-primary: space(width-300);
 $select-width-secondary: space(percent-250);
+$select-width-danger: space(percent-100);
+$select-width-percent: space(percent-200);
 $select-height-primary: sapce(space-rem-2A);
 $select-radius-primary: space(space-rem-0A);
+$select-radius-secondary: space(space-rem-0D);
 $select-outline-primary: space(spacing-50);
+$selct-outline-secondary: space(space-num-0);
 $select-border-width-primary: space(spacing-1);
 $select-space-primary: space(space-rem-1);
+$select-space-secondary: space(space-rem-1F);
 $select-opacity-primary: space(opacity-1);
 $select-zindex-primary: space(space-num-50);
 $select-border-radius-primary: space(space-rem-0A);
 $select-border-width-primary: space(spacing-1);
+$select-margin-primary: space(p-5);
+$select-margin-secondary: space(p-3);
+$select-margin-top-primary: space(space-rem-0C);
+$select-margin-left-primary: space(space-rem-neg2);
+$select-font-weight-secondary: space(weight-600);
+$select-height-secondary: space(spacing-1);
+$select-left-primary: space(space-rem-0);
+$toast-width-primary: space(width-400);
+$toast-max-width-primary: space(width-1000);
+$toast-max-width-secondary: space(width-390);
+$toast-space-primary: space(space-num-0);
+$toast-padding-primary: space(p-25);
+$toast-padding-secondary: space(spacing-250A);
+$toast-gap-primary: space(p-10);
+$toast-radius-primary: space(p-6);
+$toast-border-width-primary: space(spacing-1);
+$toast-gap-secondary: space(spacing-250A);
+$toast-weight-primary: space(weight-500);
+$toast-margin-bottom-primary: space(p-5);
+$toast-font-size-primary: space(spacing-250A);
+$toast-font-size-secondary: space(spacing-200);
+$toast-margin-primary: space(space-num-0);
+$toast-line-height-primary: space(space-num-1A);
+$toast-space-secondary: space(space-rem-1);
+$toast-margin-left-primary: space(spacing-875);
+$toast-opacity-primary: space(opacity-0);
+$toast-opaciy-secondary: space(opacity-1);
 
 $map-space: (
   space-0: 0px,
@@ -217,11 +277,16 @@ $map-space: (
   spacing-700: 48px,
   spacing-800: 64px,
   spacing-850: 67px,
+  spacing-875: 75px,
   spacing-900: 80px,
+  spacing-999: 999px,
   spacing-1000: 96px,
+  p-3: 3px,
   p-5: 5px,
+  p-6: 6px,
   p-10: 10px,
   p-20: 20px,
+  p-25: 25px,
   r-1: 1px,
   r-3: 3px,
   r-5: 5px,
@@ -234,12 +299,14 @@ $map-space: (
   width-280: 280px,
   width-300: 300px,
   width-350: 350px,
+  width-390: 390px,
   width-400: 450px,
   width-1000: 100vw,
   space-rem-0: 0.5rem,
   space-rem-0A: 0.375rem,
   space-rem-0B: 0.75rem,
   space-rem-0C: 0.25rem,
+  space-rem-0D: 0.125rem,
   space-rem-1: 1rem,
   space-rem-1A: 1.2rem,
   space-rem-1B: 1.25rem,
@@ -256,6 +323,8 @@ $map-space: (
   space-rem-15: 15rem,
   space-rem-20: 20rem,
   space-rem-neg1: -0.025em,
+  space-rem-neg2: -0.25rem,
+  space-px-neg2: -1px,
   space-px-neg1: -2px,
   weight-100: 100,
   weight-250: 250,
@@ -266,6 +335,7 @@ $map-space: (
   duration-1: 0.2s,
   space-num-0: 0,
   space-num-1: 1,
+  space-num-1A: 1.3,
   space-num-20: 20,
   space-num-50: 50,
   opacity-0: 0,
@@ -275,6 +345,7 @@ $map-space: (
   percent-40: 40%,
   percent-60: 60%,
   percent-100: 100%,
+  percent-200: 200%,
   percent-250: 250%,
 );
 

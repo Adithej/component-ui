@@ -40,7 +40,7 @@
   border-width: $popover-border-width-primary;
   border-style: solid;
   border-color: $popover-border-primary;
-  outline: 0;
+  outline: $popover-outline-primary;
   background-color: $popover-bacground-primary;
 
   &[data-state="open"][data-side="top"] {
@@ -60,12 +60,12 @@
 .demo-button {
   border: none;
   padding: $popover-padding-secondary $popover-padding-secondary;
-  font-size: 15px; //$p-15
+  font-size: $popover-fontsize-primary;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 9999px;
+  border-radius: $popover-radius-secondary;
   border-color: $button-border-secondary;
   background-color: $button-background-secondary;
   color: $button-color-secondary;
@@ -83,56 +83,56 @@
 
 .demo-span {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
+  width: $popover-space-primary;
+  height: $popover-space-primary;
+  padding: $popover-padding-danger;
+  margin: $popover-margin-primary;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
 }
 
 .demo-popover-content {
-  width: 20rem;
+  width: $popover-width-primary;
 }
 .demo-popover-content-divs {
   display: grid;
-  font-weight: 500;
+  font-weight: $popover-weight-primary;
   color: $navigation-text-secondary;
 }
 
 .demo-popover-content-div {
-  margin-top: 0.5rem;
+  margin-top: $popover-margin-top-primary;
 }
 .demo-popover-content-head {
-  font-weight: 500;
-  line-height: 1;
-  margin-top: 0;
+  font-weight: $popover-weight-primary;
+  line-height: $popover-lineheight-primary;
+  margin-top: $popover-margin-top-secondary;
 }
 
 .demo-popover-content-para {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  margin: 0;
+  font-size: $popover-fontsize-secondary;
+  line-height: $popover-lineheight-secondary;
+  margin: $popover-space-secondary;
 }
 
 .demo-popover-input {
-  height: 0;
-  padding: 25px;
+  height: $popover-space-secondary;
+  padding: $popover-padding-left-secondary;
   grid-column: span 2 / span 2;
 }
 
 .demo-popover-input-divs {
   display: grid;
-  gap: 0.5rem;
+  gap: $popover-gap-primary;
 }
 
 .demo-popover-input-div {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: $popover-gap-seconadry;
 }
 
 .demo-size {
-  height: 0;
+  height: $popover-space-secondary;
 }

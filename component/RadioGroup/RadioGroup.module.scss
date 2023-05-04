@@ -10,8 +10,7 @@
   border-style: solid;
   border-color: $radiogroup-border;
   border-radius: $radio-radius-primary;
-
-  background-color: transparent;
+  background-color: $radiogroup-background-secondary;
   background-image: none;
   &:focus {
     cursor: pointer;

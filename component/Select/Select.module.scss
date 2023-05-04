@@ -5,7 +5,7 @@
   padding-bottom: $select-padding-bottom-primary;
   padding-left: $select-padding-left-primary;
   padding-right: $select-padding-right-primary;
-  background-color: transparent;
+  background-color: $select-background-danger;
   font-size: $select-font-size-primary;
   font-weight: $select-font-weight-primary;
   line-height: $select-line-height-primary;
@@ -45,8 +45,8 @@
 }
 
 .select-viewport {
-  padding: 0.25rem;
-  margin: 5px;
+  padding: $select-padding-primary;
+  margin: $select-margin-primary;
 }
 
 .select-label {
@@ -56,7 +56,7 @@
   padding-left: $select-padding-left-secondary;
   font-size: $select-font-size-primary;
   line-height: $select-line-height-primary;
-  font-weight: 600;
+  font-weight: $select-font-weight-secondary;
 
   color: $select-text-secondary;
 }
@@ -71,11 +71,11 @@
   font-size: $select-font-size-primary;
   line-height: $select-line-height-primary;
   align-items: center;
-  width: 100%;
-  border-radius: 0.125rem;
-  outline: 0;
+  width: $select-width-danger;
+  border-radius: $select-radius-secondary;
+  outline: $selct-outline-secondary;
   user-select: none;
-  margin: 3px;
+  margin: $select-margin-secondary;
   color: $select-text-primary;
   &[data-disabled] {
     color: $select-text-primary;
@@ -89,27 +89,27 @@
 }
 
 .select-item-indicator {
-  width: 200%;
+  width: $select-width-percent;
   display: flex;
   position: absolute;
-  left: 0.5rem;
+  left: $select-left-primary;
   justify-content: center;
   align-items: center;
-  width: 0.875rem;
-  height: 0.875rem;
+  width: $select-space-secondary;
+  height: $select-space-secondary;
 }
 
 .check {
-  width: 1rem;
-  height: 1rem;
+  width: $select-space-primary;
+  height: $select-space-primary;
 }
 
 .select-seperator {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-  margin-left: -0.25rem;
-  margin-right: -0.25rem;
-  height: 1px;
+  margin-top: $select-margin-top-primary;
+  margin-bottom: $select-margin-top-primary;
+  margin-left: $select-margin-left-primary;
+  margin-right: $select-margin-left-primary;
+  height: $select-height-secondary;
 }
 
 .sizing {
