@@ -3,7 +3,7 @@
 import * as React from "react";
 
 import { Progress } from "@/component/Progress";
-import styles from "/Users/mozilor/Desktop/assignment/component-ui/component-ui/component/Progress/Progress.module.scss";
+import styles from "/Users/mozilor/Desktop/assignment/library/component-ui/component/Progress/Progress.module.scss";
 
 export function ProgressDemo() {
   const [progress, setProgress] = React.useState(13);

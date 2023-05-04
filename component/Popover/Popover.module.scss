@@ -59,7 +59,7 @@
 
 .demo-button {
   border: none;
-  padding: 10px 10px; // $p-10 $p-20
+  padding: $popover-padding-secondary $popover-padding-secondary;
   font-size: 15px; //$p-15
   cursor: pointer;
   display: flex;
@@ -97,8 +97,7 @@
 .demo-popover-content-divs {
   display: grid;
   font-weight: 500;
-  color: $navigation-text-secondary; //$navigation-text-secondary
-  //   gap: 1rem;
+  color: $navigation-text-secondary;
 }
 
 .demo-popover-content-div {

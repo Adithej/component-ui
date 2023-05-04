@@ -1,65 +1,65 @@
 @keyframes slideup-fade {
   from {
-    opacity: 0;
+    opacity: $tooltip-opacity-primary;
     transform: translateY(2px);
   }
   to {
-    opacity: 1;
+    opacity: $tooltip-opacity-secondary;
     transform: translateY(0);
   }
 }
 
 @keyframes slideright-fade {
   from {
-    opacity: 0;
+    opacity: $tooltip-opacity-primary;
     transform: translateX(-2px);
   }
   to {
-    opacity: 1;
+    opacity: $tooltip-opacity-secondary;
     transform: translateX(0);
   }
 }
 
 @keyframes slidedown-fade {
   from {
-    opacity: 0;
+    opacity: $tooltip-opacity-primary;
     transform: translateY(-2px); // -2px
   }
   to {
-    opacity: 1;
+    opacity: $tooltip-opacity-secondary;
     transform: translateY(0);
   }
 }
 
 @keyframes slideleft-fade {
   from {
-    opacity: 0;
+    opacity: $tooltip-opacity-primary;
     transform: translateX(2px);
   }
   to {
-    opacity: 1;
+    opacity: $tooltip-opacity-secondary;
     transform: translateX(0);
   }
 }
 
 .tooltip-primitive-content {
   background-color: transparent;
-  border-width: 1px;
+  border-width: $tooltip-borderwidth-primary;
   border-style: solid;
   border-color: $tooltip-border;
   overflow: hidden;
-  z-index: 50;
-  width: 100px;
-  padding: 5px 10px;
+  z-index: $tooltip-zindex-primary;
+  width: $tooltip-width-primary;
+  padding: $tooltip-adding-secondary $tooltip-padding-primary;
   color: $tooltip-text-secondary;
   margin: none;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: none;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  border-radius: 4px;
+  font-size: $tooltip-fontsize-primary;
+  line-height: $tooltip-lineheight-primary;
+  border-radius: $tooltip-radius-primary;
   user-select: none;
   animation-duration: 400ms;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
@@ -80,27 +80,27 @@
 
 .icon-button {
   font-family: inherit;
-  border-radius: 100%;
-  height: 35px;
-  width: 35px;
+  border-radius: $tooltip-radius-secondary;
+  height: $tooltip-space-primary;
+  width: $tooltip-space-primary;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-width: 1px;
+  border-width: $tooltip-borderwidth-primary;
   border-style: solid;
-  border-color: $tooltip-border; // l: hsl(214.3, 31.8, 91.4) d: rgb(29, 40, 58)
+  border-color: $tooltip-border;
   background-color: transparent;
   box-sizing: border-box;
 
   &:hover {
-    background-color: $tooltip-background-primary; // l: #E2E8F0
+    background-color: $tooltip-background-primary;
   }
 }
 
 .icon-plus {
-  color: $tooltip-text-primary; // dark and white
-  width: 1rem;
-  height: 1rem;
+  color: $tooltip-text-primary;
+  width: $tooltip-space-secondary;
+  height: $tooltip-space-secondary;
 }
 
 .add-span {
@@ -112,7 +112,7 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-  border-width: 0;
+  border-width: $tooltip-borderwidth-secondary;
 }
 
 .add-para {

@@ -60,8 +60,8 @@ export default function Home() {
       {/* <ProgressDemo /> */}
       {/* <NavigationMenuDemo /> */}
       {/* <ToggleDemo /> */}
-      <ToastDemo />
-      {/* <PopoverDemo /> */}
+      {/* <ToastDemo /> */}
+      <PopoverDemo />
     </>
   );
 }

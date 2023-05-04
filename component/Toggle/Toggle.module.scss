@@ -1,26 +1,26 @@
 .toggle {
   background-color: transparent;
   color: $togggle-text-primary;
-  height: 35px;
-  width: 35px;
-  border-radius: 4px;
+  height: $toggle-space-primary;
+  width: $toggle-space-primary;
+  border-radius: $toggle-radius-primary;
   display: flex;
-  font-size: 15px;
-  line-height: 1;
+  font-size: $toggle-fontsize-primary;
+  line-height: $toggle-lineheight-primary;
   align-items: center;
   justify-content: center;
   border: none;
   &:hover {
     background-color: $toggle-background-primary;
-    color: hsl(215.4 16.3% 46.9%);
+    color: $toggle-hover; // hsl(215.4 16.3% 46.9%)
   }
   &[data-state="on"] {
     background-color: $toggle-background-primary;
-    color: $togggle-text-secondary; //ls gray dark : white
+    color: $togggle-text-secondary;
   }
 }
 
 .demo-toggle {
-  width: 1rem;
-  height: 1rem;
+  width: $toggle-space-secondary;
+  height: $toggle-space-secondary;
 }

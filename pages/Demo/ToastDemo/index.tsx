@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as Toast from "@radix-ui/react-toast";
-// import styles from "/Users/mozilor/Desktop/assignment/library/component-ui/component/Toast/Toast.module.scss";
-import styles from "D:/myProject/component-shad/component-ui/component/Toast/Toast.module.scss";
+import styles from "/Users/mozilor/Desktop/assignment/library/component-ui/component/Toast/Toast.module.scss";
+
 import Button from "@/component/Button";
 import { X } from "lucide-react";
 

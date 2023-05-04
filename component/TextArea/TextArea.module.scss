@@ -1,8 +1,8 @@
 .textarea {
   resize: vertical;
-  margin: 0;
+  margin: $textarea-margin-primary;
   letter-spacing: normal;
-  text-indent: 0px;
+  text-indent: $textarea-intent-primary;
   text-shadow: none;
   text-align: start;
   appearance: auto;
@@ -16,22 +16,22 @@
   color: $textarea-color;
   background-color: $textarea-background;
   display: flex;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  border-color: $textarea-border; // hsl(214.3 31.8% 91.4%)
+  padding-top: $textarea-padding-primary;
+  padding-bottom: $textarea-padding-primary;
+  padding-left: $textarea-padding-secondary;
+  padding-right: $textarea-padding-secondary;
+  border-color: $textarea-border;
   border-radius: calc(0.5rem - 2px);
-  border-width: 1px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  width: 100%;
-  height: 5rem;
+  border-width: $textarea-borderwidth-primary;
+  font-size: $textarea-fontsize-primary;
+  line-height: $textarea-lineheight-primary;
+  width: $textarea-width-primary;
+  height: $textarea-height-primary;
   &:focus {
-    outline-width: 2px;
+    outline-width: $textarea-outline-primary;
     outline-style: solid;
     outline-color: $textarea-outline;
-    outline-offset: 2px;
+    outline-offset: $textarea-outline-primary;
   }
   &::placeholder {
     color: $textarea-color-primary;

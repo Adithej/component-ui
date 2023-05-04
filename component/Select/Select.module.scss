@@ -1,47 +1,47 @@
 .select-trigger {
   display: flex;
   color: $select-text;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-top: $select-padding-top-primary;
+  padding-bottom: $select-padding-bottom-primary;
+  padding-left: $select-padding-left-primary;
+  padding-right: $select-padding-right-primary;
   background-color: transparent;
-  font-size: 0.875rem;
-  font-weight: 20;
-  line-height: 1.25rem;
+  font-size: $select-font-size-primary;
+  font-weight: $select-font-weight-primary;
+  line-height: $select-line-height-primary;
   justify-content: space-between;
   align-items: center;
-  width: 300px;
-  height: 2.5rem;
-  border-radius: 0.375rem;
-  border-width: 1px;
+  width: $select-width-primary;
+  height: $select-height-primary;
+  border-radius: $select-radius-primary;
+  border-width: $select-border-width-primary;
   border-style: solid;
   border-color: $select-border;
   &:focus {
-    outline-width: 2px;
+    outline-width: $select-outline-primary;
     outline-style: solid;
-    outline-color: $select-outline; // #1D283A
-    outline-offset: 2px;
+    outline-color: $select-outline;
+    outline-offset: $select-outline-primary;
   }
 }
 
 .cheverdown {
-  width: 1rem;
-  height: 1rem;
-  opacity: 0.5;
+  width: $select-space-primary;
+  height: $select-space-primary;
+  opacity: $select-opacity-primary;
 }
 
 .select-content {
-  width: 250%;
+  width: $select-width-secondary;
   overflow: hidden;
   position: relative;
-  z-index: 50;
-  border-radius: 0.375rem;
-  border-width: 1px;
+  z-index: $select-zindex-primary;
+  border-radius: $select-border-radius-primary;
+  border-width: $select-border-width-primary;
   border-style: solid;
   border-color: $select-border-primary;
   box-shadow: 0px 10px 38px $select-box;
-  background-color: $select-bacground-primary; // hsla(0, 0%, 100%, 1)
+  background-color: $select-bacground-primary;
 }
 
 .select-viewport {
@@ -50,26 +50,26 @@
 }
 
 .select-label {
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-  padding-right: 0.5rem;
-  padding-left: 2rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  padding-top: $selct-padding-top-secondary;
+  padding-bottom: $selct-padding-top-secondary;
+  padding-right: $padding-right-secondary;
+  padding-left: $select-padding-left-secondary;
+  font-size: $select-font-size-primary;
+  line-height: $select-line-height-primary;
   font-weight: 600;
 
-  color: $select-text-secondary; // $select-text-secondary
+  color: $select-text-secondary;
 }
 
 .select-item {
   display: flex;
   position: relative;
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-  padding-right: 0.5rem;
-  padding-left: 2rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  padding-top: $selct-padding-top-secondary;
+  padding-bottom: $selct-padding-top-secondary;
+  padding-right: $padding-right-secondary;
+  padding-left: $select-padding-left-secondary;
+  font-size: $select-font-size-primary;
+  line-height: $select-line-height-primary;
   align-items: center;
   width: 100%;
   border-radius: 0.125rem;
@@ -83,7 +83,7 @@
   }
   &[data-highlighted] {
     outline: none;
-    background-color: $select-background; // $select-background
+    background-color: $select-background;
     color: color(dark);
   }
 }

@@ -99,6 +99,7 @@ $popover-opacity-primary: space(opacity-0);
 $popover-opacity-secondary: space(opacity-2);
 $popover-zindex-primary: space(space-num-50);
 $popover-padding-primary: space(space-rem-1);
+$popover-padding-secondary: space(p-10);
 $popover-width-primary: space(space-rem-20);
 $popover-width-seondary: space(space-rem-1);
 $popover-height-primary: space(space-rem-15);
@@ -125,6 +126,79 @@ $radio-fontsize-primary: space(spacing-250A);
 $radio-fontweight-primary: space(weight-250);
 $radio-lineheight-primary: space(space-num-1);
 $radio-paddingleft-primary: space(p-10);
+$tooltip-opacity-primary: space(opacity-0);
+$tooltip-opacity-secondary: space(opacity-2);
+$tooltip-borderwidth-primary: space(spacing-1);
+$tooltip-borderwidth-secondary: space(space-num-0);
+$tooltip-zindex-primary: space(space-num-50);
+$tooltip-width-primary: space(width-100);
+$tooltip-padding-primary: space(p-10);
+$tooltip-adding-secondary: space(p-5);
+$tooltip-space-primary: space(spacing-500A);
+$tooltip-space-secondary: space(space-rem-1);
+$tooltip-fontsize-primary: space(space-rem-1F);
+$tooltip-lineheight-primary: space(space-rem-1);
+$tooltip-radius-primary: space(spacing-75);
+$tooltip-radius-secondary: space(percent-100);
+$textarea-margin-primary: space(space-num-0);
+$textarea-padding-primary: space(space-rem-0);
+$textarea-padding-secondary: space(space-rem-0B);
+$textarea-fontsize-primary: space(space-rem-1F);
+$textarea-lineheight-primary: space(space-rem-1B);
+$textarea-height-primary: space(space-rem-5);
+$textarea-borderwidth-primary: space(spacing-1);
+$textarea-width-primary: space(percent-100);
+$textarea-outline-primary: space(spacing-50);
+$textarea-intent-primary: space(space-0);
+$toggle-space-primary: space(spacing-500A);
+$toggle-space-secondary: space(space-rem-1);
+$toggle-radius-primary: space(spacing-75);
+$toggle-fontsize-primary: space(spacing-250A);
+$toggle-lineheight-primary: space(space-num-1);
+$navigation-opacity-primary: space(opacity-0);
+$navigation-opacity-secondary: space(opacity-2);
+$navigation-opacity-danger: space(opacity-1);
+$navigatipon-width-primary: space(width-1000);
+$navigation-zindex-primary: space(space-num-1);
+$navigation-padding-primary: space(spacing-75);
+$navigation-radius-primary: space(spacing-75);
+$navigation-radius-secondary: space(r-6);
+$navigation-weight-primary: space(weight-500);
+$navigation-width-primary: space(percent-40);
+$navigation-width-secondary: space(percent-25);
+$navigation-margin-primary: space(space-num-0);
+$navigation-fontsize-primary: space(spacing-250A);
+$navigation-lineheight-primary: space(space-num-1);
+$navigation-padding-top-primary: space(spacing-100);
+$navigation-padding-right-primary: space(spacing-200);
+$navigation-outline-primary: space(space-num-0);
+$navigation-gap-primary: space(spacing-50);
+$navigation-space-primary: space(space-rem-0B);
+$navigation-margin-left-primary: space(space-rem-0C);
+$navigation-top-primary: space(space-num-1);
+$navigation-top-secondary: space(space-num-0);
+$navigation-top-danger: space(percent-100);
+$select-padding-top-primary: space(space-rem-0);
+$selct-padding-top-secondary: space(space-rem-0A);
+$select-padding-bottom-primary: space(space-rem-0);
+$select-padding-left-primary: space(space-rem-0B);
+$select-padding-left-secondary: space(space-rem-2);
+$select-padding-right-primary: space(space-rem-0B);
+$padding-right-secondary: space(space-rem-0);
+$select-font-size-primary: space(space-rem-1F);
+$select-font-weight-primary: space(space-num-20);
+$select-line-height-primary: sapce(space-rem-1B);
+$select-width-primary: space(width-300);
+$select-width-secondary: space(percent-250);
+$select-height-primary: sapce(space-rem-2A);
+$select-radius-primary: space(space-rem-0A);
+$select-outline-primary: space(spacing-50);
+$select-border-width-primary: space(spacing-1);
+$select-space-primary: space(space-rem-1);
+$select-opacity-primary: space(opacity-1);
+$select-zindex-primary: space(space-num-50);
+$select-border-radius-primary: space(space-rem-0A);
+$select-border-width-primary: space(spacing-1);
 
 $map-space: (
   space-0: 0px,
@@ -138,12 +212,14 @@ $map-space: (
   spacing-300: 16px,
   spacing-400: 24px,
   spacing-500: 32px,
+  spacing-500A: 35px,
   spacing-600: 40px,
   spacing-700: 48px,
   spacing-800: 64px,
   spacing-850: 67px,
   spacing-900: 80px,
   spacing-1000: 96px,
+  p-5: 5px,
   p-10: 10px,
   p-20: 20px,
   r-1: 1px,
@@ -152,26 +228,31 @@ $map-space: (
   r-6: 6px,
   r-999: 999px,
   height-0: 0,
+  width-100: 100px,
   width-120: 120px,
   width-165: 165px,
   width-280: 280px,
   width-300: 300px,
   width-350: 350px,
   width-400: 450px,
+  width-1000: 100vw,
   space-rem-0: 0.5rem,
   space-rem-0A: 0.375rem,
+  space-rem-0B: 0.75rem,
+  space-rem-0C: 0.25rem,
   space-rem-1: 1rem,
   space-rem-1A: 1.2rem,
   space-rem-1B: 1.25rem,
   space-rem-1C: 1.5rem,
-  space-rem-1D: 1.125,
-  space-rem-1E: 1.75,
+  space-rem-1D: 1.125rem,
+  space-rem-1E: 1.75rem,
   space-rem-1F: 0.875rem,
   space-rem-1H: 0.125rem,
   space-rem-1I: 0.2rem,
-  space-rem1J: 0.625,
+  space-rem1J: 0.625rem,
   space-rem-2: 2rem,
   space-rem-2A: 2.5rem,
+  space-rem-5: 5rem,
   space-rem-15: 15rem,
   space-rem-20: 20rem,
   space-rem-neg1: -0.025em,
@@ -185,12 +266,16 @@ $map-space: (
   duration-1: 0.2s,
   space-num-0: 0,
   space-num-1: 1,
+  space-num-20: 20,
   space-num-50: 50,
   opacity-0: 0,
   opacity-1: 0.5,
   opacity-2: 1,
+  percent-25: 25%,
+  percent-40: 40%,
   percent-60: 60%,
   percent-100: 100%,
+  percent-250: 250%,
 );
 
 @mixin apply-space-map($map) {

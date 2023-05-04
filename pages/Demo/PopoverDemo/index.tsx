@@ -4,7 +4,7 @@ import Button from "@/component/Button";
 import Input from "@/component/Input";
 
 import { Popover, PopoverContent, PopoverTrigger } from "@/component/Popover";
-import styles from "D:/myProject/component-shad/component-ui/component/Popover/Popover.module.scss";
+import styles from "/Users/mozilor/Desktop/assignment/library/component-ui/component/Popover/Popover.module.scss";
 export function PopoverDemo() {
   return (
     <Popover>
@@ -30,7 +30,6 @@ export function PopoverDemo() {
                   id="width"
                   type={""}
                   placeholder={"100%"}
-                  size="demo-size"
                   // defaultValue="100%"
                 />
               </div>
