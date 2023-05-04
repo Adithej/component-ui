@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as Toast from "@radix-ui/react-toast";
-import styles from "/Users/mozilor/Desktop/assignment/library/component-ui/component/Toast/Toast.module.scss";
+// import styles from "/Users/mozilor/Desktop/assignment/library/component-ui/component/Toast/Toast.module.scss";
+import styles from "D:/myProject/component-shad/component-ui/component/Toast/Toast.module.scss";
 import Button from "@/component/Button";
 import { X } from "lucide-react";
 
@@ -31,23 +32,23 @@ export function ToastDemo() {
       </Button>
 
       <Toast.Root
-        className={styles["ToastRoot"]}
+        className={styles["toast-root"]}
         open={open}
         onOpenChange={setOpen}
       >
-        <Toast.Title className={styles["ToastTitle"]}>
+        <Toast.Title className={styles["toast-title"]}>
           Scheduled: Catch up
         </Toast.Title>
         <Toast.Description asChild>
           <time
-            className={styles["ToastDescription"]}
+            className={styles["toast-description"]}
             dateTime={eventDateRef.current.toISOString()}
           >
             {prettyDate(eventDateRef.current)}
           </time>
         </Toast.Description>
         <Toast.Action
-          className={styles["ToastAction"]}
+          className={styles["toast-action"]}
           asChild
           altText="Goto schedule to undo"
         >
@@ -59,7 +60,7 @@ export function ToastDemo() {
           </div>
         </Toast.Action>
       </Toast.Root>
-      <Toast.Viewport className="ToastViewport" />
+      <Toast.Viewport className="toast-viewport" />
     </Toast.Provider>
   );
 }
