@@ -161,7 +161,7 @@
   justify-content: center;
   width: $navigation-width-primary;
   top: $navigation-top-danger;
-  perspective: 2000px;
+  perspective: $navigation-prespectiive-primary;
   .navigation-menu-primitive-viewport {
     border: $naviagation-border;
     border-style: solid;
@@ -169,7 +169,7 @@
     position: relative;
     transform-origin: top center;
     margin-top: $navigation-margin-top-primary;
-    width: $navigation-width-primary;
+    width: $navigation-width-danger;
     background-color: $navigation-background-secondary;
     border-radius: $navigation-radius-primary;
     overflow: hidden;
@@ -188,10 +188,10 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: 10px;
+  height: $navigation-height-secondary;
   top: $navigation-top-danger;
   overflow: hidden;
-  z-index: 1;
+  z-index: $navigation-zindex-secondary;
   transition: width, transform 250ms ease;
   [data-state="visible"] {
     animation: fadeIn 200ms ease;
@@ -203,23 +203,23 @@
   .navigation-menu-primitive-indicators {
     position: relative;
     --transform-rotate: 45deg;
-    width: 0.5rem;
-    height: 0.5rem;
+    width: $navigation-space-secondary;
+    height: $navigation-space-secondary;
   }
 }
 
 .demo-menu-list {
   display: grid;
-  padding: 22px;
-  margin: 0;
-  column-gap: 10px;
+  padding: $navigation-padding-bottom-secondary;
+  margin: $navigation-margin-secondary;
+  column-gap: $navigation-coloumn-gap-primary;
   list-style: none;
   @media (min-width: 768px) {
-    width: 500px;
+    width: $navigation-media-width-primary;
     grid-template-columns: 0.75fr 1fr;
   }
   @media (min-width: 1024px) {
-    width: 500px;
+    width: $navigation-media-width-primary;
   }
 
   .demo-menu-lists {
@@ -229,52 +229,52 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    width: 75%;
-    height: 75%;
+    width: $navigation-space-danger;
+    height: $navigation-space-danger;
     background: $navigation-background-primary;
-    border-radius: 6px;
-    padding: 25px;
+    border-radius: $navigation-radius-primary;
+    padding: $navigation-padding-secondary;
     text-decoration: none;
     outline: none;
     user-select: none;
   }
 
   .demo-menu-logo {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: $navigation-media-space-primary;
+    height: $navigation-media-space-primary;
     color: $navigation-icon-color;
-    padding-bottom: 10px;
+    padding-bottom: $navigation-padding-bottom;
   }
   .demo-menu-icons {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.2;
-    margin-top: 16px;
-    margin-bottom: 7px;
+    font-size: $navigation-fontsize-secondary;
+    font-weight: $navigation-weight-primary;
+    line-height: $navigation-lineheight-danger;
+    margin-top: $navigation-margin-top-secondary;
+    margin-bottom: $navigation-margin-bottom-primary;
     color: $navigation-text-secondary;
   }
   .demo-menu-para {
     color: $navigation-text-danger;
-    font-size: 14px;
-    line-height: 1.3;
+    font-size: $navigation-fontsize-primary;
+    line-height: $navigation-lineheight-danger;
   }
 }
 
 .demo-menu-content {
   display: grid;
-  padding: 22px;
-  margin: 0;
-  column-gap: 10px;
+  padding: $navigation-padding-bottom-secondary;
+  margin: $navigation-margin-secondary;
+  column-gap: $navigation-coloumn-gap-primary;
   list-style: none;
-  width: 600px;
+  width: $navigation-media-width-secondary;
   grid-auto-flow: column;
   grid-template-rows: repeat(3, 1fr);
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 500px;
+    width: $navigation-media-width-primary;
   }
   @media (min-width: 1024px) {
-    width: 600px;
+    width: $navigation-media-width-secondary;
   }
 }
 
@@ -283,9 +283,9 @@
   outline: none;
   text-decoration: none;
   user-select: none;
-  padding: 3px;
-  border-radius: 6px;
-  font-size: 15px;
+  padding: $navigation-padding-danger;
+  border-radius: $navigation-radius-primary;
+  font-size: $navigation-fontsize-primary;
   line-height: $navigation-lineheight-primary;
   flex-direction: column;
   justify-content: space-between;
@@ -294,9 +294,9 @@
     color: $navigation-text-primary;
   }
   .demo-menu-title {
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 3px;
+    font-weight: $navigation-weight-primary;
+    line-height: $navigation-lineheight-danger;
+    margin-bottom: $navigation-margin-bottom-secondary;
     color: $navigation-text-secondary;
     &:hover {
       color: $navigation-text-primary;
@@ -304,7 +304,7 @@
   }
   .demo-menu-children {
     color: $navigation-text-danger;
-    line-height: 1.4;
+    line-height: $navigation-lineheight-secondary;
     font-weight: initial;
   }
 }

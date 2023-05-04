@@ -31,8 +31,8 @@
 
 .context-subcontent {
   overflow: hidden;
-  z-index: 50;
-  padding: 0.25rem;
+  z-index: $context-zindex-primary;
+  padding: $context-padding-primary;
   border-radius: $context-borderradius-primary;
   background-color: $contextmenu-background-secondry;
   color: $contextmenu-text;
@@ -43,18 +43,17 @@
 
 .context-content {
   overflow: hidden;
-  z-index: 50;
-  padding: 0.25rem;
+  z-index: $context-zindex-primary;
+  padding: $context-padding-primary;
   border-radius: $context-borderradius-primary;
   background-color: $contextmenu-background-secondry;
   overflow: hidden;
-  min-width: 8rem;
-  width: 16rem;
-  border: 0 solid #e5e7eb;
+  min-width: $context-min-width-primary;
+  width: $context-width-secondary;
+  // border: 0 solid #e5e7eb;
   color: $contextmenu-text;
   box-shadow: 0 4px 6px -1px $contextmenu-shadow-primary,
     0 2px 4px -1px $contextmenu-shadow-seconadry;
-  // animation-name: enter;
   animation-duration: 0.15s;
 }
 
@@ -91,7 +90,7 @@
   padding-top: $context-paddingtop-primary;
   padding-bottom: $context-paddingbottom-primary;
   padding-right: $contecxt-paddingright-primary;
-  padding-left: 2rem;
+  padding-left: $context-paddingleft-secondary;
   font-size: $context-fontsize-primary;
   line-height: $contextlineheight-primary;
   align-items: center;
@@ -114,16 +113,16 @@
 .context-item-indicator {
   display: flex;
   position: absolute;
-  left: 0.5rem;
+  left: $context-left-primary;
   justify-content: center;
   align-items: center;
-  width: 0.875rem;
-  height: 0.875rem;
+  width: $context-space-secondary;
+  height: $context-space-secondary;
 }
 
 .context-item-check {
-  width: 1rem;
-  height: 1rem;
+  width: $context-space-primary;
+  height: $context-space-primary;
 }
 
 .context-radio-item {
@@ -132,11 +131,11 @@
   padding-top: $context-paddingtop-primary;
   padding-bottom: $context-paddingbottom-primary;
   padding-right: $contecxt-paddingright-primary;
-  padding-left: 2rem;
+  padding-left: $context-paddingleft-secondary;
   font-size: $context-fontsize-primary;
   line-height: $contextlineheight-primary;
   align-items: center;
-  border-radius: $context-borderradius-secondary;
+  border-radius: $context-borderradius-secondary; // $context-borderradius-secondary
   cursor: default;
   outline: $context-outline-primary;
   user-select: none;
@@ -148,13 +147,13 @@
   }
   &[data-disabled] {
     pointer-events: none;
-    opacity: 0.5;
+    opacity: $context-opacity-primary;
   }
 }
 
 .context-radio-circle {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: $context-space-danger; // $context-space-danger
+  height: $context-space-danger;
   fill: currentColor;
 }
 
@@ -165,46 +164,46 @@
   padding-right: $contecxt-paddingright-primary;
   font-size: $context-fontsize-primary;
   line-height: $contextlineheight-primary;
-  font-weight: 600;
+  font-weight: $context-weight-primary;
 }
 
 .context-seperator {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-  margin-left: -0.25rem;
-  margin-right: -0.25rem;
-  height: 1px;
+  margin-top: $context-margin-top-primary;
+  margin-bottom: $context-margin-top-primary;
+  margin-left: $context-margin-left-primary;
+  margin-right: $context-margin-left-primary;
+  height: $context-height-secondary;
   background-color: $contextmenu-background-primary;
 }
 
 .context-shortcut {
   margin-left: auto;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  letter-spacing: 0.1em;
+  font-size: $context-fontsize-secondary;
+  line-height: $context-lineheight-secondary;
+  letter-spacing: $context-letter-spacing;
   color: $contextmenu-text-primary;
 }
 
 .demo-trigger {
   display: flex;
-  height: 150px;
-  width: 300px;
-  border-width: 1px;
+  height: $context-height-danger;
+  width: $context-media-width-primary;
+  border-width: $context-width-danger;
   border-style: dashed;
   font-size: $context-fontsize-primary;
   line-height: $contextlineheight-primary;
   justify-content: center;
   align-items: center;
   border-radius: $context-borderradius-primary;
-  font-weight: 200;
+  font-weight: $context-weight-secondary;
   border-color: $contextmenu-border;
   color: $contextmenu-text-primary;
 }
 
 .demo-content {
-  width: 16rem;
+  width: $context-width-secondary;
 }
 
 .demo-subcontent {
-  width: 12rem;
+  width: $context-media-width-secondary;
 }
