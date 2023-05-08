@@ -1,0 +1,25 @@
+.navigation-list {
+  display: flex;
+  margin-left: 1rem;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    margin-left: 1.5rem;
+  }
+}
+
+.navigation-overview {
+  transition-property: background-color, border-color, color, fill, stroke;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+.navigation-overview-list {
+  transition-property: background-color, border-color, color, fill, stroke;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 50;
+
+  //hover
+}

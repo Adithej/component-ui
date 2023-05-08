@@ -18,6 +18,7 @@ import { NavigationMenuDemo } from "./Demo/NavigationMenuDemo";
 import { ToggleDemo } from "./Demo/ToggleDemo";
 import { ToastDemo } from "./Demo/ToastDemo";
 import { PopoverDemo } from "./Demo/PopoverDemo";
+import { AvatarDemo } from "./Demo/AvatarDemo";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -58,10 +59,11 @@ export default function Home() {
       {/* <CardDemo /> */}
       {/* <TooltipDemo /> */}
       {/* <ProgressDemo /> */}
-      <NavigationMenuDemo />
+      {/* <NavigationMenuDemo /> */}
       {/* <ToggleDemo /> */}
       {/* <ToastDemo /> */}
       {/* <PopoverDemo /> */}
+      <AvatarDemo />
     </>
   );
 }

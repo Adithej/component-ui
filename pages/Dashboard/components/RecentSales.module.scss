@@ -1,0 +1,47 @@
+.sales-root {
+  margin-top: 2rem;
+}
+
+.sales-container {
+  display: flex;
+  align-items: center;
+}
+
+.sales-avatar-one {
+  height: 2.25rem;
+  width: 2.25rem;
+}
+.sales-avatar-two {
+  border-width: 1px;
+  border-radius: 9999px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
+  height: 2.25rem;
+  width: 2.25rem;
+}
+
+.sales-description {
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+}
+
+.sales-item-one {
+  line-height: 1;
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin: 0;
+}
+.sales-item-two {
+  color: hsl(215.4 16.3% 46.9%);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 0;
+}
+.sales-item-price {
+  margin-left: auto;
+  font-weight: 500;
+}
