@@ -11,7 +11,7 @@ const meta: Meta<typeof Popover> = {
 export default meta;
 
 export const Default = () => (
-  <>
+  <div className={styles["demo-position"]}>
     <Popover>
       <PopoverTrigger asChild>
         <button className={styles["demo-button"]}>
@@ -35,7 +35,6 @@ export const Default = () => (
                   id="width"
                   type={""}
                   placeholder={"100%"}
-                  size="demo-size"
                   // defaultValue="100%"
                 />
               </div>
@@ -47,7 +46,6 @@ export const Default = () => (
                   id="maxWidth"
                   type={""}
                   placeholder={"300px"} // defaultValue="300px"
-                  size={""}
                 />
               </div>
             </div>
@@ -58,7 +56,6 @@ export const Default = () => (
                   id="height"
                   type={""}
                   placeholder={"25px"} // defaultValue="25px"
-                  size={""}
                 />
               </div>
             </div>
@@ -76,5 +73,5 @@ export const Default = () => (
         </div>
       </PopoverContent>
     </Popover>
-  </>
+  </div>
 );

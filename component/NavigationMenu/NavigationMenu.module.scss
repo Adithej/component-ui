@@ -133,7 +133,7 @@
 .navigation-menu-content {
   position: absolute;
   top: $navigation-top-secondary;
-  width: $navigation-width-secondary;
+  width: $navigation-width-secondary; //  $navigation-width-secondary
   animation-duration: 250ms;
   animation-timing-function: ease;
   &[data-motion="from-start"] {
@@ -162,23 +162,27 @@
   width: $navigation-width-primary;
   top: $navigation-top-danger;
   perspective: $navigation-prespectiive-primary;
+
   .navigation-menu-primitive-viewport {
-    border: $naviagation-border;
-    border-style: solid;
-    border-color: $navigation-border-primary;
+    // border: $naviagation-border;
+    // border-style: solid;
+    // border-color: $navigation-border-primary;
     position: relative;
     transform-origin: top center;
     margin-top: $navigation-margin-top-primary;
-    width: $navigation-width-danger;
+    width: $navigation-width-danger; // $navigation-width-danger
     background-color: $navigation-background-secondary;
     border-radius: $navigation-radius-primary;
     overflow: hidden;
-    height: $navigation-height-primary;
+    height: $navigation-height-primary; // $navigation-height-primary
     transition: width, height, 300ms ease;
-    [data-state="open"] {
+    &[data-state="open"] {
       animation: scaleIn 200ms ease;
+      border: $naviagation-border;
+      border-style: solid;
+      border-color: $navigation-border-primary;
     }
-    [data-state="closed"] {
+    &[data-state="closed"] {
       animation: scaleOut 200ms ease;
     }
   }
@@ -201,8 +205,8 @@
   }
 
   .navigation-menu-primitive-indicators {
-    position: relative;
-    --transform-rotate: 45deg;
+    // position: relative;
+    // --transform-rotate: 45deg;
     width: $navigation-space-secondary;
     height: $navigation-space-secondary;
   }
@@ -213,7 +217,9 @@
   padding: $navigation-padding-bottom-secondary;
   margin: $navigation-margin-secondary;
   column-gap: $navigation-coloumn-gap-primary;
+  // background-color: red;
   list-style: none;
+
   @media (min-width: 768px) {
     width: $navigation-media-width-primary;
     grid-template-columns: 0.75fr 1fr;
@@ -269,6 +275,7 @@
   width: $navigation-media-width-secondary;
   grid-auto-flow: column;
   grid-template-rows: repeat(3, 1fr);
+
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     width: $navigation-media-width-primary;
@@ -298,6 +305,7 @@
     line-height: $navigation-lineheight-danger;
     margin-bottom: $navigation-margin-bottom-secondary;
     color: $navigation-text-secondary;
+
     &:hover {
       color: $navigation-text-primary;
     }

@@ -171,6 +171,7 @@ $popover-weight-primary: space(weight-500);
 $popover-gap-primary: space(space-rem-0);
 $popover-gap-seconadry: space(space-rem-1);
 $popover-padding-left-secondary: space(p-25);
+$popover-margin-top-danger: space(width-300);
 $progress-width-primary: space(width-300);
 $progress-width-secondary: space(percent-60);
 $progress-height-primary: space(space-rem-1);
@@ -267,7 +268,7 @@ $navigation-top-danger: space(percent-100);
 $naviagation-border: space(spacing-50);
 $navigation-radius-primary: space(r-6);
 $navigation-margin-secondary: space(space-num-0);
-$navigation-height-primary: space(width-300);
+$navigation-height-primary: space(space-rem-18);
 $navigation-height-secondary: space(p-10);
 $navigation-coloumn-gap-primary: space(p-10);
 $navigation-prespectiive-primary: space(width-2000);
@@ -399,6 +400,7 @@ $map-space: (
   space-rem-12: 12rem,
   space-rem-15: 15rem,
   space-rem-16: 16rem,
+  space-rem-18: 18rem,
   space-rem-20: 20rem,
   space-rem-24: 24rem,
   space-rem-neg1: -0.025em,

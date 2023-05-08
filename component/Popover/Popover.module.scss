@@ -136,3 +136,10 @@
 .demo-size {
   height: $popover-space-secondary;
 }
+
+.demo-position {
+  margin-top: $popover-margin-top-danger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

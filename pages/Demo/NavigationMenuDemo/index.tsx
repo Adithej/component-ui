@@ -1,7 +1,7 @@
 import * as React from "react";
 import Link from "next/link";
-// import styles from "/Users/mozilor/Desktop/assignment/component-ui/component-ui/component/NavigationMenu/NavigationMenu.module.scss";
-import styles from "D:/myProject/component-shad/component-ui/component/NavigationMenu/NavigationMenu.module.scss";
+
+import styles from "/Users/mozilor/Desktop/assignment/library/component-ui/component/NavigationMenu/NavigationMenu.module.scss";
 import {
   NavigationMenu,
   NavigationMenuContent,
