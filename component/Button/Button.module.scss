@@ -8,18 +8,17 @@ Button.button {
   align-items: center;
   justify-content: center;
   &.primary {
-    background-color: $button-background-primary; // $button-background-primary
-    color: $button-color-primary; // $button-color  #f1fcfd
-    // border-style: solid;
+    background-color: $button-background-primary;
+    color: $button-color-primary;
   }
 
   &.secondary {
     border-color: $button-border-secondary;
-    background-color: $button-background-secondary; //
+    background-color: $button-background-secondary;
     color: $button-color-secondary;
     border-style: solid;
     &:hover {
-      background-color: $button-background-hover; //   226, 232, 240  //$button-background-hover
+      background-color: $button-background-hover;
     }
   }
 

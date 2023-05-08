@@ -41,6 +41,7 @@ $card-height-primary: space(space-num-1);
 $card-width-primary: space(width-350);
 $card-width-secondary: space(width-165);
 $card-width-danger: space(width-280);
+$card-spacing-primary: space(percent-100);
 $card-gap-primary: space(space-rem-1);
 $checkbox-width-primary: space(space-rem-1);
 $checkbox-width-secondary: space(spacing-300);
@@ -135,8 +136,11 @@ $input-paddingleft-primary: space(space-rem-0);
 $input-paddingright-primary: space(space-rem-0);
 $input-fontsize-primary: space(space-rem-1F);
 $input-lineheight-primary: space(space-rem-1B);
+$input-max-width-primary: space(space-rem-24);
 $input-radius-primary: space(r-6);
 $input-height-primary: space(space-rem-2A);
+$input-height-secondary: space(space-rem-2);
+$input-width-primary: space(percent-100);
 $input-outlinewidth-primary: space(spacing-50);
 $popover-opacity-primary: space(opacity-0);
 $popover-opacity-secondary: space(opacity-2);
@@ -396,6 +400,7 @@ $map-space: (
   space-rem-15: 15rem,
   space-rem-16: 16rem,
   space-rem-20: 20rem,
+  space-rem-24: 24rem,
   space-rem-neg1: -0.025em,
   space-rem-neg2: -0.25rem,
   space-px-neg2: -1px,

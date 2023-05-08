@@ -7,12 +7,13 @@
   padding-right: $input-paddingright-primary;
   font-size: $input-fontsize-primary;
   line-height: $input-lineheight-primary;
-  background-color: transparent;
+  background-color: $input-background-primary;
   border-radius: $input-radius-primary;
   border-width: $input-border-primary;
   display: flex;
-  height: 2.5rem;
-  // width: 350rem;
+  max-width: $input-max-width-primary;
+  height: $input-height-secondary;
+  width: $input-width-primary;
   color: $input-text;
   &:focus {
     outline-width: $input-outlinewidth-primary;

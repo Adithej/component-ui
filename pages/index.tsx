@@ -57,10 +57,10 @@ export default function Home() {
       {/* <DialogDemo /> */}
       {/* <CardDemo /> */}
       {/* <TooltipDemo /> */}
-      {/* <ProgressDemo /> */}
+      <ProgressDemo />
       {/* <NavigationMenuDemo /> */}
       {/* <ToggleDemo /> */}
-      <ToastDemo />
+      {/* <ToastDemo /> */}
       {/* <PopoverDemo /> */}
     </>
   );
