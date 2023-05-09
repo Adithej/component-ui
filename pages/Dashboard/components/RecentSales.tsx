@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/component/Avatar";
-import styles from "./RecentSales.module.scss";
+import styles from "./styles/RecentSales.module.scss";
 
 export function RecentSales() {
   return (

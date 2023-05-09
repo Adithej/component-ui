@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./MainNav.module.scss";
+import styles from "./styles/MainNav.module.scss";
 
 export function MainNav({
   className,

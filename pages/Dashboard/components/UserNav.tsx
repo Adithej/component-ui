@@ -12,7 +12,7 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "@/component/DropdownMenu";
-import styles from "./UserNav.module.scss";
+import styles from "./styles/UserNav.module.scss";
 
 export function UserNav() {
   return (
