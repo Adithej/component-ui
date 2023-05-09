@@ -8,25 +8,25 @@ export function MainNav({
   return (
     <nav className={styles["navigation-list"]} {...props}>
       <Link
-        href="/examples/dashboard"
+        href="component-ui/pages/Dashboard/index.tsx"
         className={styles["navigation-overview"]}
       >
         Overview
       </Link>
       <Link
-        href="/examples/dashboard"
+        href="component-ui/pages/Dashboard/index.tsx"
         className={styles["navigation-overview-list"]}
       >
         Customers
       </Link>
       <Link
-        href="/examples/dashboard"
+        href="component-ui/pages/Dashboard/index.tsx"
         className={styles["navigation-overview-list"]}
       >
         Products
       </Link>
       <Link
-        href="/examples/dashboard"
+        href="component-ui/pages/Dashboard/index.tsx"
         className={styles["navigation-overview-list"]}
       >
         Settings

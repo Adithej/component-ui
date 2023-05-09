@@ -1,7 +1,11 @@
 .navigation-list {
+  border-color: hsl(214.3 31.8% 91.4%);
   display: flex;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   align-items: center;
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
 
   @media (min-width: 1024px) {
     margin-left: 1.5rem;
@@ -9,17 +13,34 @@
 }
 
 .navigation-overview {
-  transition-property: background-color, border-color, color, fill, stroke;
+  text-decoration: none;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
+
+  &:hover {
+    color: hsl(222.2 47.4% 11.2%);
+  }
 }
 
 .navigation-overview-list {
-  transition-property: background-color, border-color, color, fill, stroke;
+  text-decoration: none;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  font-weight: 50;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 
   //hover
+  &:hover {
+    color: hsl(222.2 47.4% 11.2%);
+  }
 }

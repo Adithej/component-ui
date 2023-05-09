@@ -19,6 +19,7 @@ import { ToggleDemo } from "./Demo/ToggleDemo";
 import { ToastDemo } from "./Demo/ToastDemo";
 import { PopoverDemo } from "./Demo/PopoverDemo";
 import { AvatarDemo } from "./Demo/AvatarDemo";
+import Dashboard from "./Dashboard";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -63,7 +64,8 @@ export default function Home() {
       {/* <ToggleDemo /> */}
       {/* <ToastDemo /> */}
       {/* <PopoverDemo /> */}
-      <AvatarDemo />
+      {/* <AvatarDemo /> */}
+      <Dashboard />
     </>
   );
 }

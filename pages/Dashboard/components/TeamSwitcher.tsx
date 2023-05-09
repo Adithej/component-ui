@@ -1,9 +1,6 @@
-"use client";
-
 import * as React from "react";
 import { Check, ChevronsUpDown, PlusCircle } from "lucide-react";
 
-import { cn } from "@/lib/utils";
 import { Avatar, AvatarFallback, AvatarImage } from "@/component/Avatar";
 import Button from "@/component/Button";
 // import {
@@ -162,12 +159,12 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
           </DialogDescription>
         </DialogHeader>
         <div>
-          <div className="space-y-4 py-2 pb-4">
-            <div className="space-y-2">
+          <div className={styles["switcher-select"]}>
+            <div className={styles["switcher-select-label"]}>
               <Label htmlFor="name">Team name</Label>
-              <Input id="name" placeholder="Acme Inc." />
+              <Input id="name" placeholder="Acme Inc." type={""} />
             </div>
-            <div className="space-y-2">
+            <div className={styles["switcher-select-label"]}>
               <Label htmlFor="plan">Subscription plan</Label>
               <Select>
                 <SelectTrigger>
@@ -175,14 +172,16 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="free">
-                    <span className="font-medium">Free</span> -{" "}
-                    <span className="text-muted-foreground">
+                    <span className={styles["switcher-select-item"]}>Free</span>{" "}
+                    -{" "}
+                    <span className={styles["switcher-select-span"]}>
                       Trial for two weeks
                     </span>
                   </SelectItem>
                   <SelectItem value="pro">
-                    <span className="font-medium">Pro</span> -{" "}
-                    <span className="text-muted-foreground">
+                    <span className={styles["switcher-select-item"]}>Pro</span>{" "}
+                    -{" "}
+                    <span className={styles["switcher-select-span"]}>
                       $9/month per user
                     </span>
                   </SelectItem>
@@ -192,10 +191,14 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
           </div>
         </div>
         <DialogFooter>
-          <Button variant="outline" onClick={() => setShowNewTeamDialog(false)}>
+          <Button
+            variant="secondary"
+            onClick={() => setShowNewTeamDialog(false)}
+            icon={<></>}
+          >
             Cancel
           </Button>
-          <Button type="submit">Continue</Button>
+          <Button icon={<></>}>Continue</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
