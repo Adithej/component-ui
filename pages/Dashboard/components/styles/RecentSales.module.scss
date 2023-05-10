@@ -5,10 +5,11 @@
 .sales-container {
   display: flex;
   align-items: center;
+  padding: 1rem;
 }
 
 .sales-avatar-one {
-  height: 2.25rem;
+  height: 2.25rem; // 2.25rem
   width: 2.25rem;
 }
 .sales-avatar-two {

@@ -162,7 +162,7 @@ export default function Dashboard() {
                   </Card>
                 </div>
                 <div className={styles["dashboard-card-grid"]}>
-                  <Card className={styles["dashboard-card-column"]}>
+                  <Card className={styles["dashboard-card-column-one"]}>
                     <CardHeader>
                       <CardTitle>Overview</CardTitle>
                     </CardHeader>
@@ -174,7 +174,11 @@ export default function Dashboard() {
                     <CardHeader>
                       <CardTitle>Recent Sales</CardTitle>
                       <CardDescription>
-                        You made 265 sales this month.
+                        <div
+                          className={styles["dashboard-card-colum-description"]}
+                        >
+                          You made 265 sales this month.
+                        </div>
                       </CardDescription>
                     </CardHeader>
                     <CardContent>

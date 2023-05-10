@@ -1,18 +1,18 @@
 .card-primitive {
+  position: relative;
   border-style: solid;
   border-radius: $card-radius-primary;
   border-width: $card-borderwidth-primary;
   border-color: $card-border-primary;
-  // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   color: $card-text-secondary;
   background-color: $card-background-primary;
-  width: $card-width-primary;
+  // width: $card-width-primary;  // for dashboard
 }
 .card-header {
   display: flex;
   padding: $card-padding-secondary;
   margin-top: $card-margintop-primary;
-  flex-direction: column;
+  flex-direction: row; // column
   padding-bottom: $card-padding-primary;
 }
 
@@ -23,10 +23,13 @@
   letter-spacing: $card-letterspacing-primary;
   line-height: $card-height-primary;
   margin: $card-margin-primary;
+  margin-bottom: 20px; // dash
   color: $card-text-primary;
 }
 
 .card-description {
+  position: absolute;
+  left: 10px;
   font-size: $card-fontsize-secondary;
   line-height: $card-lineheight-secondary;
   color: $card-text-danger;
