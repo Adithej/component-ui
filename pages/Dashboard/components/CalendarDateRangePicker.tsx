@@ -21,10 +21,8 @@ export function CalendarDateRangePicker({
         <PopoverTrigger asChild>
           <button
             id="date"
-            className={
-              `${styles["range-picker-button"]},
-              ${!date} ` && ` ${styles["range-picker-foreground"]}`
-            }
+            className={`${styles["range-picker-button"]} ,
+              ${!date}  &&  ${styles["range-picker-foreground"]}`}
           >
             <CalendarIcon className={styles["calender-icon"]} />
             {date?.from ? (

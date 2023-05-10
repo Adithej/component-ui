@@ -1,15 +1,35 @@
 .popover-button {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  border-radius: 0.375rem;
+  display: inline-flex;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  // justify-content: center;
+  align-items: center;
+  border-radius: calc(0.5rem - 2px);
+  text-transform: none;
+  background-color: transparent;
+  border-style: none;
+  // padding-left: 0.75rem;
+  // padding-right: 0.75rem;
   justify-content: space-between;
   width: 200px;
+  height: 40px;
+  &:hover {
+    background-color: hsl(210 40% 96.1%);
+    color: hsl(222.2 47.4% 11.2%);
+  }
 }
 
-.switchher-avatar {
+.switcher-avatar {
+  position: relative;
   margin-right: 0.5rem;
   width: 1.25rem;
   height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.switcher-head {
+  margin-left: 10px;
 }
 
 .switcher-chevron {

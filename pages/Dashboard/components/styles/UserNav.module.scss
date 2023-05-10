@@ -1,11 +1,19 @@
 .nav-button {
   position: relative;
+  border-radius: 9999px;
+  background-color: transparent;
+  border-style: none;
   width: 2rem;
   height: 2rem;
-  border-radius: 9999px;
+  text-transform: none;
 }
 
 .nav-avatar {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 9999px;
   width: 2rem;
   height: 2rem;
 }

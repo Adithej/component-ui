@@ -84,14 +84,14 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
             aria-label="Select a team"
             className={styles["popover-button"]}
           >
-            <Avatar className={styles["switchher-avatar"]}>
+            <Avatar className={styles["switcher-avatar"]}>
               <AvatarImage
                 src={`https://avatar.vercel.sh/${selectedTeam.value}.png`}
                 alt={selectedTeam.label}
               />
               <AvatarFallback>SC</AvatarFallback>
             </Avatar>
-            {selectedTeam.label}
+            <div className={styles["switcher-head"]}>{selectedTeam.label}</div>
             <ChevronsUpDown className={styles["switcher-chevron"]} />
           </button>
         </PopoverTrigger>
