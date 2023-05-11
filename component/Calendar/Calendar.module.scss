@@ -119,13 +119,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 0.5rem;
-  width: 100%;
-  &[aria-selected="true"] {
-    opacity: 1;
-    border-radius: 0.5rem;
-    background-color: hsl(210 40% 96.1%);
-    color: hsl(222.2 47.4% 11.2%);
-  }
+  // width: 100%;
 }
 
 .day-picker-cell {
@@ -196,24 +190,21 @@
     background-color: hsl(222.2 47.4% 11.2%);
     color: hsl(210 40% 98%);
   }
-
-  // &[aria-selected="true"] {
-  //   opacity: 1;
-  //   border-radius: 0;
-  //   background-color: hsl(210 40% 96.1%);
-  //   color: hsl(222.2 47.4% 11.2%);
-  // }
 }
 .day-picker-today {
-  border-radius: 0.5rem;
-  width: 2.25rem;
-  height: 2.25rem;
-  background-color: hsl(222.2 47.4% 11.2%);
-  color: hsl(210 40% 98%);
+  button {
+    // background-color: hsl(222.2 47.4% 11.2%);
+    color: hsl(210 40% 98%);
+    background-image: none;
+    text-transform: none;
+    border: none;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
 }
 
 .day-picker-outside {
-  // opacity: 0.5;
+  opacity: 0.5;
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 0.5rem;
@@ -235,14 +226,14 @@
   height: 2.25rem;
   background-color: hsl(215.4 16.3% 46.9%);
   color: hsl(222.2 47.4% 11.2%);
-  &.focus {
-    opacity: 1;
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: 0.5rem;
-    background-color: hsl(222.2 47.4% 11.2%);
-  }
-  // color: red;
+  border-radius: 0.5rem;
+  // &.focus {
+  //   opacity: 1;
+  //   width: 2.25rem;
+  //   height: 2.25rem;
+  //   border-radius: 0.5rem;
+  //   background-color: hsl(222.2 47.4% 11.2%);
+  // }
 }
 
 .day-picker-hidden {

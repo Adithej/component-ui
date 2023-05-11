@@ -35,7 +35,7 @@ export default function Dashboard() {
   return (
     <>
       <div className={styles["divison"]}>
-        <div className={styles["dashboard"]}>
+        {/* <div className={styles["dashboard"]}>
           <Image
             src="/examples/dashboard-light.png"
             width={1280}
@@ -50,7 +50,7 @@ export default function Dashboard() {
             alt="Dashboard"
             className="hidden dark:block"
           />
-        </div>
+        </div> */}
         <div className={styles["dashboard-teamswitcher"]}>
           <div className={styles["dashboard-teamswitcher-navs"]}>
             <div className={styles["dashboard-teamswitcher-nav"]}>
@@ -92,8 +92,10 @@ export default function Dashboard() {
                 <div className={styles["dashboard-tab-content"]}>
                   <Card>
                     <CardHeader className={styles["dashboard-card-head"]}>
-                      <CardTitle className={styles["dashboard-card-title"]}>
-                        Total Revenue
+                      <CardTitle>
+                        <div className={styles["dashboard-card-title"]}>
+                          Total Revenue
+                        </div>
                       </CardTitle>
                       <DollarSign
                         className={styles["dashboard-card-descripton"]}
@@ -110,8 +112,10 @@ export default function Dashboard() {
                   </Card>
                   <Card>
                     <CardHeader className={styles["dashboard-card-head"]}>
-                      <CardTitle className={styles["dashboard-card-title"]}>
-                        Subscriptions
+                      <CardTitle>
+                        <div className={styles["dashboard-card-title"]}>
+                          Subscriptions
+                        </div>
                       </CardTitle>
                       <Users className={styles["dashboard-card-descripton"]} />
                     </CardHeader>
@@ -126,8 +130,10 @@ export default function Dashboard() {
                   </Card>
                   <Card>
                     <CardHeader className={styles["dashboard-card-head"]}>
-                      <CardTitle className={styles["dashboard-card-title"]}>
-                        Sales
+                      <CardTitle>
+                        <div className={styles["dashboard-card-title"]}>
+                          Sales
+                        </div>
                       </CardTitle>
                       <CreditCard
                         className={styles["dashboard-card-descripton"]}
@@ -144,8 +150,10 @@ export default function Dashboard() {
                   </Card>
                   <Card>
                     <CardHeader className={styles["dashboard-card-head"]}>
-                      <CardTitle className={styles["dashboard-card-title"]}>
-                        Active Now
+                      <CardTitle>
+                        <div className={styles["dashboard-card-title"]}>
+                          Active Now
+                        </div>
                       </CardTitle>
                       <Activity
                         className={styles["dashboard-card-descripton"]}

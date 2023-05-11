@@ -20,10 +20,7 @@ export function UserNav() {
       <DropdownMenuTrigger asChild>
         <button className={styles["nav-button"]}>
           <Avatar className={styles["nav-avatar"]}>
-            <AvatarImage
-              src="component-ui/pages/Dashboard/Avatars/01.png"
-              alt="@shadcn"
-            />
+            <AvatarImage src="https://avatar.vercel.sh/2.png" alt="@shadcn" />
             <AvatarFallback>SC</AvatarFallback>
           </Avatar>
         </button>

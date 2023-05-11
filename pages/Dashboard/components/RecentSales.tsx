@@ -6,10 +6,7 @@ export function RecentSales() {
     <div className={styles["sales-root"]}>
       <div className={styles["sales-container"]}>
         <Avatar className={styles["sales-avatar-one"]}>
-          <AvatarImage
-            src="component-ui/pages/Dashboard/Avatars/01.png"
-            alt="Avatar"
-          />
+          <AvatarImage src="https://avatar.vercel.sh/3.png" alt="Avatar" />
           <AvatarFallback>OM</AvatarFallback>
         </Avatar>
         <div className={styles["sales-description"]}>
@@ -20,10 +17,7 @@ export function RecentSales() {
       </div>
       <div className={styles["sales-container"]}>
         <Avatar className={styles["sales-avatar-two"]}>
-          <AvatarImage
-            src="component-ui/pages/Dashboard/Avatars/02.png"
-            alt="Avatar"
-          />
+          <AvatarImage src="https://avatar.vercel.sh/4.png" alt="Avatar" />
           <AvatarFallback>JL</AvatarFallback>
         </Avatar>
         <div className={styles["sales-description"]}>
@@ -34,10 +28,7 @@ export function RecentSales() {
       </div>
       <div className={styles["sales-container"]}>
         <Avatar className={styles["sales-avatar-one"]}>
-          <AvatarImage
-            src="component-ui/pages/Dashboard/Avatars/03.png"
-            alt="Avatar"
-          />
+          <AvatarImage src="https://avatar.vercel.sh/5.png" alt="Avatar" />
           <AvatarFallback>IN</AvatarFallback>
         </Avatar>
         <div className={styles["sales-description"]}>
@@ -48,10 +39,7 @@ export function RecentSales() {
       </div>
       <div className={styles["sales-container"]}>
         <Avatar className={styles["sales-avatar-one"]}>
-          <AvatarImage
-            src="component-ui/pages/Dashboard/Avatars/04.png"
-            alt="Avatar"
-          />
+          <AvatarImage src="https://avatar.vercel.sh/7.png" alt="Avatar" />
           <AvatarFallback>WK</AvatarFallback>
         </Avatar>
         <div className={styles["sales-description"]}>
@@ -62,10 +50,7 @@ export function RecentSales() {
       </div>
       <div className={styles["sales-container"]}>
         <Avatar className={styles["sales-avatar-one"]}>
-          <AvatarImage
-            src="component-ui/pages/Dashboard/Avatars/05.png"
-            alt="Avatar"
-          />
+          <AvatarImage src="https://avatar.vercel.sh/8.png" alt="Avatar" />
           <AvatarFallback>SD</AvatarFallback>
         </Avatar>
         <div className={styles["sales-description"]}>

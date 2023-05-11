@@ -96,8 +96,8 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
             <ChevronsUpDown className={styles["switcher-chevron"]} />
           </button>
         </PopoverTrigger>
-        <PopoverContent className={styles["switcher-content"]}>
-          {/* <Command>
+        {/* <PopoverContent className={styles["switcher-content"]}>
+          <Command>
             <CommandList>
               <CommandInput placeholder="Search team..." />
               <CommandEmpty>No team found.</CommandEmpty>
@@ -149,8 +149,8 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                 </DialogTrigger>
               </CommandGroup>
             </CommandList>
-          </Command> */}
-        </PopoverContent>
+          </Command>
+        </PopoverContent> */}
       </Popover>
       <DialogContent>
         <DialogHeader>
