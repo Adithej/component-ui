@@ -42,6 +42,10 @@
   border-color: $popover-border-primary;
   outline: $popover-outline-primary;
   background-color: $popover-bacground-primary;
+  // min-width: max-content;
+  // max-width: fit-content;
+  width: fit-content;
+  height: fit-content;
 
   &[data-state="open"][data-side="top"] {
     animation-name: slideDownAndFade;

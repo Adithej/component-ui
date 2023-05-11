@@ -7,9 +7,7 @@ import { Calendar } from "@/component/Calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/component/Popover";
 import styles from "./styles/CalendarDateRangePicker.module.scss";
 
-export function CalendarDateRangePicker({
-  className,
-}: React.HTMLAttributes<HTMLDivElement>) {
+export function CalendarDateRangePicker({}: React.HTMLAttributes<HTMLDivElement>) {
   const [date, setDate] = React.useState<DateRange | undefined>({
     from: new Date(2023, 0, 20),
     to: addDays(new Date(2023, 0, 20), 20),
@@ -39,16 +37,23 @@ export function CalendarDateRangePicker({
             )}
           </button>
         </PopoverTrigger>
-        <PopoverContent className={styles["range-popover-content"]} align="end">
-          <Calendar
-            initialFocus
-            mode="range"
-            defaultMonth={date?.from}
-            selected={date}
-            onSelect={setDate}
-            numberOfMonths={2}
-          />
-        </PopoverContent>
+        <div>
+          <PopoverContent style={{ border: "none" }} align="end">
+            <Calendar
+              className={styles["range-calender"]}
+              style={{
+                opacity: "1",
+                backgroundColor: "white",
+              }}
+              initialFocus
+              mode="range"
+              defaultMonth={date?.from}
+              selected={date}
+              onSelect={setDate}
+              numberOfMonths={2}
+            />
+          </PopoverContent>
+        </div>
       </Popover>
     </div>
   );

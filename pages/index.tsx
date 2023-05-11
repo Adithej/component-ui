@@ -20,6 +20,7 @@ import { ToastDemo } from "./Demo/ToastDemo";
 import { PopoverDemo } from "./Demo/PopoverDemo";
 import { AvatarDemo } from "./Demo/AvatarDemo";
 import Dashboard from "./Dashboard";
+import { CalendarDemo } from "./Demo/CalendarDemo";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -66,6 +67,7 @@ export default function Home() {
       {/* <PopoverDemo /> */}
       {/* <AvatarDemo /> */}
       <Dashboard />
+      {/* <CalendarDemo /> */}
     </>
   );
 }

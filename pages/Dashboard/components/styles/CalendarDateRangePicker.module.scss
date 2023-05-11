@@ -25,13 +25,16 @@
 
 .calender-icon {
   align-items: center;
-
   margin-right: 0.5rem;
   width: 1rem;
   height: 1rem;
 }
 
+.range-calender {
+  opacity: 1;
+  background-color: white;
+}
+
 .range-popover-content {
-  padding: 0;
-  width: auto;
+  border: none;
 }
