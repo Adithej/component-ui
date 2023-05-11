@@ -326,6 +326,24 @@ $toast-space-secondary: space(space-rem-1);
 $toast-margin-left-primary: space(spacing-875);
 $toast-opacity-primary: space(opacity-0);
 $toast-opaciy-secondary: space(opacity-1);
+$usernav-width-primary: space(space-rem-2);
+$user-nav-height-primary: space(space-rem-2);
+$usernav-width-secodary: space(space-rem-1);
+$usernav-height-secondary: space(space-rem-1);
+$usernav-border-radius-primary: space(spacing-999);
+$usernav-fontweight-primary: space(weight-400);
+$usernav-fontweight-secondary: space(weight-500);
+$usernav-fontweight-danger: space(weight-150);
+$usernav-width-danger: space(space-rem-14);
+$usernav-margin-primary: space(space-num-0);
+$usernav-margin-secondary: space(space-rem-0C);
+$usernav-margin-danger: space(space-rem-0);
+$usernav-shrink: space(space-num-0);
+$usernav-fontsize-primary: sapce(space-rem-1F);
+$usernav-fontsize-secondary: space(space-rem-0B);
+$usernav-lineheight-primary: space(space-num-1);
+$usernav-lineheight-secondary: space(space-rem-1B);
+$usernav-padding-primary: space(p-5);
 
 $map-space: (
   space-0: 0px,
@@ -399,6 +417,7 @@ $map-space: (
   space-rem-8: 8rem,
   space-rem-12: 12rem,
   space-rem-15: 15rem,
+  space-rem-14: 14rem,
   space-rem-16: 16rem,
   space-rem-18: 18rem,
   space-rem-20: 20rem,
@@ -409,6 +428,7 @@ $map-space: (
   space-px-neg1: -2px,
   space-em-1: 0.1em,
   weight-100: 100,
+  weight-150: 150,
   weight-200: 200,
   weight-250: 250,
   weight-400: 400,

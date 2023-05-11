@@ -1,10 +1,10 @@
 .nav-button {
   position: relative;
-  border-radius: 9999px;
+  border-radius: $usernav-border-radius-primary;
   background-color: transparent;
   border-style: none;
-  width: 2rem;
-  height: 2rem;
+  width: $usernav-width-primary;
+  height: $user-nav-height-primary;
   text-transform: none;
 }
 
@@ -12,45 +12,45 @@
   overflow: hidden;
   display: flex;
   position: relative;
-  flex-shrink: 0;
-  border-radius: 9999px;
-  width: 2rem;
-  height: 2rem;
+  flex-shrink: $usernav-shrink;
+  border-radius: $usernav-border-radius-primary;
+  width: $usernav-width-primary;
+  height: $user-nav-height-primary;
 }
 
 .nav-menu-content {
-  width: 14rem;
+  width: $usernav-width-danger;
 }
 
 .nav-menu-label {
-  font-weight: 400;
+  font-weight: $usernav-fontweight-primary;
 }
 
 .nav-label-description {
   display: flex;
-  margin-top: 0.25rem;
+  margin-top: $usernav-margin-secondary;
   flex-direction: column;
 }
 
 .nav-label-head {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  line-height: 1;
-  padding-bottom: 5px;
-  margin: 0;
+  font-size: $usernav-fontsize-primary;
+  line-height: $usernav-lineheight-secondary;
+  font-weight: $usernav-fontweight-secondary;
+  line-height: $usernav-lineheight-primary;
+  padding-bottom: $usernav-padding-primary;
+  margin: $usernav-margin-primary;
 }
 
 .nav-label-para {
-  font-size: 0.75rem;
-  font-weight: 150;
-  line-height: 1;
-  margin: 0;
+  font-size: $usernav-fontsize-secondary;
+  font-weight: $usernav-fontweight-danger;
+  line-height: $usernav-lineheight-primary;
+  margin: $usernav-margin-primary;
   color: hsl(215.4 16.3% 46.9%);
 }
 
 .nav-menu-user {
-  margin-right: 0.5rem;
-  width: 1rem;
-  height: 1rem;
+  margin-right: $usernav-margin-danger;
+  width: $usernav-width-secodary;
+  height: $usernav-height-secondary;
 }
