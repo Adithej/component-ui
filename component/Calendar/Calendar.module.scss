@@ -100,7 +100,7 @@
 .day-picker-head-row {
   display: flex;
   width: $calender-width-secondary;
-  text-indent: $calender-text-intent-primary;
+  text-indent: 0;
   border-color: inherit;
   display: table;
   color: hsl(222.2 47.4% 11.2%);

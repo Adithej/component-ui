@@ -9,8 +9,10 @@
 }
 
 .sales-avatar-one {
-  height: $recentsales-height-primary;
-  width: $recentsales-width-primary;
+  // height: $recentsales-height-primary;
+  // width: $recentsales-width-primary;
+  width: fit-content;
+  height: fit-content;
 }
 .sales-avatar-two {
   border-width: $recentsales-border-width-primary;
