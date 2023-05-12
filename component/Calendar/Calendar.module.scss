@@ -53,10 +53,10 @@
   justify-content: center;
   align-items: center;
   width: $calender-width-primary;
-  height: 1.75rem;
+  height: $calender-height-primary;
   display: inline-flex;
   position: absolute;
-  right: 0.25rem;
+  right: $calender-right-primary;
   cursor: pointer;
   text-transform: none;
   &:hover {
@@ -90,7 +90,7 @@
 
 .day-picker-nav-next {
   position: absolute;
-  right: 0.25rem;
+  right: $calender-right-primary;
 }
 
 .day-picker-table {
@@ -100,7 +100,7 @@
 .day-picker-head-row {
   display: flex;
   width: $calender-width-secondary;
-  text-indent: 0;
+  text-indent: $calender-text-intent-primary;
   border-color: inherit;
   display: table;
   color: hsl(222.2 47.4% 11.2%);
@@ -110,7 +110,7 @@
 .day-picker-head-cell {
   color: hsl(215.4 16.3% 46.9%);
   font-weight: $calender-font-weight-secondary;
-  font-size: 0.8rem;
+  font-size: $calender-font-size-secondary;
   width: $calender-width-danger;
 }
 
