@@ -344,6 +344,100 @@ $usernav-fontsize-secondary: space(space-rem-0B);
 $usernav-lineheight-primary: space(space-num-1);
 $usernav-lineheight-secondary: space(space-rem-1B);
 $usernav-padding-primary: space(p-5);
+$teamswitcher-font-size-primary: space(space-rem-1F);
+$teamswitcher-line-height-primary: sapce(space-rem-1B);
+$teamswitcher-font-weight-primary: space(weight-500);
+$teamswitcher-width-primary: space(width-200);
+$teamswitcher-width-secondary: space(space-rem-1B);
+$teamswitcher-width-danger: space(space-rem-1);
+$teamswitcher-height-primary: space(spacing-600);
+$teamswitcher-height-secondary: space(space-rem-1B);
+$teamswitcher-height-danger: space(space-rem-1);
+$teamswitcher-margin-right-primary: space(space-rem-0);
+$teamswitcher-margin-left-primary: space(p-10);
+$teamswitcher-margin-top-primary: space(space-rem-1);
+$teamswitcher-padding-primary: space(space-rem-0);
+$teamswitcher-padding-secondary: space(space-rem-1);
+$teamswitcher-padding-danger: space(space-num-0);
+$teamswitcher-font-weight-primary: space(weight-500);
+$teamswitcher-opacity-primary: space(opacity-1);
+$teamswitcher-flex-shrink-primary: space(space-num-0);
+$search-width-primary: space(width-300);
+$search-height-primary: space(space-rem-2B);
+$search-margin-primary: space(p-10);
+$recentsales-margin-primary: space(space-num-0);
+$recentsales-margin-secondary: space(space-rem-1);
+$recentsales-margin-top-primary: space(space-rem-2);
+$recentsales-margin-top-secondary: space(space-rem-0C);
+$recentsales-padding-primary: space(space-rem-1);
+$recentsales-width-primary: space(space-rem-2B);
+$recentsales-height-primary: space(space-rem-2B);
+$recentsales-border-width-primary: space(spacing-1);
+$recentsales-border-radius-primary: space(r-999);
+$recentsales-flex-shrink: space(space-num-0);
+$recentsales-line-height-primary: space(space-num-1);
+$recentsales-line-height-secondary: space(space-rem-1B);
+$recentsales-font-size-primary: space(space-rem-1F);
+$recentsales-font-weight-primary: space(weight-500);
+$mainav-margin-left-primary: space(space-rem-1C);
+$mainav-margin-right-primary: space(space-rem-1C);
+$mainav-font-size-primary: space(space-rem-1F);
+$mainav-line-height-primary: space(space-rem-1B);
+$mainav-font-weight-primary: space(weight-500);
+$mainav-media-width-primary: space(width-1024);
+$calenderpicker-gap-primary: space(space-rem-0);
+$calenderpicker-height-primary: space(space-rem-2A);
+$calenderpicker-height-secondary: space(space-rem-1);
+$calenderpicker-width-primary: space(width-240);
+$calenderpicker-width-secondary: space(space-rem-1);
+$calenderpicker-border-width-primary: space(spacing-1);
+$calenderpicker-opacity-primary: space(opacity-2);
+$calenderpicker-margin-right-primary: space(space-rem-0);
+$calenderpicker-padding-primary: space(space-rem-0B);
+$calenderpicker-border-radius-primary: space(space-rem-0A);
+$calenderpicker-font-weight-primary: space(weight-400);
+$calenderpicker-line-height-primary: space(space-rem-1B);
+$dashboard-border-width-primary: space(spacing-1);
+$dashboard-border-radius-primary: space(space-rem-0);
+$dashboard-border-radius-secondary: space(space-rem-0A);
+$dashboard-border-radius-danger: space(space-num-0);
+$dashboard-margin-left-primary: space(spacing-600);
+$dashboard-margin-left-secondary: space(space-rem-1C);
+$dashboard-margin-left-danger: space(space-rem-28);
+$dashboard-margin-top-primary: space(space-rem-1C);
+$dashboard-margin-top-secondary: space(space-rem-1);
+$dashboard-margin-primary: space(space-rem-0);
+$dashboard-margin-secondary: space(space-rem-1);
+$dashboard-margin-danger: space(p-10);
+$dashboard-media-margin-primary: space(space-num-0);
+$dashboard-padding-primary: space(space-rem-1);
+$dashboard-padding-secondary: space(space-rem-2);
+$dashboard-padding-danger: space(space-rem-1C);
+$dashboard-padding-top-primary: space(height-0);
+$dashboard-padding-left-primary: space(space-rem-0);
+$dashboard-padding-bottom-primary: space(space-rem-0);
+$dashboard-max-width-primary: space(percent-95);
+$dashboard-max-height-primary: space(percent-100);
+$dashboard-border-bottom-primary: space(spacing-1);
+$dashboard-height-primary: space(space-rem-4);
+$dashboard-height-secondary: space(space-rem-3);
+$dashboard-height-danger: space(space-rem-1B);
+$dashboard-spacing-primary: space(space-rem-1);
+$dashboard-spacing-secondary: space(space-rem-0B);
+$dashboard-spacing-danger: space(space-rem1L);
+$dashboard-font-size-primary: space(space-rem1K);
+$dashboard-font-size-secondary: space(space-rem-1C);
+$dashboard-font-size-danger: space(space-rem-0B);
+$dashboard-font-wight-primary: space(weight-700);
+$dashboard-font-wight-secondary: space(weight-500);
+$dashboard-line-height-primary: space(space-rem-1);
+$dashboard-line-height-secondary: space(space-rem-2);
+$dashboard-line-height-danger: space(space-rem-0C);
+$dashboard-media-line-height-primary: space(space-rem-2B);
+$dashboard-letter-spacing-primary: space(space-em-neg1);
+$dashboard-width-primary: space(space-rem-1D);
+$dashboard-right-primary: space(space-num-0);
+$dashboard-gap-primary: space(space-rem-1);
 
 $map-space: (
   space-0: 0px,
@@ -386,6 +480,8 @@ $map-space: (
   width-120: 120px,
   width-150: 150px,
   width-165: 165px,
+  width-200: 200px,
+  width-240: 240px,
   width-280: 280px,
   width-300: 300px,
   width-350: 350px,
@@ -395,6 +491,7 @@ $map-space: (
   width-500: 500px,
   width-600: 600px,
   width-1000: 100vw,
+  width-1024: 1024px,
   width-2000: 2000px,
   space-rem-0: 0.5rem,
   space-rem-0A: 0.375rem,
@@ -411,8 +508,13 @@ $map-space: (
   space-rem-1H: 0.125rem,
   space-rem-1I: 0.2rem,
   space-rem1J: 0.625rem,
+  space-rem1K: 0.8rem,
+  space-rem1L: 1.875rem,
   space-rem-2: 2rem,
   space-rem-2A: 2.5rem,
+  space-rem-2B: 2.25rem,
+  space-rem-3: 3rem,
+  space-rem-4: 4rem,
   space-rem-5: 5rem,
   space-rem-8: 8rem,
   space-rem-12: 12rem,
@@ -422,11 +524,13 @@ $map-space: (
   space-rem-18: 18rem,
   space-rem-20: 20rem,
   space-rem-24: 24rem,
+  space-rem-28: 28rem,
   space-rem-neg1: -0.025em,
   space-rem-neg2: -0.25rem,
   space-px-neg2: -1px,
   space-px-neg1: -2px,
   space-em-1: 0.1em,
+  space-em-neg1: -0.025em,
   weight-100: 100,
   weight-150: 150,
   weight-200: 200,
@@ -434,6 +538,7 @@ $map-space: (
   weight-400: 400,
   weight-500: 500,
   weight-600: 600,
+  weight-700: 700,
   duration-0: 0s,
   duration-1: 0.2s,
   space-num-0: 0,
@@ -452,6 +557,7 @@ $map-space: (
   percent-50: 50%,
   percent-60: 60%,
   percent-75: 75%,
+  percent-95: 95%,
   percent-100: 100%,
   percent-200: 200%,
   percent-250: 250%,

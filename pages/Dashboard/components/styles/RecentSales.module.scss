@@ -1,48 +1,48 @@
 .sales-root {
-  margin-top: 2rem;
+  margin-top: $recentsales-margin-top-primary;
 }
 
 .sales-container {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: $recentsales-padding-primary;
 }
 
 .sales-avatar-one {
-  height: 2.25rem; // 2.25rem
-  width: 2.25rem;
+  height: $recentsales-height-primary;
+  width: $recentsales-width-primary;
 }
 .sales-avatar-two {
-  border-width: 1px;
-  border-radius: 9999px;
+  border-width: $recentsales-border-width-primary;
+  border-radius: $recentsales-border-radius-primary;
   overflow: hidden;
   justify-content: center;
   align-items: center;
   display: flex;
   position: relative;
-  flex-shrink: 0;
-  height: 2.25rem;
-  width: 2.25rem;
+  flex-shrink: $recentsales-flex-shrink;
+  height: $recentsales-height-primary;
+  width: $recentsales-width-primary;
 }
 
 .sales-description {
-  margin-left: 1rem;
-  margin-top: 0.25rem;
+  margin-left: $recentsales-margin-secondary;
+  margin-top: $recentsales-margin-top-secondary;
 }
 
 .sales-item-one {
-  line-height: 1;
-  font-weight: 500;
-  font-size: 0.875rem;
-  margin: 0;
+  line-height: $recentsales-line-height-primary;
+  font-weight: $recentsales-font-weight-primary;
+  font-size: $recentsales-font-size-primary;
+  margin: $recentsales-margin-primary;
 }
 .sales-item-two {
   color: hsl(215.4 16.3% 46.9%);
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  margin: 0;
+  font-size: $recentsales-font-size-primary;
+  line-height: $recentsales-line-height-secondary;
+  margin: $recentsales-margin-primary;
 }
 .sales-item-price {
   margin-left: auto;
-  font-weight: 500;
+  font-weight: $recentsales-font-weight-primary;
 }

@@ -1,19 +1,18 @@
 .popover-button {
   display: inline-flex;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  // justify-content: center;
+  font-size: $teamswitcher-font-size-primary;
+  line-height: $teamswitcher-line-height-primary;
+  font-weight: $teamswitcher-font-weight-primary;
+
   align-items: center;
   border-radius: calc(0.5rem - 2px);
   text-transform: none;
   background-color: transparent;
   border-style: none;
-  // padding-left: 0.75rem;
-  // padding-right: 0.75rem;
+
   justify-content: space-between;
-  width: 200px;
-  height: 40px;
+  width: $teamswitcher-width-primary;
+  height: $teamswitcher-height-primary;
   &:hover {
     background-color: hsl(210 40% 96.1%);
     color: hsl(222.2 47.4% 11.2%);
@@ -22,41 +21,41 @@
 
 .switcher-avatar {
   position: relative;
-  margin-right: 0.5rem;
-  width: 1.25rem;
-  height: 1.25rem;
-  flex-shrink: 0;
+  margin-right: $teamswitcher-margin-right-primary;
+  width: $teamswitcher-width-secondary;
+  height: $teamswitcher-height-secondary;
+  flex-shrink: $teamswitcher-flex-shrink-primary;
 }
 
 .switcher-head {
-  margin-left: 10px;
+  margin-left: $teamswitcher-margin-left-primary;
 }
 
 .switcher-chevron {
   margin-left: auto;
-  width: 1rem;
-  height: 1rem;
-  opacity: 0.5;
+  width: $teamswitcher-width-danger;
+  height: $teamswitcher-height-danger;
+  opacity: $teamswitcher-opacity-primary;
 }
 
 .switcher-content {
-  padding: 0;
-  width: 200px;
+  padding: $teamswitcher-padding-danger;
+  width: $teamswitcher-width-primary;
 }
 
 .switcher-select {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-bottom: 1rem;
-  margin-top: 1rem;
+  padding-top: $teamswitcher-padding-primary;
+  padding-bottom: $teamswitcher-padding-primary;
+  padding-bottom: $teamswitcher-padding-secondary;
+  margin-top: $teamswitcher-margin-top-primary;
 }
 
 .switcher-select-label {
-  margin-top: 0.5rem;
+  margin-top: $teamswitcher-margin-right-primary;
 }
 
 .switcher-select-item {
-  font-weight: 500;
+  font-weight: $teamswitcher-font-weight-primary;
 }
 
 .switcher-select-span {

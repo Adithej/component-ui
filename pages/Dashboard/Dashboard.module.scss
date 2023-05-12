@@ -3,22 +3,22 @@
     0 8px 10px -6px rgba(0, 0, 0, 0.1);
   display: block;
   background-color: hsl(0 0% 100%);
-  border-width: 1px;
+  border-width: $dashboard-border-width-primary;
   border-style: solid;
-  border-radius: 0.5rem;
+  border-radius: $dashboard-border-radius-primary;
   border-color: hsl(214.3 31.8% 91.4%);
   overflow: hidden;
   box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, var(--shadow);
-  padding-top: 0;
+  padding-top: $dashboard-padding-top-primary;
   border-top-style: none;
-  margin-left: 40px;
+  margin-left: $dashboard-margin-left-primary;
   box-sizing: border-box;
-  max-width: 95%;
-  max-height: 100%;
+  max-width: $dashboard-max-width-primary;
+  max-height: $dashboard-max-height-primary;
 }
 .dashboard {
-  border-width: 1px;
-  border-radius: 0.5rem;
+  border-width: $dashboard-border-width-primary;
+  border-radius: $dashboard-border-radius-primary;
   border-color: hsl(214.3 31.8% 91.4%);
   border-style: solid;
   box-sizing: border-box;
@@ -31,8 +31,8 @@
   background-color: hsl(0 0% 100%);
   color: hsl(222.2 47.4% 11.2%);
   font-feature-settings: "rlig" 1, "calt" 1;
-  border-width: 1px;
-  border-radius: 0.5rem;
+  border-width: $dashboard-border-width-primary;
+  border-radius: $dashboard-border-radius-primary;
   border-color: hsl(214.3 31.8% 91.4%);
   box-sizing: border-box;
   display: none;
@@ -45,70 +45,70 @@
 
 .dashboard-teamswitcher-navs {
   box-sizing: border-box;
-  border-radius: 0.5rem;
+  border-radius: $dashboard-border-radius-primary;
   border-color: hsl(214.3 31.8% 91.4%);
-  border-bottom-width: 1px;
+  border-bottom-width: $dashboard-border-bottom-primary;
   border-style: solid;
 
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-bottom-left-radius: $dashboard-border-radius-danger;
+  border-bottom-right-radius: $dashboard-border-radius-danger;
 }
 
 .dashboard-teamswitcher-nav {
   display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: $dashboard-padding-primary;
+  padding-right: $dashboard-padding-primary;
   align-items: center;
-  height: 4rem;
+  height: $dashboard-height-primary;
 }
 
 .dashboard-main-nav {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: $dashboard-margin-left-secondary;
+  margin-right: $dashboard-margin-left-secondary;
 }
 
 .dashboard-nav-search {
   display: flex;
-  margin-left: 28rem;
+  margin-left: $dashboard-margin-left-danger;
 
   align-items: center;
 }
 
 .dashboard-calender {
-  padding: 2rem;
-  padding-top: 0;
+  padding: $dashboard-padding-secondary;
+  padding-top: $dashboard-padding-top-primary;
   flex: 1 1 0%;
 }
 
 .dashboard-calender-picker {
   display: flex;
-  margin-top: 1.5rem;
-  height: 3rem;
+  margin-top: $dashboard-margin-top-primary;
+  height: $dashboard-height-secondary;
   justify-content: space-between;
   align-items: center;
 }
 
 .dashboard-calender-head {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 700;
-  letter-spacing: -0.025em;
+  font-size: $dashboard-spacing-danger;
+  line-height: $dashboard-media-line-height-primary;
+  font-weight: $dashboard-font-wight-primary;
+  letter-spacing: $dashboard-letter-spacing-primary;
 }
 
 .dashboard-calender-range {
   display: flex;
-  margin-left: 0.5rem;
+  margin-left: $dashboard-margin-primary;
   align-items: center;
 }
 
 .dashboard-download {
-  margin-right: 0.5rem;
-  width: 1rem;
-  height: 1rem;
+  margin-right: $dashboard-margin-primary;
+  width: $dashboard-spacing-primary;
+  height: $dashboard-spacing-primary;
 }
 
 .dashboard-tab {
-  margin-top: 1rem;
+  margin-top: $dashboard-margin-top-secondary;
   margin-bottom: calc(1rem * 0);
 }
 
@@ -117,7 +117,7 @@
 }
 
 .dashboard-tab-content {
-  gap: 1rem;
+  gap: $dashboard-gap-primary;
   display: grid;
 
   @media (min-width: 1024px) {
@@ -130,8 +130,8 @@
 }
 
 .dashboard-card-head {
-  padding-bottom: 0.5rem;
-  padding: 1.5rem;
+  padding-bottom: $dashboard-padding-bottom-primary;
+  padding: $dashboard-padding-danger;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -140,45 +140,44 @@
 }
 
 .dashboard-picker-button {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  border-radius: 0.375rem;
+  padding-left: $dashboard-spacing-secondary;
+  padding-right: $dashboard-spacing-secondary;
+  border-radius: $dashboard-border-radius-secondary;
 }
 
 .dashboard-card-title {
-  font-size: 0.8rem;
-  line-height: 0.25rem;
-  font-weight: 500;
+  font-size: $dashboard-font-size-primary;
+  line-height: $dashboard-line-height-danger;
+  font-weight: $dashboard-font-wight-secondary;
 }
 
 .dashboard-card-descripton {
   position: absolute;
-  right: 0;
-  width: 1.125rem;
-  height: 1.25rem;
-  margin-right: 1rem;
-  // margin-left: 150px;
+  right: $dashboard-right-primary;
+  width: $dashboard-width-primary;
+  height: $dashboard-height-danger;
+  margin-right: $dashboard-margin-secondary;
 
   color: hsl(215.4 16.3% 46.9%);
 }
 
 .dashboard-card-content {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
+  font-size: $dashboard-font-size-secondary;
+  line-height: $dashboard-line-height-secondary;
+  font-weight: $dashboard-font-wight-primary;
 }
 
 .dashboard-card-para {
-  margin: 0;
-  font-size: 0.75rem;
-  line-height: 1rem;
+  margin: $dashboard-media-margin-primary;
+  font-size: $dashboard-font-size-danger;
+  line-height: $dashboard-line-height-primary;
   color: hsl(215.4 16.3% 46.9%);
 }
 
 .dashboard-card-grid {
   display: grid;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: $dashboard-gap-primary;
+  margin-top: $dashboard-margin-top-secondary;
   margin-bottom: calc(1rem * 0);
   @media (min-width: 1024px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -189,12 +188,12 @@
   grid-column: span 1 / span 1;
 }
 .dashboard-card-colum-description {
-  margin: 10px;
+  margin: $dashboard-margin-danger;
 }
 .dashboard-card-column-two {
   grid-column: span 1 / span 1;
 }
 
 .dashboard-card-contents {
-  padding-left: 0.5rem;
+  padding-left: $dashboard-padding-left-primary;
 }
