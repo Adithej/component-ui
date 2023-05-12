@@ -1,0 +1,56 @@
+.nav-button {
+  position: relative;
+  border-radius: $usernav-border-radius-primary;
+  background-color: transparent;
+  border-style: none;
+  width: $usernav-width-primary;
+  height: $user-nav-height-primary;
+  text-transform: none;
+}
+
+.nav-avatar {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-shrink: $usernav-shrink;
+  border-radius: $usernav-border-radius-primary;
+  width: $usernav-width-primary;
+  height: $user-nav-height-primary;
+}
+
+.nav-menu-content {
+  width: $usernav-width-danger;
+}
+
+.nav-menu-label {
+  font-weight: $usernav-fontweight-primary;
+}
+
+.nav-label-description {
+  display: flex;
+  margin-top: $usernav-margin-secondary;
+  flex-direction: column;
+}
+
+.nav-label-head {
+  font-size: $usernav-fontsize-primary;
+  line-height: $usernav-lineheight-secondary;
+  font-weight: $usernav-fontweight-secondary;
+  line-height: $usernav-lineheight-primary;
+  padding-bottom: $usernav-padding-primary;
+  margin: $usernav-margin-primary;
+}
+
+.nav-label-para {
+  font-size: $usernav-fontsize-secondary;
+  font-weight: $usernav-fontweight-danger;
+  line-height: $usernav-lineheight-primary;
+  margin: $usernav-margin-primary;
+  color: hsl(215.4 16.3% 46.9%);
+}
+
+.nav-menu-user {
+  margin-right: $usernav-margin-danger;
+  width: $usernav-width-secodary;
+  height: $usernav-height-secondary;
+}

@@ -1,0 +1,48 @@
+.sales-root {
+  margin-top: $recentsales-margin-top-primary;
+}
+
+.sales-container {
+  display: flex;
+  align-items: center;
+  padding: $recentsales-padding-primary;
+}
+
+.sales-avatar-one {
+  height: $recentsales-height-primary;
+  width: $recentsales-width-primary;
+}
+.sales-avatar-two {
+  border-width: $recentsales-border-width-primary;
+  border-radius: $recentsales-border-radius-primary;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  flex-shrink: $recentsales-flex-shrink;
+  height: $recentsales-height-primary;
+  width: $recentsales-width-primary;
+}
+
+.sales-description {
+  margin-left: $recentsales-margin-secondary;
+  margin-top: $recentsales-margin-top-secondary;
+}
+
+.sales-item-one {
+  line-height: $recentsales-line-height-primary;
+  font-weight: $recentsales-font-weight-primary;
+  font-size: $recentsales-font-size-primary;
+  margin: $recentsales-margin-primary;
+}
+.sales-item-two {
+  color: hsl(215.4 16.3% 46.9%);
+  font-size: $recentsales-font-size-primary;
+  line-height: $recentsales-line-height-secondary;
+  margin: $recentsales-margin-primary;
+}
+.sales-item-price {
+  margin-left: auto;
+  font-weight: $recentsales-font-weight-primary;
+}

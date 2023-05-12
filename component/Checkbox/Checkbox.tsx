@@ -15,7 +15,7 @@ const Checkbox = React.forwardRef<
     {...props}
   >
     <CheckboxPrimitive.Indicator
-      className={styles["checkbox-primitive-indicator "]}
+      className={styles["checkbox-primitive-indicator"]}
     >
       <CheckIcon className={styles["check"]} />
     </CheckboxPrimitive.Indicator>

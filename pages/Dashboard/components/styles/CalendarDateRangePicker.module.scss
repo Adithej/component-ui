@@ -1,0 +1,41 @@
+.range-picker {
+  display: grid;
+  gap: $calenderpicker-gap-primary;
+  border-color: hsl(214.3 31.8% 91.4%);
+  height: $calenderpicker-height-primary;
+}
+
+.range-picker-button {
+  padding-left: $calenderpicker-padding-primary;
+  padding-right: $calenderpicker-padding-primary;
+  border-radius: $calenderpicker-border-radius-primary;
+  font-weight: $calenderpicker-font-weight-primary;
+  line-height: $calenderpicker-line-height-primary;
+  text-align: left;
+  justify-content: flex-start;
+  width: $calenderpicker-width-primary;
+  height: $calenderpicker-height-primary;
+  background-color: transparent;
+  border-style: solid;
+  border-width: $calenderpicker-border-width-primary;
+  border-color: hsl(214.3 31.8% 91.4%);
+}
+.range-picker-foreground {
+  color: hsl(222.2 47.4% 11.2%);
+}
+
+.calender-icon {
+  align-items: center;
+  margin-right: $calenderpicker-margin-right-primary;
+  width: $calenderpicker-width-secondary;
+  height: $calenderpicker-height-secondary;
+}
+
+.range-calender {
+  opacity: $calenderpicker-opacity-primary;
+  background-color: white;
+}
+
+.range-popover-content {
+  border: none;
+}

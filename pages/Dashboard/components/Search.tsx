@@ -1,8 +1,9 @@
 import Input from "@/component/Input";
+import styles from "./styles/Search.module.scss";
 
 export function Search() {
   return (
-    <div>
+    <div className={styles["search-span"]}>
       <Input
         type="search"
         placeholder="Search..."

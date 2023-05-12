@@ -1,0 +1,46 @@
+.navigation-list {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  @media (min-width: 1024px) {
+    margin-left: $mainav-margin-left-primary;
+    margin-right: $mainav-margin-right-primary;
+  }
+}
+
+.navigation-overview {
+  margin-left: $mainav-margin-left-primary;
+  margin-right: $mainav-margin-right-primary;
+  text-decoration: none;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  font-size: $mainav-font-size-primary;
+  line-height: $mainav-line-height-primary;
+  font-weight: $mainav-font-weight-primary;
+  color: black;
+
+  &:hover {
+    color: hsl(222.2 47.4% 11.2%);
+  }
+}
+
+.navigation-overview-list {
+  margin-right: $mainav-margin-right-primary;
+  text-decoration: none;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  font-weight: $mainav-font-weight-primary;
+  font-size: $mainav-font-size-primary;
+  line-height: $mainav-line-height-primary;
+  color: hsl(215.4 16.3% 46.9%);
+
+  &:hover {
+    color: hsl(222.2 47.4% 11.2%);
+  }
+}
