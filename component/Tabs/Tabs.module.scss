@@ -2,25 +2,25 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 2.5rem;
-  border-radius: 0.375rem;
+  height: $tabs-line-height-primary;
+  border-radius: $tabs-border-radius-primary;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   outline: none;
-  padding: 0.25rem;
+  padding: $tabs-padding-primary;
   background-color: hsl(210 40% 96.1%);
   color: hsl(215.4 16.3% 46.9%);
   box-sizing: border-box;
 }
 
 .tabs-trigger {
-  width: 100px;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  width: $tabs-width-primary;
+  font-weight: $tabs-font-weight-primay;
+  font-size: $tabs-font-size-primary;
+  line-height: $tabs-line-height-secondary;
+  padding-top: $tabs-padding-secondary;
+  padding-bottom: $tabs-padding-secondary;
+  padding-left: $tabs-padding-danger;
+  padding-right: $tabs-padding-danger;
   border-radius: calc(0.5rem - 4px);
   white-space: nowrap;
   justify-content: center;
@@ -31,13 +31,12 @@
   border-style: none;
   border-color: hsl(214.3 31.8% 91.4%);
   &:disabled {
-    // width: 100px;
     pointer-events: none;
-    opacity: 0.5;
+    opacity: $tabs-opacity-primary;
     background-color: transparent;
   }
 }
 
 .tabs-content {
-  margin-top: 0.5rem;
+  margin-top: $tabs-margin-top-primary;
 }
