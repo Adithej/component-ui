@@ -2,21 +2,21 @@
   display: flex;
   overflow: hidden;
   position: relative;
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 9999px;
-  flex-shrink: 0;
+  height: $avatar-height-primary;
+  width: $avatar-width-primary;
+  border-radius: $avatar-border-radius-primary;
+  flex-shrink: $avatar-flex-shrink-primary;
   border-color: hsl(214.3 31.8% 91.4%);
 }
 
 .avatar-image {
-  width: 100%;
-  height: 100%;
+  width: $avatar-width-secondary;
+  height: $avatar-height-secondary;
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: inherit;
   img {
-    max-width: 100%;
+    max-width: $avatar-width-secondary;
     overflow-clip-margin: content-box;
     overflow: clip;
   }
@@ -26,7 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 9999px;
+  width: $avatar-width-secondary;
+  height: $avatar-height-secondary;
+  border-radius: $avatar-border-radius-primary;
 }
